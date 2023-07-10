@@ -13,6 +13,7 @@ website:
       - faq.qmd
       - projects.qmd
       - resources.qmd
+      - blog.qmd
 
 format:
   html:

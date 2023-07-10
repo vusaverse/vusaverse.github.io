@@ -7,6 +7,13 @@
     "text": "1 + 1\n\n[1] 2"
   },
   {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Quarto\n\n\nR\n\n\nMEDS\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2023\n\n\nJohn Doe\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "VU Analytics",
@@ -19,6 +26,13 @@
     "title": "Packages",
     "section": "",
     "text": "VU Analytics has created a number of packages to simplify its work. These packages are part of the so-called vusaverse. Two types of packages are distinguished:\n\nPackages to use external tools; and\nPackages for data science tasks\n\n\n\nThese packages include: - vvcanvas; for communicating with the CANVAS LMS - vvtableau; for using Tableau REST API - vvtermtime; for scheduling tasks\n\n\n\n\nvvauditor\nvvcommander\nvvconverter\nvvfiller\nvvmover\nvvmodeller (Deprecated)\nvvsculptor"
+  },
+  {
+    "objectID": "posts/example_blog.html",
+    "href": "posts/example_blog.html",
+    "title": "Exploring Data Visualization with Tableau",
+    "section": "",
+    "text": "Data visualization is an essential component of data science. It allows us to present complex information in a visually appealing and easily understandable manner. In this blog post, we will explore the power of Tableau, a popular data visualization tool.\n\n\nTableau is a powerful and intuitive data visualization tool that enables users to create interactive and dynamic visualizations. It offers a wide range of visualization options, including charts, graphs, maps, and dashboards. Tableau’s drag-and-drop interface makes it accessible to both data scientists and non-technical users.\n\n\n\nTableau provides numerous benefits for data scientists and analysts:\n\n\nTableau supports various data sources, such as CSV files, Excel spreadsheets, databases, and cloud services. It allows users to connect and integrate data from multiple sources seamlessly. With Tableau’s data blending capabilities, you can combine different datasets to uncover valuable insights.\n\n\n\nOne of Tableau’s standout features is its ability to create interactive visualizations. Users can filter, drill down, and explore data dynamically. This interactivity empowers stakeholders to gain deeper insights and ask ad hoc questions, leading to more informed decision-making.\n\n\n\nTableau offers built-in analytics and statistical functions that enhance data exploration. Users can perform calculations, trend analysis, forecasting, clustering, and more. These analytical capabilities enable data scientists to dig deeper into the data and uncover patterns and relationships.\n\n\n\nTableau allows the creation of interactive dashboards that consolidate multiple visualizations into a single view. Dashboards provide an overview of key metrics and allow users to explore data across different dimensions. They can be customized with filters, parameters, and actions to enable users to interact with the data.\n\n\n\n\nTo get started with Tableau, follow these steps:\n\nDownload and install Tableau Desktop from the official website.\nLaunch Tableau Desktop and connect to your desired data source.\nChoose the appropriate visualization type and drag and drop fields onto the canvas.\nCustomize the visualization by applying filters, sorting, formatting, and adding interactivity.\nCreate a dashboard to combine multiple visualizations and enhance data exploration.\nPublish your visualizations to Tableau Server or Tableau Public for sharing and collaboration.\n\n\n\n\nTableau is a powerful tool that empowers data scientists and analysts to create stunning and interactive data visualizations. Its intuitive interface, extensive feature set, and ability to integrate with various data sources make it a popular choice in the data science community.\nBy leveraging Tableau’s capabilities, data scientists can effectively communicate insights, drive decision-making, and extract maximum value from their data.\nIf you haven’t explored Tableau yet, I highly recommend giving it a try. Start visualizing your data in new and insightful ways with Tableau today!"
   },
   {
     "objectID": "projects.html",
