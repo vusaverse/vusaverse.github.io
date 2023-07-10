@@ -10,6 +10,9 @@ website:
         text: Home
       - about.qmd
       - packages.qmd
+      - faq.qmd
+      - projects.qmd
+      - resources.qmd
 
 format:
   html:

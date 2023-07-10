@@ -19,5 +19,19 @@
     "title": "Packages",
     "section": "",
     "text": "VU Analytics has created a number of packages to simplify its work. These packages are part of the so-called vusaverse. Two types of packages are distinguished:\n\nPackages to use external tools; and\nPackages for data science tasks\n\n\n\nThese packages include: - vvcanvas; for communicating with the CANVAS LMS - vvtableau; for using Tableau REST API - vvtermtime; for scheduling tasks\n\n\n\n\nvvauditor\nvvcommander\nvvconverter\nvvfiller\nvvmover\nvvmodeller (Deprecated)\nvvsculptor"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "This page serves as a showcase for a selection of our projects."
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Some resources we have used in our team:\n\ntidyverse\nmastering shiny\nadvanced R\nr-pkgs.org\ndatacamp\ninformation dashboard design"
   }
 ]

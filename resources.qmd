@@ -1,0 +1,20 @@
+---
+title: "Resources"
+editor: visual
+---
+
+# Resources
+
+Some resources we have used in our team:
+
+-   tidyverse
+
+-   mastering shiny
+
+-   advanced R
+
+-   r-pkgs.org
+
+-   datacamp
+
+-   information dashboard design
