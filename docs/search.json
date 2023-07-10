@@ -1,31 +1,17 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
     "section": "",
-    "text": "1 + 1\n\n[1] 2"
+    "text": "This page serves as a showcase for a selection of our projects."
   },
   {
     "objectID": "blog.html",
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Quarto\n\n\nR\n\n\nMEDS\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2023\n\n\nJohn Doe\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "VU Analytics",
-    "section": "",
-    "text": "VU Analytics is committed to using data to support policy making, student guidance and scientific research into academic success as effectively as possible. We call this data-informed policy. We provide the VU with insights into student intake, progression and graduation and thus contribute to the quality of education at the VU.\nVU Analytics investigates VU study data. This study data is created during the paths students take within the VU ‘garden’.\n\nPart of it is about the origin of students and what they did ‘before the gate’: their previous education in the Netherlands or abroad, how they oriented themselves at the VU, which study choices they made. This includes data from Studielink, orientation data, data from the study choice trajectory, the introduction and the language proficiency test.\nThe next part is about what they do in the garden: where the VU career of students starts, what choices students make about their routes within and between programmes, their study results and academic success. VU Analytics largely receives this data from the student administration via VUdata.\nFinally, it is about how our students fare after they leave the garden with a diploma: a follow-up study or their labour market success.\n\nAll these data are traces left behind in the garden. The team combines study data to create an enriched dataset. We use the study data in our dataset to understand our students better, to improve the quality of education, and to study student intake, progression and graduation.\nOn their path, students may come across many things that are beautiful or could be improved. Attractive places to talk to a lecturer or study advisor, interesting paths and flowers, but also fallen trees or small rivers that are difficult to cross without help. VU policy officers and programme managers turn to VU Analytics for good advice on routes to be recommended. Together, they discuss possible barriers. Under the watchful eye of the privacy officer, the team investigates relevant data and provides specific advice that can be used by colleagues and, ultimately, by students. Through all these investigations, the team gets a good picture of the entire VU, which helps with general issues for the VU as a whole. \nTo achieve this, Team VU Analytics has contact with a broad network of policy staff and members of education management. VU Analytics regularly participates in various educational consultations within the VU. We also proactively organise a sounding board group to ensure that the initiatives and services of VU Analytics are as closely aligned as possible with the wishes and needs of the organisation. The sounding board group consists of representatives from the various bodies and target groups.\nWe can be reached for questions about data for educational policy or scientific research at: VU-analytics@vu.nl."
-  },
-  {
-    "objectID": "packages.html",
-    "href": "packages.html",
-    "title": "Packages",
-    "section": "",
-    "text": "VU Analytics has created a number of packages to simplify its work. These packages are part of the so-called vusaverse. Two types of packages are distinguished:\n\nPackages to use external tools; and\nPackages for data science tasks\n\n\n\nThese packages include: - vvcanvas; for communicating with the CANVAS LMS - vvtableau; for using Tableau REST API - vvtermtime; for scheduling tasks\n\n\n\n\nvvauditor\nvvcommander\nvvconverter\nvvfiller\nvvmover\nvvmodeller (Deprecated)\nvvsculptor"
+    "text": "Exploring Data Visualization with Tableau\n\n\n\n\n\n\n\nQuarto\n\n\nR\n\n\nMEDS\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2023\n\n\nJohn Doe\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/example_blog.html",
@@ -35,17 +21,80 @@
     "text": "Data visualization is an essential component of data science. It allows us to present complex information in a visually appealing and easily understandable manner. In this blog post, we will explore the power of Tableau, a popular data visualization tool.\n\n\nTableau is a powerful and intuitive data visualization tool that enables users to create interactive and dynamic visualizations. It offers a wide range of visualization options, including charts, graphs, maps, and dashboards. Tableau’s drag-and-drop interface makes it accessible to both data scientists and non-technical users.\n\n\n\nTableau provides numerous benefits for data scientists and analysts:\n\n\nTableau supports various data sources, such as CSV files, Excel spreadsheets, databases, and cloud services. It allows users to connect and integrate data from multiple sources seamlessly. With Tableau’s data blending capabilities, you can combine different datasets to uncover valuable insights.\n\n\n\nOne of Tableau’s standout features is its ability to create interactive visualizations. Users can filter, drill down, and explore data dynamically. This interactivity empowers stakeholders to gain deeper insights and ask ad hoc questions, leading to more informed decision-making.\n\n\n\nTableau offers built-in analytics and statistical functions that enhance data exploration. Users can perform calculations, trend analysis, forecasting, clustering, and more. These analytical capabilities enable data scientists to dig deeper into the data and uncover patterns and relationships.\n\n\n\nTableau allows the creation of interactive dashboards that consolidate multiple visualizations into a single view. Dashboards provide an overview of key metrics and allow users to explore data across different dimensions. They can be customized with filters, parameters, and actions to enable users to interact with the data.\n\n\n\n\nTo get started with Tableau, follow these steps:\n\nDownload and install Tableau Desktop from the official website.\nLaunch Tableau Desktop and connect to your desired data source.\nChoose the appropriate visualization type and drag and drop fields onto the canvas.\nCustomize the visualization by applying filters, sorting, formatting, and adding interactivity.\nCreate a dashboard to combine multiple visualizations and enhance data exploration.\nPublish your visualizations to Tableau Server or Tableau Public for sharing and collaboration.\n\n\n\n\nTableau is a powerful tool that empowers data scientists and analysts to create stunning and interactive data visualizations. Its intuitive interface, extensive feature set, and ability to integrate with various data sources make it a popular choice in the data science community.\nBy leveraging Tableau’s capabilities, data scientists can effectively communicate insights, drive decision-making, and extract maximum value from their data.\nIf you haven’t explored Tableau yet, I highly recommend giving it a try. Start visualizing your data in new and insightful ways with Tableau today!"
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
+    "objectID": "posts/example_blog.html#what-is-tableau",
+    "href": "posts/example_blog.html#what-is-tableau",
+    "title": "Exploring Data Visualization with Tableau",
     "section": "",
-    "text": "This page serves as a showcase for a selection of our projects."
+    "text": "Tableau is a powerful and intuitive data visualization tool that enables users to create interactive and dynamic visualizations. It offers a wide range of visualization options, including charts, graphs, maps, and dashboards. Tableau’s drag-and-drop interface makes it accessible to both data scientists and non-technical users."
+  },
+  {
+    "objectID": "posts/example_blog.html#benefits-of-using-tableau",
+    "href": "posts/example_blog.html#benefits-of-using-tableau",
+    "title": "Exploring Data Visualization with Tableau",
+    "section": "",
+    "text": "Tableau provides numerous benefits for data scientists and analysts:\n\n\nTableau supports various data sources, such as CSV files, Excel spreadsheets, databases, and cloud services. It allows users to connect and integrate data from multiple sources seamlessly. With Tableau’s data blending capabilities, you can combine different datasets to uncover valuable insights.\n\n\n\nOne of Tableau’s standout features is its ability to create interactive visualizations. Users can filter, drill down, and explore data dynamically. This interactivity empowers stakeholders to gain deeper insights and ask ad hoc questions, leading to more informed decision-making.\n\n\n\nTableau offers built-in analytics and statistical functions that enhance data exploration. Users can perform calculations, trend analysis, forecasting, clustering, and more. These analytical capabilities enable data scientists to dig deeper into the data and uncover patterns and relationships.\n\n\n\nTableau allows the creation of interactive dashboards that consolidate multiple visualizations into a single view. Dashboards provide an overview of key metrics and allow users to explore data across different dimensions. They can be customized with filters, parameters, and actions to enable users to interact with the data."
+  },
+  {
+    "objectID": "posts/example_blog.html#getting-started-with-tableau",
+    "href": "posts/example_blog.html#getting-started-with-tableau",
+    "title": "Exploring Data Visualization with Tableau",
+    "section": "",
+    "text": "To get started with Tableau, follow these steps:\n\nDownload and install Tableau Desktop from the official website.\nLaunch Tableau Desktop and connect to your desired data source.\nChoose the appropriate visualization type and drag and drop fields onto the canvas.\nCustomize the visualization by applying filters, sorting, formatting, and adding interactivity.\nCreate a dashboard to combine multiple visualizations and enhance data exploration.\nPublish your visualizations to Tableau Server or Tableau Public for sharing and collaboration."
+  },
+  {
+    "objectID": "posts/example_blog.html#conclusion",
+    "href": "posts/example_blog.html#conclusion",
+    "title": "Exploring Data Visualization with Tableau",
+    "section": "",
+    "text": "Tableau is a powerful tool that empowers data scientists and analysts to create stunning and interactive data visualizations. Its intuitive interface, extensive feature set, and ability to integrate with various data sources make it a popular choice in the data science community.\nBy leveraging Tableau’s capabilities, data scientists can effectively communicate insights, drive decision-making, and extract maximum value from their data.\nIf you haven’t explored Tableau yet, I highly recommend giving it a try. Start visualizing your data in new and insightful ways with Tableau today!"
   },
   {
     "objectID": "resources.html",
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Some resources we have used in our team:\n\ntidyverse\nmastering shiny\nadvanced R\nr-pkgs.org\ndatacamp\ninformation dashboard design"
+    "text": "Resources\nSome resources we have used in our team:\n\ntidyverse\nmastering shiny\nadvanced R\nr-pkgs.org\ndatacamp\ninformation dashboard design"
+  },
+  {
+    "objectID": "faq.html",
+    "href": "faq.html",
+    "title": "FAQ",
+    "section": "",
+    "text": "Frequently Asked Questions"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "VU Analytics",
+    "section": "",
+    "text": "VU Analytics is a VU data facility that analyses education and student data in order to improve student intake, progression and graduation in all phases of education.\nVU Analytics is committed to using data to support policy making, student guidance and scientific research into academic success as effectively as possible. We call this data-informed policy. We provide the VU with insights into student intake, progression and graduation and thus contribute to the quality of education at the VU.\nVU Analytics investigates VU study data. This study data is created during the paths students take within the VU ‘garden’.\n\nPart of it is about the origin of students and what they did ‘before the gate’: their previous education in the Netherlands or abroad, how they oriented themselves at the VU, which study choices they made. This includes data from Studielink, orientation data, data from the study choice trajectory, the introduction and the language proficiency test.\nThe next part is about what they do in the garden: where the VU career of students starts, what choices students make about their routes within and between programmes, their study results and academic success. VU Analytics largely receives this data from the student administration via VUdata.\nFinally, it is about how our students fare after they leave the garden with a diploma: a follow-up study or their labour market success.\n\nAll these data are traces left behind in the garden. The team combines study data to create an enriched dataset. We use the study data in our dataset to understand our students better, to improve the quality of education, and to study student intake, progression and graduation.\nOn their path, students may come across many things that are beautiful or could be improved. Attractive places to talk to a lecturer or study advisor, interesting paths and flowers, but also fallen trees or small rivers that are difficult to cross without help. VU policy officers and programme managers turn to VU Analytics for good advice on routes to be recommended. Together, they discuss possible barriers. Under the watchful eye of the privacy officer, the team investigates relevant data and provides specific advice that can be used by colleagues and, ultimately, by students. Through all these investigations, the team gets a good picture of the entire VU, which helps with general issues for the VU as a whole. \nTo achieve this, Team VU Analytics has contact with a broad network of policy staff and members of education management. VU Analytics regularly participates in various educational consultations within the VU. We also proactively organise a sounding board group to ensure that the initiatives and services of VU Analytics are as closely aligned as possible with the wishes and needs of the organisation. The sounding board group consists of representatives from the various bodies and target groups.\nWe can be reached for questions about data for educational policy or scientific research at: VU-analytics@vu.nl."
+  },
+  {
+    "objectID": "packages.html",
+    "href": "packages.html",
+    "title": "Packages",
+    "section": "",
+    "text": "VU Analytics has created a number of packages to simplify its work. These packages are part of the so-called vusaverse. Two types of packages are distinguished:\n\nPackages to use external tools; and\nPackages for data science tasks\n\n\n\nThese packages include:\n\nvvcanvas; for communicating with the CANVAS LMS\nvvtableau; for using Tableau REST API\nvvtermtime; for scheduling tasks\n\n\n\n\n\nvvauditor\nvvcommander\nvvconverter\nvvdoctor\nvvfiller\nvvmover\nvvmodeller (Deprecated)\nvvsculptor\nvvshiny"
+  },
+  {
+    "objectID": "packages.html#packages-for-external-tools",
+    "href": "packages.html#packages-for-external-tools",
+    "title": "Packages",
+    "section": "",
+    "text": "These packages include:\n\nvvcanvas; for communicating with the CANVAS LMS\nvvtableau; for using Tableau REST API\nvvtermtime; for scheduling tasks"
+  },
+  {
+    "objectID": "packages.html#packages-for-data-science-tasks",
+    "href": "packages.html#packages-for-data-science-tasks",
+    "title": "Packages",
+    "section": "",
+    "text": "vvauditor\nvvcommander\nvvconverter\nvvdoctor\nvvfiller\nvvmover\nvvmodeller (Deprecated)\nvvsculptor\nvvshiny"
   }
 ]

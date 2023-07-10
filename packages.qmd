@@ -13,16 +13,21 @@ VU Analytics has created a number of packages to simplify its work. These packag
 ## Packages for external tools
 
 These packages include:
-- vvcanvas; for communicating with the CANVAS LMS
-- vvtableau; for using Tableau REST API
-- vvtermtime; for scheduling tasks
+
+-   vvcanvas; for communicating with the CANVAS LMS
+
+-   vvtableau; for using Tableau REST API
+
+-    vvtermtime; for scheduling tasks
 
 ## Packages for data science tasks
 
-- vvauditor
-- vvcommander
-- vvconverter
-- vvfiller
-- vvmover
-- vvmodeller (Deprecated)
-- vvsculptor
+-   vvauditor
+-   vvcommander
+-   vvconverter
+-   vvdoctor
+-   vvfiller
+-   vvmover
+-   vvmodeller (Deprecated)
+-   vvsculptor
+-   vvshiny
