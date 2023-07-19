@@ -1,0 +1,166 @@
+---
+title: "Example blogpost"
+editor: visual
+author: John Doe
+date: "2023-07-18"
+categories: [R, Packages, Docker, Rocker] # self-defined categories
+---
+
+---
+title: "Using Rocker docker for R package development"
+author: "John Doe"
+date: "2023-07-18"
+---
+
+# Introduction
+
+In the world of data science, developing and sharing R packages is a crucial aspect of collaborative work. However, ensuring reproducibility, managing dependencies, and maintaining a consistent development environment can be challenging. This is where Docker Rocker comes in. In this blog post, we will explore the pros and cons of using Docker Rocker for R package development and provide a step-by-step guide to help you get started.
+
+## Pros of Using Docker Rocker for R Package Development
+
+-   Reproducibility: Docker allows you to create a containerized environment that encapsulates all the dependencies required for your R package. This ensures that your code will run consistently across different systems, making it easier to reproduce your work.
+
+-   Isolation: Docker containers provide a sandboxed environment, allowing you to isolate your R package development from other dependencies or configurations on your system. This helps prevent conflicts and ensures that your package development environment remains stable.
+
+-   Portability: Docker containers can be easily shared and deployed across different platforms and systems, making it convenient for collaboration and deployment.
+
+-   Version Control: With Docker, you can version control your containerized environment, including the specific versions of R, packages, and system dependencies. This makes it easier to track changes and roll back to previous versions if needed.
+
+-   Flexibility: Docker Rocker provides a wide range of pre-built containers for different versions of R, allowing you to easily switch between R versions for testing and development purposes.
+
+## Cons of Using Docker Rocker for R Package Development
+
+Cons of Using Docker Rocker for R Package Development:
+
+-   Learning Curve: Docker has its own set of commands and concepts that may require some learning and adjustment if you are new to it.
+
+-   Increased Complexity: Docker adds an additional layer of complexity to your development workflow, as you need to manage and maintain the Docker images and containers alongside your R package code.
+
+-   Resource Overhead: Running R packages within Docker containers may consume more system resources compared to running them directly on the host system. This can impact the performance and responsiveness of your development environment.
+
+-   Build Time: Building Docker images can take some time, especially when installing and configuring dependencies. However, this build time is a one-time cost, and subsequent container launches are faster.
+
+# Getting Started with Docker Rocker
+
+1.  Install Docker: Start by installing Docker on your machine. Visit the official Docker website and follow the instructions for your operating system.
+
+2.  Choose a Docker Image: Docker Rocker provides a variety of pre-built images for R development. Choose an image that suits your needs, considering the R version and additional packages or dependencies you require.
+
+3.  Create a Dockerfile: Create a Dockerfile in your R package project directory. This file defines the steps to build your Docker image. Specify the base image, install necessary system dependencies, and copy your R package code into the image.
+
+4.  Build the Docker Image: Use the docker build command to build your Docker image based on the Dockerfile. This process may take some time as it installs and configures the dependencies.
+
+5.  Run the Docker Container: Once the image is built, you can run a Docker container based on that image. Use the docker run command to start the container, specifying any necessary options such as port mapping or volume mounting. You can now interact with your R package code within the container.
+
+# Bringing it all together
+
+The above may seem intimidating at first, but do not worry. We have a pre-made custom rocker docker instance that you can easily use.
+
+``` dockerfile
+FROM rocker/tidyverse:latest
+
+COPY .config /home/rstudio/.config
+COPY .Rprofile /home/rstudio/
+
+USER root
+RUN chown -R rstudio:rstudio /home/rstudio/
+
+RUN install2.r --error --deps TRUE \
+    usethis \
+    testthat \
+    magick \
+    urltools \
+    markdown \
+    text2vec \
+    qpdf \
+    devtools \
+    && rm -rf /tmp/downloaded_packages/ /tmp/*.rds
+
+RUN apt-get clean && apt-get -y update && apt-get install -y --no-install-recommends libxt6 imagemagick
+```
+
+Let's break down the Dockerfile code step by step:
+
+1.  FROM rocker/tidyverse:latest: This line specifies the base image for our Docker image. In this case, we are using the rocker/tidyverse image, which provides a comprehensive set of R packages commonly used in data science.
+
+2.  COPY .config /home/rstudio/.config and COPY .Rprofile /home/rstudio/: These lines copy the .config and .Rprofile files from the local directory to the /home/rstudio/ directory inside the Docker image. These files can contain custom configurations or settings for the R/RStudio environment.
+
+3.  USER root and RUN chown -R rstudio:rstudio /home/rstudio/: These lines switch the user to root and change the ownership of the /home/rstudio/ directory to the rstudio user. This ensures that the rstudio user has the appropriate permissions to write files and install packages.
+
+4.  RUN install2.r --error --deps TRUE ...: This line installs several R packages using the install2.r function. The packages included in this example are `usethis`, `testthat`, `magick`, `urltools`, `markdown`, `text2vec`, `qpdf`, and `devtools`. Feel free to modify this list based on your specific package requirements. The --error flag ensures that the installation process stops if any errors occur, and the --deps TRUE flag installs the package dependencies.
+
+5.  && rm -rf /tmp/downloaded_packages/ /tmp/\*.rds: This line removes any temporary files generated during the package installation process, freeing up disk space within the Docker image.
+
+6.  RUN apt-get clean && apt-get -y update && apt-get install -y --no-install-recommends libxt6 imagemagick: These lines update the package lists, clean the package cache, and install the libxt6 and imagemagick packages using apt-get. These packages are often required for certain R packages that rely on external libraries or image manipulation.
+
+# Starting up the docker image
+
+Next, we need to build our docker instance locally. For this we use a startup file.
+
+In this section, we will provide examples of startup files for both Windows (`.bat`) and Unix-based systems (`.sh`).
+
+For Windows (`.bat`) startup file:
+
+``` bash
+@echo off
+
+docker build -t custom-rocker-example .
+
+start http://localhost:8787
+
+docker run -e PASSWORD="%1" -p 8787:8787 ^
+-v "%cd%":/home/rstudio/output ^
+--rm custom-rocker-example
+
+```
+
+Explanation of the Windows startup file:
+
+1. docker build -t custom-rocker-example .: This line builds the Docker image using the Dockerfile in the current directory and assigns it the name custom-rocker-example.
+
+2. start http://localhost:8787: This line opens a web browser and navigates to http://localhost:8787, which is the default address for the RStudio server running inside the Docker container.
+
+2. docker run -e PASSWORD="%1" -p 8787:8787 ...: This line runs the Docker container based on the custom-rocker-example image. The -e PASSWORD="%1" flag sets the password for the RStudio server, which is passed as an argument when executing the startup file. The -p 8787:8787 flag maps the port 8787 from the container to the same port on the host system. The -v "%cd%":/home/rstudio/output flag mounts the current directory as /home/rstudio/output inside the container, allowing you to access and save files between the host and container.
+
+
+For Unix-based systems (`.sh`) startup file:
+
+
+``` bash
+#!/bin/bash
+
+# Function that will get executed when the user presses Ctrl+C
+handler() {
+    echo "Processing the Ctrl+C"
+    docker system prune -a
+    exit 0
+}
+
+# Assign the handler function to the SIGINT signal
+trap handler INT
+
+docker build -t custom-rocker-example .
+
+open http://localhost:8787
+
+docker run -e PASSWORD="\$1" -p 8787:8787 \
+    -v "$(pwd)":/home/rstudio/output \
+    -v /home/USERNAME/Documents:/home/rstudio/Documents \
+    --rm custom-rocker-example
+
+```
+
+Explanation of the Unix-based startup file:
+
+1. handler() { ... } and trap handler INT: These lines define a function and assign it to the SIGINT signal, which is triggered when the user presses Ctrl+C. The function handler() is responsible for cleaning up Docker resources before exiting the script.
+
+2. docker build -t custom-rocker-example .: This line builds the Docker image using the Dockerfile in the current directory and assigns it the name custom-rocker-example.
+
+3. open http://localhost:8787: This line opens a web browser and navigates to http://localhost:8787, which is the default address for the RStudio server running inside the Docker container.
+
+4. docker run -e PASSWORD="\$1" -p 8787:8787 ...: This line runs the Docker container based on the custom-rocker-example image. The -e PASSWORD="\$1" flag sets the password for the RStudio server, which is passed as an argument when executing the startup file. 
+
+5. The -p 8787:8787 flag maps the port 8787 from the container to the same port on the host system. The -v "$(pwd)":/home/rstudio/output flag mounts the current directory as /home/rstudio/output inside the container, allowing you to access and save files between the host and container. Additionally, the -v /home/USERNAME/Documents:/home/rstudio/Documents flag mounts the Documents directory from the host system to the Documents directory inside the container, enabling seamless access to files in that directory.
+
+By using these startup files, you can easily build and run your Docker container for R package development. The startup file automates the process, ensuring that the necessary image is built and the container is launched with the appropriate configurations. This saves you time and effort, allowing you to focus on your R package development tasks.
+

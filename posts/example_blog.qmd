@@ -3,7 +3,7 @@ title: "Example blogpost"
 editor: visual
 author: John Doe
 date: "2023-07-10"
-categories: [Quarto, R, MEDS] # self-defined categories
+categories: [Tableau, Visualisations] # self-defined categories
 ---
 
 ---
@@ -44,12 +44,12 @@ Tableau allows the creation of interactive dashboards that consolidate multiple 
 
 To get started with Tableau, follow these steps:
 
-1. Download and install Tableau Desktop from the official website.
-2. Launch Tableau Desktop and connect to your desired data source.
-3. Choose the appropriate visualization type and drag and drop fields onto the canvas.
-4. Customize the visualization by applying filters, sorting, formatting, and adding interactivity.
-5. Create a dashboard to combine multiple visualizations and enhance data exploration.
-6. Publish your visualizations to Tableau Server or Tableau Public for sharing and collaboration.
+1.  Download and install Tableau Desktop from the official website.
+2.  Launch Tableau Desktop and connect to your desired data source.
+3.  Choose the appropriate visualization type and drag and drop fields onto the canvas.
+4.  Customize the visualization by applying filters, sorting, formatting, and adding interactivity.
+5.  Create a dashboard to combine multiple visualizations and enhance data exploration.
+6.  Publish your visualizations to Tableau Server or Tableau Public for sharing and collaboration.
 
 ## Conclusion
 
@@ -58,4 +58,3 @@ Tableau is a powerful tool that empowers data scientists and analysts to create 
 By leveraging Tableau's capabilities, data scientists can effectively communicate insights, drive decision-making, and extract maximum value from their data.
 
 If you haven't explored Tableau yet, I highly recommend giving it a try. Start visualizing your data in new and insightful ways with Tableau today!
-

@@ -13,8 +13,14 @@ Some resources we have used in our team:
 
 -   advanced R
 
--   r-pkgs.org
-
 -   datacamp
 
--   information dashboard design
+## Books
+
+### R programming
+
+[R packages](https://r-pkgs.org/) by Hadley Wickham
+
+### Visualisations
+
+Information Dashboard Design by Stephen Few

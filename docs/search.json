@@ -11,7 +11,28 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Exploring Data Visualization with Tableau\n\n\n\n\n\n\n\nQuarto\n\n\nR\n\n\nMEDS\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2023\n\n\nJohn Doe\n\n\n\n\n\n\nNo matching items"
+    "text": "Using Rocker docker for R package development\n\n\n\n\n\n\n\nR\n\n\nPackages\n\n\nDocker\n\n\nRocker\n\n\n\n\n\n\n\n\n\n\n\nJul 18, 2023\n\n\nJohn Doe\n\n\n\n\n\n\n  \n\n\n\n\nExploring Data Visualization with Tableau\n\n\n\n\n\n\n\nTableau\n\n\nVisualisations\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2023\n\n\nJohn Doe\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/Rocker.html",
+    "href": "posts/Rocker.html",
+    "title": "Using Rocker docker for R package development",
+    "section": "",
+    "text": "In the world of data science, developing and sharing R packages is a crucial aspect of collaborative work. However, ensuring reproducibility, managing dependencies, and maintaining a consistent development environment can be challenging. This is where Docker Rocker comes in. In this blog post, we will explore the pros and cons of using Docker Rocker for R package development and provide a step-by-step guide to help you get started.\n\n\n\nReproducibility: Docker allows you to create a containerized environment that encapsulates all the dependencies required for your R package. This ensures that your code will run consistently across different systems, making it easier to reproduce your work.\nIsolation: Docker containers provide a sandboxed environment, allowing you to isolate your R package development from other dependencies or configurations on your system. This helps prevent conflicts and ensures that your package development environment remains stable.\nPortability: Docker containers can be easily shared and deployed across different platforms and systems, making it convenient for collaboration and deployment.\nVersion Control: With Docker, you can version control your containerized environment, including the specific versions of R, packages, and system dependencies. This makes it easier to track changes and roll back to previous versions if needed.\nFlexibility: Docker Rocker provides a wide range of pre-built containers for different versions of R, allowing you to easily switch between R versions for testing and development purposes.\n\n\n\n\nCons of Using Docker Rocker for R Package Development:\n\nLearning Curve: Docker has its own set of commands and concepts that may require some learning and adjustment if you are new to it.\nIncreased Complexity: Docker adds an additional layer of complexity to your development workflow, as you need to manage and maintain the Docker images and containers alongside your R package code.\nResource Overhead: Running R packages within Docker containers may consume more system resources compared to running them directly on the host system. This can impact the performance and responsiveness of your development environment.\nBuild Time: Building Docker images can take some time, especially when installing and configuring dependencies. However, this build time is a one-time cost, and subsequent container launches are faster."
+  },
+  {
+    "objectID": "posts/Rocker.html#pros-of-using-docker-rocker-for-r-package-development",
+    "href": "posts/Rocker.html#pros-of-using-docker-rocker-for-r-package-development",
+    "title": "Using Rocker docker for R package development",
+    "section": "",
+    "text": "Reproducibility: Docker allows you to create a containerized environment that encapsulates all the dependencies required for your R package. This ensures that your code will run consistently across different systems, making it easier to reproduce your work.\nIsolation: Docker containers provide a sandboxed environment, allowing you to isolate your R package development from other dependencies or configurations on your system. This helps prevent conflicts and ensures that your package development environment remains stable.\nPortability: Docker containers can be easily shared and deployed across different platforms and systems, making it convenient for collaboration and deployment.\nVersion Control: With Docker, you can version control your containerized environment, including the specific versions of R, packages, and system dependencies. This makes it easier to track changes and roll back to previous versions if needed.\nFlexibility: Docker Rocker provides a wide range of pre-built containers for different versions of R, allowing you to easily switch between R versions for testing and development purposes."
+  },
+  {
+    "objectID": "posts/Rocker.html#cons-of-using-docker-rocker-for-r-package-development",
+    "href": "posts/Rocker.html#cons-of-using-docker-rocker-for-r-package-development",
+    "title": "Using Rocker docker for R package development",
+    "section": "",
+    "text": "Cons of Using Docker Rocker for R Package Development:\n\nLearning Curve: Docker has its own set of commands and concepts that may require some learning and adjustment if you are new to it.\nIncreased Complexity: Docker adds an additional layer of complexity to your development workflow, as you need to manage and maintain the Docker images and containers alongside your R package code.\nResource Overhead: Running R packages within Docker containers may consume more system resources compared to running them directly on the host system. This can impact the performance and responsiveness of your development environment.\nBuild Time: Building Docker images can take some time, especially when installing and configuring dependencies. However, this build time is a one-time cost, and subsequent container launches are faster."
   },
   {
     "objectID": "posts/example_blog.html",
@@ -53,7 +74,14 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Resources\nSome resources we have used in our team:\n\ntidyverse\nmastering shiny\nadvanced R\nr-pkgs.org\ndatacamp\ninformation dashboard design"
+    "text": "Some resources we have used in our team:\n\ntidyverse\nmastering shiny\nadvanced R\ndatacamp\n\n\n\n\n\nR packages by Hadley Wickham\n\n\n\nInformation Dashboard Design by Stephen Few"
+  },
+  {
+    "objectID": "resources.html#books",
+    "href": "resources.html#books",
+    "title": "Resources",
+    "section": "",
+    "text": "R packages by Hadley Wickham\n\n\n\nInformation Dashboard Design by Stephen Few"
   },
   {
     "objectID": "faq.html",
