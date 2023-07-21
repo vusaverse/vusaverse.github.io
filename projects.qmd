@@ -5,6 +5,15 @@ editor: visual
 
 This page serves as a showcase for a selection of our projects.
 
-## Project 1
+## **Effect of  the COVID-19 Pandemic on Student Performances** 
+
+Project Objectives:
+
+-   Understand the impact of the COVID-19 pandemic on student performance and academic outcomes.
+
+-   Identify factors contributing to variations in student success during remote learning.
+
+-   Provide recommendations and insights to inform future planning and
+    decision-making related to student support, curriculum adjustments, and resource allocation.
 
 ## Project 2
