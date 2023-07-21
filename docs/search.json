@@ -7,6 +7,20 @@
     "text": "This page serves as a showcase for a selection of our projects."
   },
   {
+    "objectID": "projects.html#project-1",
+    "href": "projects.html#project-1",
+    "title": "Projects",
+    "section": "Project 1",
+    "text": "Project 1"
+  },
+  {
+    "objectID": "projects.html#project-2",
+    "href": "projects.html#project-2",
+    "title": "Projects",
+    "section": "Project 2",
+    "text": "Project 2"
+  },
+  {
     "objectID": "blog.html",
     "href": "blog.html",
     "title": "Blog",
@@ -74,21 +88,21 @@
     "href": "resources.html",
     "title": "Resources",
     "section": "",
-    "text": "Some resources we have used in our team:\n\ntidyverse\nmastering shiny\nadvanced R\ndatacamp\n\n\n\n\n\nR packages by Hadley Wickham\n\n\n\nInformation Dashboard Design by Stephen Few"
+    "text": "Some resources we have used in our team:"
   },
   {
     "objectID": "resources.html#books",
     "href": "resources.html#books",
     "title": "Resources",
-    "section": "",
-    "text": "R packages by Hadley Wickham\n\n\n\nInformation Dashboard Design by Stephen Few"
+    "section": "Books",
+    "text": "Books\n\nR programming\nR packages by Hadley Wickham\n\n\nVisualisations\nInformation Dashboard Design by Stephen Few"
   },
   {
     "objectID": "faq.html",
     "href": "faq.html",
     "title": "FAQ",
     "section": "",
-    "text": "Frequently Asked Questions"
+    "text": "Data\nQ: What are your data sources?\nA: Our data sources include various sources within the university’s systems and databases. These sources may include student information systems, learning management systems, registration systems, and academic databases. We ensure that the data we collect is relevant, accurate, and up-to-date to provide meaningful insights into student success.\n\n\nStudents\nQ: How is my student performance data collected and used?\nA: Student performance data is collected through various means, such as grades, assessments, and evaluations. This data is securely stored and used for analyzing student performance trends, identifying areas of improvement, and informing decision-making processes related to curriculum enhancements, teaching methodologies, and student support services. The data helps us understand how students perform per program per year and enables us to develop strategies to enhance student success.\n\n\nPrivacy\nQ: How is data anonymized and aggregated to protect individual privacy?\nA: Data anonymization is an important aspect of protecting individual privacy. Before any analysis or reporting takes place, personally identifiable information (PII) is removed or transformed to ensure that individuals cannot be identified. This process involves techniques such as …\n\n\nCollaboration\nQ: Are there any existing collaborations or success stories with other universities?\nA: Yes! We have had successful collaborations with several institutions in the past. Some examples of universities we have collaborated with include “De Haagse Hogeschool” and “Universiteit Twente”. These collaborations have allowed us to share knowledge, exchange best practices, and work together to improve student success initiatives."
   },
   {
     "objectID": "about.html",
@@ -109,20 +123,20 @@
     "href": "packages.html",
     "title": "Packages",
     "section": "",
-    "text": "VU Analytics has created a number of packages to simplify its work. These packages are part of the so-called vusaverse. Two types of packages are distinguished:\n\nPackages to use external tools; and\nPackages for data science tasks\n\n\n\nThese packages include:\n\nvvcanvas; for communicating with the CANVAS LMS\nvvtableau; for using Tableau REST API\nvvtermtime; for scheduling tasks\n\n\n\n\n\nvvauditor\nvvcommander\nvvconverter\nvvdoctor\nvvfiller\nvvmover\nvvmodeller (Deprecated)\nvvsculptor\nvvshiny"
+    "text": "VU Analytics has created a number of packages to simplify its work. These packages are part of the so-called vusaverse. Two types of packages are distinguished:"
   },
   {
     "objectID": "packages.html#packages-for-external-tools",
     "href": "packages.html#packages-for-external-tools",
     "title": "Packages",
-    "section": "",
-    "text": "These packages include:\n\nvvcanvas; for communicating with the CANVAS LMS\nvvtableau; for using Tableau REST API\nvvtermtime; for scheduling tasks"
+    "section": "Packages for external tools",
+    "text": "Packages for external tools\nThese packages include:\n\nvvcanvas; for communicating with the CANVAS LMS\nvvtableau; for using Tableau REST API\nvvtermtime; for scheduling tasks"
   },
   {
     "objectID": "packages.html#packages-for-data-science-tasks",
     "href": "packages.html#packages-for-data-science-tasks",
     "title": "Packages",
-    "section": "",
-    "text": "vvauditor\nvvcommander\nvvconverter\nvvdoctor\nvvfiller\nvvmover\nvvmodeller (Deprecated)\nvvsculptor\nvvshiny"
+    "section": "Packages for data science tasks",
+    "text": "Packages for data science tasks\n\nvvauditor\nvvcommander\nvvconverter\nvvdoctor\nvvfiller\nvvmover\nvvmodeller (Deprecated)\nvvsculptor\nvvshiny"
   }
 ]

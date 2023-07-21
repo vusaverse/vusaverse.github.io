@@ -3,8 +3,6 @@ title: "Packages"
 editor: visual
 ---
 
-# Packages
-
 VU Analytics has created a number of packages to simplify its work. These packages are part of the so-called `vusaverse`. Two types of packages are distinguished:
 
 -   Packages to use external tools; and
@@ -18,7 +16,7 @@ These packages include:
 
 -   vvtableau; for using Tableau REST API
 
--    vvtermtime; for scheduling tasks
+-   vvtermtime; for scheduling tasks
 
 ## Packages for data science tasks
 

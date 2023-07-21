@@ -3,8 +3,6 @@ title: "Projects"
 editor: visual
 ---
 
-# Projects
-
 This page serves as a showcase for a selection of our projects.
 
 ## Project 1

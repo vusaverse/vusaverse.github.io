@@ -3,8 +3,6 @@ title: "Resources"
 editor: visual
 ---
 
-# Resources
-
 Some resources we have used in our team:
 
 -   tidyverse

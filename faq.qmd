@@ -3,4 +3,44 @@ title: "FAQ"
 editor: visual
 ---
 
-# Frequently Asked Questions
+# Data
+
+*Q: What are your data sources?*
+
+A: Our data sources include various sources within the university's
+systems and databases. These sources may include student information
+systems, learning management systems, registration systems, and academic
+databases. We ensure that the data we collect is relevant, accurate,
+and up-to-date to provide meaningful insights into student success.
+
+# Students
+
+*Q: How is my student performance data collected and used?*
+
+A: Student performance data is collected through various means, such as
+grades, assessments, and evaluations. This data is securely stored and
+used for analyzing student performance trends, identifying areas of
+improvement, and informing decision-making processes related to
+curriculum enhancements, teaching methodologies, and student support
+services. The data helps us understand how students perform per program per year and enables us to develop strategies to enhance student
+success.
+
+# Privacy
+
+*Q: How is data anonymized and aggregated to protect individual privacy?*
+
+A: Data anonymization is an important aspect of protecting individual
+privacy. Before any analysis or reporting takes place, personally
+identifiable information (PII) is removed or transformed to ensure that
+individuals cannot be identified. This process involves techniques such
+as ...
+
+# Collaboration
+
+*Q: Are there any existing collaborations or success stories with other universities?*
+
+A: Yes! We have had successful collaborations with several institutions in
+the past. Some examples of universities we have collaborated with
+include "De Haagse Hogeschool" and "Universiteit Twente". These
+collaborations have allowed us to share knowledge, exchange best
+practices, and work together to improve student success initiatives.
