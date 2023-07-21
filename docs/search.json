@@ -95,7 +95,14 @@
     "href": "resources.html#books",
     "title": "Resources",
     "section": "Books",
-    "text": "Books\n\nR programming\nR packages by Hadley Wickham\n\n\nVisualisations\nInformation Dashboard Design by Stephen Few"
+    "text": "Books\n\nR programming\n\nR packages by Hadley Wickham. This book is an essential resource for R programming, particularly for building and maintaining R packages. It covers best practices for package development, documentation, testing, and distribution. The book is authored by Hadley Wickham, a prominent figure in the R community and a leading developer of many popular R packages.\n\n\n\nVisualisations\n\nInformation Dashboard Design by Stephen Few. This book focuses on the principles and best practices of designing effective information dashboards. It provides guidance on visualizing data in a way that maximizes understanding and supports decision-making. The book covers topics such as data visualization techniques, dashboard layout, color usage, and creating interactive dashboards."
+  },
+  {
+    "objectID": "resources.html#channels",
+    "href": "resources.html#channels",
+    "title": "Resources",
+    "section": "Channels",
+    "text": "Channels\n\nVisualisations\n\nTableau Tim on YouTube. Tableau Tim is a YouTube channel that provides tutorials and tips for using Tableau for data visualization and analysis. The channel covers various topics, including Tableau basics, advanced techniques, creating interactive dashboards, data blending, and more."
   },
   {
     "objectID": "faq.html",
