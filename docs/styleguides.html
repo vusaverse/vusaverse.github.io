@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>vusaverse - About VU Analytics</title>
+<title>vusaverse - Style Guides</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -85,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./about.html" rel="" target="">
  <span class="menu-text">About VU Analytics</span></a>
   </li>  
   <li class="nav-item">
@@ -109,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./styleguides.html" rel="" target="">
+    <a class="nav-link active" href="./styleguides.html" rel="" target="" aria-current="page">
  <span class="menu-text">Style Guides</span></a>
   </li>  
 </ul>
@@ -135,9 +135,27 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#data-engineers" id="toc-data-engineers" class="nav-link active" data-scroll-target="#data-engineers">Data Engineers</a></li>
-  <li><a href="#data-scientists" id="toc-data-scientists" class="nav-link" data-scroll-target="#data-scientists">Data Scientists</a></li>
-  <li><a href="#student-assistants" id="toc-student-assistants" class="nav-link" data-scroll-target="#student-assistants">Student Assistants</a></li>
+  <li><a href="#style-guide-for-r" id="toc-style-guide-for-r" class="nav-link active" data-scroll-target="#style-guide-for-r">Style Guide for R</a>
+  <ul class="collapse">
+  <li><a href="#code-formatting" id="toc-code-formatting" class="nav-link" data-scroll-target="#code-formatting">Code Formatting</a></li>
+  <li><a href="#function-calls" id="toc-function-calls" class="nav-link" data-scroll-target="#function-calls">Function Calls</a></li>
+  <li><a href="#comments" id="toc-comments" class="nav-link" data-scroll-target="#comments">Comments</a></li>
+  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
+  <li><a href="#naming-conventions" id="toc-naming-conventions" class="nav-link" data-scroll-target="#naming-conventions">Naming Conventions</a></li>
+  <li><a href="#data-manipulation" id="toc-data-manipulation" class="nav-link" data-scroll-target="#data-manipulation">Data Manipulation</a></li>
+  <li><a href="#error-handling" id="toc-error-handling" class="nav-link" data-scroll-target="#error-handling">Error Handling</a></li>
+  </ul></li>
+  <li><a href="#style-guide-for-committing-in-git" id="toc-style-guide-for-committing-in-git" class="nav-link" data-scroll-target="#style-guide-for-committing-in-git">Style Guide for Committing in Git</a></li>
+  <li><a href="#style-guide-for-tableau" id="toc-style-guide-for-tableau" class="nav-link" data-scroll-target="#style-guide-for-tableau">Style Guide for Tableau</a>
+  <ul class="collapse">
+  <li><a href="#dashboard-layout" id="toc-dashboard-layout" class="nav-link" data-scroll-target="#dashboard-layout">Dashboard Layout</a></li>
+  <li><a href="#color-palette" id="toc-color-palette" class="nav-link" data-scroll-target="#color-palette">Color Palette</a></li>
+  <li><a href="#fonts-and-typography" id="toc-fonts-and-typography" class="nav-link" data-scroll-target="#fonts-and-typography">Fonts and Typography</a></li>
+  <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization">Data Visualization</a></li>
+  <li><a href="#interactivity" id="toc-interactivity" class="nav-link" data-scroll-target="#interactivity">Interactivity</a></li>
+  <li><a href="#accessibility" id="toc-accessibility" class="nav-link" data-scroll-target="#accessibility">Accessibility</a></li>
+  <li><a href="#documentation-1" id="toc-documentation-1" class="nav-link" data-scroll-target="#documentation-1">Documentation</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -146,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About VU Analytics</h1>
+<h1 class="title">Style Guides</h1>
 </div>
 
 
@@ -161,21 +179,150 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>We are a small and dynamic team of professionals and students who are passionate about data and analytics. Our team consists of 2 data engineers, 2 data scientists, and 2 student assistants.</p>
-<section id="data-engineers" class="level3">
-<h3 class="anchored" data-anchor-id="data-engineers">Data Engineers</h3>
-<p>Our data engineers are skilled in handling data and building robust data pipelines. They specialize in designing and implementing data storage systems, data integration, and data processing frameworks. They ensure that our data infrastructure is efficient and reliable.</p>
+<section id="style-guide-for-r" class="level1">
+<h1>Style Guide for R</h1>
+<p>We follow the Tidyverse style guide for R for the most part.</p>
+<section id="code-formatting" class="level2">
+<h2 class="anchored" data-anchor-id="code-formatting">Code Formatting</h2>
+<ul>
+<li>Use 2 spaces for indentation.</li>
+<li>Limit lines to a maximum of 100 characters.</li>
+<li>Use spaces around operators and after commas, but not within parentheses or function calls.</li>
+<li>Place spaces before and after the assignment operator (<code>&lt;-</code> or <code>=</code>).</li>
+<li>Use meaningful variable and function names using Hungarian notation.</li>
+<li>Use consistent spacing within function calls, e.g., <code>function(arg1 = value1, arg2 = value2)</code>.</li>
+</ul>
 </section>
-<section id="data-scientists" class="level3">
-<h3 class="anchored" data-anchor-id="data-scientists">Data Scientists</h3>
-<p>Our data scientists are the analytical minds behind our projects. They excel in extracting insights from complex datasets, building predictive models, and discovering patterns that drive informed decision-making. They employ their visualization skills and report to our stakeholders.</p>
+<section id="function-calls" class="level2">
+<h2 class="anchored" data-anchor-id="function-calls">Function Calls</h2>
+<ul>
+<li>Use the pipe operator (<code>%&gt;%</code>) for chaining operations.</li>
+<li>Break long function calls into multiple lines, aligning arguments with the opening parenthesis.</li>
+<li>Indent continuation lines by 2 spaces.</li>
+</ul>
 </section>
-<section id="student-assistants" class="level3">
-<h3 class="anchored" data-anchor-id="student-assistants">Student Assistants</h3>
-<p>Our student assistants play a vital role in supporting our team by assisting with various tasks related to data analysis and project management. They are eager learners, always striving to gain practical experience and contribute to the success of our projects. Their fresh perspective and enthusiasm bring valuable ideas and perspectives to our team.</p>
-<p>At our core, we are a team that values collaboration, continuous learning, and pushing the boundaries of what is possible with data. Together, we work towards delivering impactful insights for higher education.</p>
+<section id="comments" class="level2">
+<h2 class="anchored" data-anchor-id="comments">Comments</h2>
+<ul>
+<li>Use comments to explain the purpose and logic of your code.</li>
+<li>Write comments in complete sentences, starting with a capital letter and ending with a period.</li>
+<li>Avoid excessive commenting for obvious code.</li>
+</ul>
+</section>
+<section id="documentation" class="level2">
+<h2 class="anchored" data-anchor-id="documentation">Documentation</h2>
+<ul>
+<li>Use roxygen2-style comments to document functions.</li>
+<li>Include a title, description, arguments, and examples in the function documentation.</li>
+<li>Use the <code>@param</code> tag to document function arguments.</li>
+<li>Use the <code>@return</code> tag to document the return value of a function.</li>
+<li>Document any side effects or dependencies of a function.</li>
+</ul>
+</section>
+<section id="naming-conventions" class="level2">
+<h2 class="anchored" data-anchor-id="naming-conventions">Naming Conventions</h2>
+<ul>
+<li>Use Hungarian notation to add prefixes to object names.</li>
+<li>Avoid using reserved words or existing function names.</li>
+<li>Use descriptive names that convey the purpose of the variable or function.</li>
+</ul>
+</section>
+<section id="data-manipulation" class="level2">
+<h2 class="anchored" data-anchor-id="data-manipulation">Data Manipulation</h2>
+<ul>
+<li>Use the <code>dplyr</code> package for data manipulation tasks.</li>
+<li>Use the pipe operator (<code>%&gt;%</code>) to chain multiple data manipulation steps.</li>
+<li>Avoid using the <code>$</code> operator for subsetting or modifying data frames.</li>
+</ul>
+</section>
+<section id="error-handling" class="level2">
+<h2 class="anchored" data-anchor-id="error-handling">Error Handling</h2>
+<ul>
+<li>Use <code>stop()</code> to raise errors when necessary.</li>
+<li>Use <code>tryCatch()</code> for handling errors and providing custom error messages.</li>
+</ul>
+</section>
+</section>
+<section id="style-guide-for-committing-in-git" class="level1">
+<h1>Style Guide for Committing in Git</h1>
+<p>We follow the <a href="https://developers.google.com/blockly/guides/contribute/get-started/commits">Blockly</a> style guide for the most part. We mainly use the following prefixes for our commit messages:</p>
+<p><code>fix</code>: For commits that fix bugs/errors.</p>
+<p><code>feat</code>: For commits that add new functionality.</p>
+<p><code>deprecate</code> (archive): For commits that send files to the archive repository.</p>
+<p><code>test</code>: For commits that create/modify test scripts.</p>
+<p><code>style</code>: For commits that modify code for the purpose of style.</p>
+<p><code>update</code>: For example, modifying code for reading new data.</p>
+<p><code>temp</code>: For temporary modifications in scripts for data ingestion, manipulation, and analysis.</p>
+</section>
+<section id="style-guide-for-tableau" class="level1">
+<h1>Style Guide for Tableau</h1>
+<section id="dashboard-layout" class="level2">
+<h2 class="anchored" data-anchor-id="dashboard-layout">Dashboard Layout</h2>
+<ul>
+<li>Keep the layout clean and uncluttered.</li>
+<li>Use a grid-based layout to align elements.</li>
+<li>Maintain a logical flow of information from left to right and top to bottom.</li>
+<li>Use white space effectively to improve readability.</li>
+<li>Add university logo in top right corner.</li>
+</ul>
+</section>
+<section id="color-palette" class="level2">
+<h2 class="anchored" data-anchor-id="color-palette">Color Palette</h2>
+<ul>
+<li>Use our custom color palette throughout the dashboard.</li>
+<li>Choose colors that are visually appealing and provide good contrast.</li>
+<li>Avoid using too many colors that can overwhelm the viewer.</li>
+<li>Use color to highlight important information or to differentiate categories.</li>
+</ul>
+</section>
+<section id="fonts-and-typography" class="level2">
+<h2 class="anchored" data-anchor-id="fonts-and-typography">Fonts and Typography</h2>
+<ul>
+<li>Use a limited number of fonts to maintain consistency.</li>
+<li>Choose fonts that are easy to read and visually appealing.</li>
+<li>Use font sizes that are appropriate for the content and ensure readability.</li>
+<li>Use font styles (bold, italic, etc.) sparingly and purposefully.</li>
+</ul>
+</section>
+<section id="data-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="data-visualization">Data Visualization</h2>
+<ul>
+<li>Choose the appropriate chart type to represent the data accurately.</li>
+<li>Use clear and descriptive axis labels.</li>
+<li>Provide a title and caption for each visualization.</li>
+<li>Avoid cluttering the visualization with unnecessary elements.</li>
+<li>Use tooltips to provide additional information on hover.</li>
+</ul>
+</section>
+<section id="interactivity" class="level2">
+<h2 class="anchored" data-anchor-id="interactivity">Interactivity</h2>
+<ul>
+<li>Use interactivity to enhance the user experience.</li>
+<li>Provide filters and parameters to allow users to explore the data.</li>
+<li>Use actions to create dynamic interactions between visualizations.</li>
+<li>Ensure that interactivity is intuitive and easy to use.</li>
+</ul>
+</section>
+<section id="accessibility" class="level2">
+<h2 class="anchored" data-anchor-id="accessibility">Accessibility</h2>
+<ul>
+<li>Design dashboards that are accessible to all users.</li>
+<li>Use colorblind-friendly palettes and provide alternative text for images.</li>
+<li>Ensure that text is readable and has sufficient contrast.</li>
+<li>Test the dashboard with screen readers to ensure compatibility.</li>
+</ul>
+</section>
+<section id="documentation-1" class="level2">
+<h2 class="anchored" data-anchor-id="documentation-1">Documentation</h2>
+<ul>
+<li>Document the purpose and context of the dashboard.</li>
+<li>Provide a description of the data sources and any transformations applied.</li>
+<li>Include any assumptions or limitations of the dashboard.</li>
+<li>Document any calculations or custom fields used.</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

@@ -1,0 +1,131 @@
+---
+title: "Style Guides"
+---
+
+# Style Guide for R
+
+We follow the Tidyverse style guide for R for the most part. 
+
+## Code Formatting
+
+- Use 2 spaces for indentation.
+- Limit lines to a maximum of 100 characters.
+- Use spaces around operators and after commas, but not within parentheses or function calls.
+- Place spaces before and after the assignment operator (`<-` or `=`).
+- Use meaningful variable and function names using Hungarian notation.
+- Use consistent spacing within function calls, e.g., `function(arg1 = value1, arg2 = value2)`.
+
+## Function Calls
+
+- Use the pipe operator (`%>%`) for chaining operations.
+- Break long function calls into multiple lines, aligning arguments with the opening parenthesis.
+- Indent continuation lines by 2 spaces.
+
+## Comments
+
+- Use comments to explain the purpose and logic of your code.
+- Write comments in complete sentences, starting with a capital letter and ending with a period.
+- Avoid excessive commenting for obvious code.
+
+## Documentation
+
+- Use roxygen2-style comments to document functions.
+- Include a title, description, arguments, and examples in the function documentation.
+- Use the `@param` tag to document function arguments.
+- Use the `@return` tag to document the return value of a function.
+- Document any side effects or dependencies of a function.
+
+## Naming Conventions
+
+- Use Hungarian notation to add prefixes to object names.
+- Avoid using reserved words or existing function names.
+- Use descriptive names that convey the purpose of the variable or function.
+
+## Data Manipulation
+
+- Use the `dplyr` package for data manipulation tasks.
+- Use the pipe operator (`%>%`) to chain multiple data manipulation steps.
+- Avoid using the `$` operator for subsetting or modifying data frames.
+
+## Error Handling
+
+- Use `stop()` to raise errors when necessary.
+- Use `tryCatch()` for handling errors and providing custom error messages.
+
+
+
+
+# Style Guide for Committing in Git
+
+We follow the [Blockly](https://developers.google.com/blockly/guides/contribute/get-started/commits) style guide for the most part. We mainly use the following prefixes for our commit messages:
+
+
+`fix`: For commits that fix bugs/errors.
+
+`feat`: For commits that add new functionality.
+
+`deprecate` (archive): For commits that send files to the archive repository.
+
+`test`: For commits that create/modify test scripts.
+
+`style`: For commits that modify code for the purpose of style.
+
+`update`: For example, modifying code for reading new data.
+
+`temp`: For temporary modifications in scripts for data ingestion, manipulation, and analysis.
+
+
+
+# Style Guide for Tableau
+
+
+## Dashboard Layout
+
+- Keep the layout clean and uncluttered.
+- Use a grid-based layout to align elements.
+- Maintain a logical flow of information from left to right and top to bottom.
+- Use white space effectively to improve readability.
+- Add university logo in top right corner.
+
+## Color Palette
+
+- Use our custom color palette throughout the dashboard.
+- Choose colors that are visually appealing and provide good contrast.
+- Avoid using too many colors that can overwhelm the viewer.
+- Use color to highlight important information or to differentiate categories.
+
+## Fonts and Typography
+
+- Use a limited number of fonts to maintain consistency.
+- Choose fonts that are easy to read and visually appealing.
+- Use font sizes that are appropriate for the content and ensure readability.
+- Use font styles (bold, italic, etc.) sparingly and purposefully.
+
+## Data Visualization
+
+- Choose the appropriate chart type to represent the data accurately.
+- Use clear and descriptive axis labels.
+- Provide a title and caption for each visualization.
+- Avoid cluttering the visualization with unnecessary elements.
+- Use tooltips to provide additional information on hover.
+
+## Interactivity
+
+- Use interactivity to enhance the user experience.
+- Provide filters and parameters to allow users to explore the data.
+- Use actions to create dynamic interactions between visualizations.
+- Ensure that interactivity is intuitive and easy to use.
+
+## Accessibility
+
+- Design dashboards that are accessible to all users.
+- Use colorblind-friendly palettes and provide alternative text for images.
+- Ensure that text is readable and has sufficient contrast.
+- Test the dashboard with screen readers to ensure compatibility.
+
+## Documentation
+
+- Document the purpose and context of the dashboard.
+- Provide a description of the data sources and any transformations applied.
+- Include any assumptions or limitations of the dashboard.
+- Document any calculations or custom fields used.

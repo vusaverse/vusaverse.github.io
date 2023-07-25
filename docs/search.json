@@ -145,5 +145,110 @@
     "title": "Packages",
     "section": "Packages for data science tasks",
     "text": "Packages for data science tasks\n\nvvauditor\nvvcommander\nvvconverter\nvvdoctor\nvvfiller\nvvmover\nvvmodeller (Deprecated)\nvvsculptor\nvvshiny"
+  },
+  {
+    "objectID": "styleguides.html",
+    "href": "styleguides.html",
+    "title": "Style Guides",
+    "section": "",
+    "text": "We follow the Tidyverse style guide for R for the most part.\n\n\n\nUse 2 spaces for indentation.\nLimit lines to a maximum of 100 characters.\nUse spaces around operators and after commas, but not within parentheses or function calls.\nPlace spaces before and after the assignment operator (&lt;- or =).\nUse meaningful variable and function names using Hungarian notation.\nUse consistent spacing within function calls, e.g., function(arg1 = value1, arg2 = value2).\n\n\n\n\n\nUse the pipe operator (%&gt;%) for chaining operations.\nBreak long function calls into multiple lines, aligning arguments with the opening parenthesis.\nIndent continuation lines by 2 spaces.\n\n\n\n\n\nUse comments to explain the purpose and logic of your code.\nWrite comments in complete sentences, starting with a capital letter and ending with a period.\nAvoid excessive commenting for obvious code.\n\n\n\n\n\nUse roxygen2-style comments to document functions.\nInclude a title, description, arguments, and examples in the function documentation.\nUse the @param tag to document function arguments.\nUse the @return tag to document the return value of a function.\nDocument any side effects or dependencies of a function.\n\n\n\n\n\nUse Hungarian notation to add prefixes to object names.\nAvoid using reserved words or existing function names.\nUse descriptive names that convey the purpose of the variable or function.\n\n\n\n\n\nUse the dplyr package for data manipulation tasks.\nUse the pipe operator (%&gt;%) to chain multiple data manipulation steps.\nAvoid using the $ operator for subsetting or modifying data frames.\n\n\n\n\n\nUse stop() to raise errors when necessary.\nUse tryCatch() for handling errors and providing custom error messages."
+  },
+  {
+    "objectID": "styleguides.html#code-formatting",
+    "href": "styleguides.html#code-formatting",
+    "title": "Style Guides",
+    "section": "",
+    "text": "Use 2 spaces for indentation.\nLimit lines to a maximum of 100 characters.\nUse spaces around operators and after commas, but not within parentheses or function calls.\nPlace spaces before and after the assignment operator (&lt;- or =).\nUse meaningful variable and function names using Hungarian notation.\nUse consistent spacing within function calls, e.g., function(arg1 = value1, arg2 = value2)."
+  },
+  {
+    "objectID": "styleguides.html#function-calls",
+    "href": "styleguides.html#function-calls",
+    "title": "Style Guides",
+    "section": "",
+    "text": "Use the pipe operator (%&gt;%) for chaining operations.\nBreak long function calls into multiple lines, aligning arguments with the opening parenthesis.\nIndent continuation lines by 2 spaces."
+  },
+  {
+    "objectID": "styleguides.html#comments",
+    "href": "styleguides.html#comments",
+    "title": "Style Guides",
+    "section": "",
+    "text": "Use comments to explain the purpose and logic of your code.\nWrite comments in complete sentences, starting with a capital letter and ending with a period.\nAvoid excessive commenting for obvious code."
+  },
+  {
+    "objectID": "styleguides.html#documentation",
+    "href": "styleguides.html#documentation",
+    "title": "Style Guides",
+    "section": "",
+    "text": "Use roxygen2-style comments to document functions.\nInclude a title, description, arguments, and examples in the function documentation.\nUse the @param tag to document function arguments.\nUse the @return tag to document the return value of a function.\nDocument any side effects or dependencies of a function."
+  },
+  {
+    "objectID": "styleguides.html#naming-conventions",
+    "href": "styleguides.html#naming-conventions",
+    "title": "Style Guides",
+    "section": "",
+    "text": "Use Hungarian notation to add prefixes to object names.\nAvoid using reserved words or existing function names.\nUse descriptive names that convey the purpose of the variable or function."
+  },
+  {
+    "objectID": "styleguides.html#data-manipulation",
+    "href": "styleguides.html#data-manipulation",
+    "title": "Style Guides",
+    "section": "",
+    "text": "Use the dplyr package for data manipulation tasks.\nUse the pipe operator (%&gt;%) to chain multiple data manipulation steps.\nAvoid using the $ operator for subsetting or modifying data frames."
+  },
+  {
+    "objectID": "styleguides.html#error-handling",
+    "href": "styleguides.html#error-handling",
+    "title": "Style Guides",
+    "section": "",
+    "text": "Use stop() to raise errors when necessary.\nUse tryCatch() for handling errors and providing custom error messages."
+  },
+  {
+    "objectID": "styleguides.html#dashboard-layout",
+    "href": "styleguides.html#dashboard-layout",
+    "title": "Style Guides",
+    "section": "Dashboard Layout",
+    "text": "Dashboard Layout\n\nKeep the layout clean and uncluttered.\nUse a grid-based layout to align elements.\nMaintain a logical flow of information from left to right and top to bottom.\nUse white space effectively to improve readability.\nAdd university logo in top right corner."
+  },
+  {
+    "objectID": "styleguides.html#color-palette",
+    "href": "styleguides.html#color-palette",
+    "title": "Style Guides",
+    "section": "Color Palette",
+    "text": "Color Palette\n\nUse our custom color palette throughout the dashboard.\nChoose colors that are visually appealing and provide good contrast.\nAvoid using too many colors that can overwhelm the viewer.\nUse color to highlight important information or to differentiate categories."
+  },
+  {
+    "objectID": "styleguides.html#fonts-and-typography",
+    "href": "styleguides.html#fonts-and-typography",
+    "title": "Style Guides",
+    "section": "Fonts and Typography",
+    "text": "Fonts and Typography\n\nUse a limited number of fonts to maintain consistency.\nChoose fonts that are easy to read and visually appealing.\nUse font sizes that are appropriate for the content and ensure readability.\nUse font styles (bold, italic, etc.) sparingly and purposefully."
+  },
+  {
+    "objectID": "styleguides.html#data-visualization",
+    "href": "styleguides.html#data-visualization",
+    "title": "Style Guides",
+    "section": "Data Visualization",
+    "text": "Data Visualization\n\nChoose the appropriate chart type to represent the data accurately.\nUse clear and descriptive axis labels.\nProvide a title and caption for each visualization.\nAvoid cluttering the visualization with unnecessary elements.\nUse tooltips to provide additional information on hover."
+  },
+  {
+    "objectID": "styleguides.html#interactivity",
+    "href": "styleguides.html#interactivity",
+    "title": "Style Guides",
+    "section": "Interactivity",
+    "text": "Interactivity\n\nUse interactivity to enhance the user experience.\nProvide filters and parameters to allow users to explore the data.\nUse actions to create dynamic interactions between visualizations.\nEnsure that interactivity is intuitive and easy to use."
+  },
+  {
+    "objectID": "styleguides.html#accessibility",
+    "href": "styleguides.html#accessibility",
+    "title": "Style Guides",
+    "section": "Accessibility",
+    "text": "Accessibility\n\nDesign dashboards that are accessible to all users.\nUse colorblind-friendly palettes and provide alternative text for images.\nEnsure that text is readable and has sufficient contrast.\nTest the dashboard with screen readers to ensure compatibility."
+  },
+  {
+    "objectID": "styleguides.html#documentation-1",
+    "href": "styleguides.html#documentation-1",
+    "title": "Style Guides",
+    "section": "Documentation",
+    "text": "Documentation\n\nDocument the purpose and context of the dashboard.\nProvide a description of the data sources and any transformations applied.\nInclude any assumptions or limitations of the dashboard.\nDocument any calculations or custom fields used."
   }
 ]
