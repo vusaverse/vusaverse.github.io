@@ -114,9 +114,9 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About VU Analytics",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "We are a small and dynamic team of professionals and students who are passionate about data and analytics. Our team consists of 2 data engineers, 2 data scientists, and 2 student assistants.\n\nData Engineers\nOur data engineers are skilled in handling data and building robust data pipelines. They specialize in designing and implementing data storage systems, data integration, and data processing frameworks. They ensure that our data infrastructure is efficient and reliable.\n\n\nData Scientists\nOur data scientists are the analytical minds behind our projects. They excel in extracting insights from complex datasets, building predictive models, and discovering patterns that drive informed decision-making. They employ their visualization skills and report to our stakeholders.\n\n\nStudent Assistants\nOur student assistants play a vital role in supporting our team by assisting with various tasks related to data analysis and project management. They are eager learners, always striving to gain practical experience and contribute to the success of our projects. Their fresh perspective and enthusiasm bring valuable ideas and perspectives to our team.\nAt our core, we are a team that values collaboration, continuous learning, and pushing the boundaries of what is possible with data. Together, we work towards delivering impactful insights for higher education."
   },
   {
     "objectID": "index.html",
