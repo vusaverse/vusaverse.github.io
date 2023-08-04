@@ -1,0 +1,62 @@
+---
+title: "Introduction to vvtableau"
+author: "VU Analytics"
+date: "2023-08-01"
+categories: [R, Packages, Tableau, vusaverse] # self-defined categories
+---
+
+# Automate Tableau Tasks with vvtableau
+
+### Introduction
+
+Welcome to the world of automated Tableau tasks! In this blog post, we will explore `vvtableau`, an R package developed by VU Analytics at Vrije Universiteit Amsterdam as part of the [vusaverse](https://github.com/vusaverse) collection. With `vvtableau`, you can streamline your Tableau workflows and save time by automating repetitive tasks in Tableau Server. Let's explore the `vvtableau` package and how it could enhance your Tableau experience with R!
+
+### What is vvtableau?
+
+`vvtableau` is an R package that provides a seamless interface for interacting with Tableau Server using the Tableau REST API. It is part of the `vusaverse` collection, a set of packages developed by VU Analytics to support data pipelines. With `vvtableau`, you can automate various Tableau tasks, such as:
+
+-   downloading workbooks from the server;
+-   setting up refresh data extract data alerts;
+-   retrieving server object information directly from R; and
+-   managing locally hosted workbooks through the XML methods.
+
+### Getting Started with vvtableau
+
+To get started with `vvtableau`, follow these simple steps:
+
+``` r
+## Install the package from CRAN 
+install.packages("vvtableau")
+
+## Or install the development version from GitHub 
+devtools::install_github("vusaverse/vvtableau")
+
+## Load package 
+library(vvtableau)
+
+## Authenticate on the Tableau Server
+
+tableau <- authenticate_server(
+  server = "https://your.tableau.server.com",
+  username = "your_username",
+  password = "your_password" 
+) 
+
+## The above "tableau" object can now be passed in every Tableau REST API method.
+```
+
+### Key Features of vvtableau
+
+`vvtableau` offers a range of features to automate Tableau tasks and enhance your Tableau experience. Here are some key features:
+
+1.  `download_workbooks_server()`: This function allows you to download workbooks from Tableau Server. You can use it to automate the process of retrieving workbooks and saving them locally, which can be helpful for regular backups.
+
+2.  `get_server_refresh_tasks()`: With this function, you can retrieve information about extract refresh tasks on Tableau Server. By automating the retrieval of refresh task details, you can monitor and manage data refresh processes more efficiently.
+
+3.  `get_server_users()`: This function enables you to retrieve information about users on Tableau Server.
+
+For a comprehensive list of features and detailed documentation, we recommend referring to the official `vvtableau` [documentation](https://vusaverse.github.io/vvtableau/ "https://vusaverse.github.io/vvtableau/"). It provides in-depth explanations and examples to help you make the most of `vvtableau` in your R workflows.
+
+### Contributing to vvtableau
+
+`vvtableau` is an open-source project, and contributions from the community are highly encouraged. If you encounter any bugs, have feature requests, or would like to contribute code improvements, you can open an issue or submit a pull request on the [GitHub](https://github.com/vusaverse/vvtableau "https://github.com/vusaverse/vvtableau") repository.

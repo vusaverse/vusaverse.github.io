@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="VU Analytics">
+<meta name="dcterms.date" content="2023-08-01">
 
-<title>vusaverse - Projects</title>
+<title>vusaverse - Introduction to vvtableau</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,25 +22,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -60,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -70,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">vusaverse</span>
     </a>
   </div>
@@ -81,35 +117,35 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
+    <a class="nav-link" href="../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
+    <a class="nav-link" href="../about.html" rel="" target="">
  <span class="menu-text">About VU Analytics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./packages.html" rel="" target="">
+    <a class="nav-link" href="../packages.html" rel="" target="">
  <span class="menu-text">Packages</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./faq.html" rel="" target="">
+    <a class="nav-link" href="../faq.html" rel="" target="">
  <span class="menu-text">FAQ</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../projects.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html" rel="" target="">
+    <a class="nav-link" href="../resources.html" rel="" target="">
  <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html" rel="" target="">
+    <a class="nav-link" href="../blog.html" rel="" target="">
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./styleguides.html" rel="" target="">
+    <a class="nav-link" href="../styleguides.html" rel="" target="">
  <span class="menu-text">Style Guides</span></a>
   </li>  
 </ul>
@@ -127,7 +163,41 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Introduction to vvtableau</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">R</div>
+                <div class="quarto-category">Packages</div>
+                <div class="quarto-category">Tableau</div>
+                <div class="quarto-category">vusaverse</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>VU Analytics </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 1, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -135,45 +205,77 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#effect-of-the-covid-19-pandemic-on-student-performances" id="toc-effect-of-the-covid-19-pandemic-on-student-performances" class="nav-link active" data-scroll-target="#effect-of-the-covid-19-pandemic-on-student-performances"><strong>Effect of the COVID-19 Pandemic on Student Performances</strong></a></li>
-  <li><a href="#project-2" id="toc-project-2" class="nav-link" data-scroll-target="#project-2">Project 2</a></li>
+  <li><a href="#automate-tableau-tasks-with-vvtableau" id="toc-automate-tableau-tasks-with-vvtableau" class="nav-link active" data-scroll-target="#automate-tableau-tasks-with-vvtableau">Automate Tableau Tasks with vvtableau</a>
+  <ul class="collapse">
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#what-is-vvtableau" id="toc-what-is-vvtableau" class="nav-link" data-scroll-target="#what-is-vvtableau">What is vvtableau?</a></li>
+  <li><a href="#getting-started-with-vvtableau" id="toc-getting-started-with-vvtableau" class="nav-link" data-scroll-target="#getting-started-with-vvtableau">Getting Started with vvtableau</a></li>
+  <li><a href="#key-features-of-vvtableau" id="toc-key-features-of-vvtableau" class="nav-link" data-scroll-target="#key-features-of-vvtableau">Key Features of vvtableau</a></li>
+  <li><a href="#contributing-to-vvtableau" id="toc-contributing-to-vvtableau" class="nav-link" data-scroll-target="#contributing-to-vvtableau">Contributing to vvtableau</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Projects</h1>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-</header>
-
-<p>This page serves as a showcase for a selection of our projects.</p>
-<section id="effect-of-the-covid-19-pandemic-on-student-performances" class="level2">
-<h2 class="anchored" data-anchor-id="effect-of-the-covid-19-pandemic-on-student-performances"><strong>Effect of the COVID-19 Pandemic on Student Performances</strong></h2>
-<p>Project Objectives:</p>
+<section id="automate-tableau-tasks-with-vvtableau" class="level1">
+<h1>Automate Tableau Tasks with vvtableau</h1>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<p>Welcome to the world of automated Tableau tasks! In this blog post, we will explore <code>vvtableau</code>, an R package developed by VU Analytics at Vrije Universiteit Amsterdam as part of the <a href="https://github.com/vusaverse">vusaverse</a> collection. With <code>vvtableau</code>, you can streamline your Tableau workflows and save time by automating repetitive tasks in Tableau Server. Let’s explore the <code>vvtableau</code> package and how it could enhance your Tableau experience with R!</p>
+</section>
+<section id="what-is-vvtableau" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-vvtableau">What is vvtableau?</h3>
+<p><code>vvtableau</code> is an R package that provides a seamless interface for interacting with Tableau Server using the Tableau REST API. It is part of the <code>vusaverse</code> collection, a set of packages developed by VU Analytics to support data pipelines. With <code>vvtableau</code>, you can automate various Tableau tasks, such as:</p>
 <ul>
-<li><p>Understand the impact of the COVID-19 pandemic on student performance and academic outcomes.</p></li>
-<li><p>Identify factors contributing to variations in student success during remote learning.</p></li>
-<li><p>Provide recommendations and insights to inform future planning and decision-making related to student support, curriculum adjustments, and resource allocation.</p></li>
+<li>downloading workbooks from the server;</li>
+<li>setting up refresh data extract data alerts;</li>
+<li>retrieving server object information directly from R; and</li>
+<li>managing locally hosted workbooks through the XML methods.</li>
 </ul>
 </section>
-<section id="project-2" class="level2">
-<h2 class="anchored" data-anchor-id="project-2">Project 2</h2>
+<section id="getting-started-with-vvtableau" class="level3">
+<h3 class="anchored" data-anchor-id="getting-started-with-vvtableau">Getting Started with vvtableau</h3>
+<p>To get started with <code>vvtableau</code>, follow these simple steps:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Install the package from CRAN </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"vvtableau"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="do">## Or install the development version from GitHub </span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"vusaverse/vvtableau"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="do">## Load package </span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(vvtableau)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="do">## Authenticate on the Tableau Server</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>tableau <span class="ot">&lt;-</span> <span class="fu">authenticate_server</span>(</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">server =</span> <span class="st">"https://your.tableau.server.com"</span>,</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">username =</span> <span class="st">"your_username"</span>,</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">password =</span> <span class="st">"your_password"</span> </span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>) </span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="do">## The above "tableau" object can now be passed in every Tableau REST API method.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="key-features-of-vvtableau" class="level3">
+<h3 class="anchored" data-anchor-id="key-features-of-vvtableau">Key Features of vvtableau</h3>
+<p><code>vvtableau</code> offers a range of features to automate Tableau tasks and enhance your Tableau experience. Here are some key features:</p>
+<ol type="1">
+<li><p><code>download_workbooks_server()</code>: This function allows you to download workbooks from Tableau Server. You can use it to automate the process of retrieving workbooks and saving them locally, which can be helpful for regular backups.</p></li>
+<li><p><code>get_server_refresh_tasks()</code>: With this function, you can retrieve information about extract refresh tasks on Tableau Server. By automating the retrieval of refresh task details, you can monitor and manage data refresh processes more efficiently.</p></li>
+<li><p><code>get_server_users()</code>: This function enables you to retrieve information about users on Tableau Server.</p></li>
+</ol>
+<p>For a comprehensive list of features and detailed documentation, we recommend referring to the official <code>vvtableau</code> <a href="https://vusaverse.github.io/vvtableau/" title="https://vusaverse.github.io/vvtableau/">documentation</a>. It provides in-depth explanations and examples to help you make the most of <code>vvtableau</code> in your R workflows.</p>
+</section>
+<section id="contributing-to-vvtableau" class="level3">
+<h3 class="anchored" data-anchor-id="contributing-to-vvtableau">Contributing to vvtableau</h3>
+<p><code>vvtableau</code> is an open-source project, and contributions from the community are highly encouraged. If you encounter any bugs, have feature requests, or would like to contribute code improvements, you can open an issue or submit a pull request on the <a href="https://github.com/vusaverse/vvtableau" title="https://github.com/vusaverse/vvtableau">GitHub</a> repository.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
