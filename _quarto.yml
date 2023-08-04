@@ -4,6 +4,7 @@ project:
 
 website:
   title: "vusaverse"
+  site-url: "https://vusaverse.github.io/"
   navbar:
     left:
       - href: index.qmd
@@ -18,6 +19,8 @@ website:
     right:
       - icon: github
         href: https://github.com/vusaverse
+      - icon: rss
+        href: docs/blog.xml
 
 format:
   html:
