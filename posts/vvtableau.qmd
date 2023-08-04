@@ -13,6 +13,8 @@ Welcome to the world of automated Tableau tasks! In this blog post, we will expl
 
 ### What is vvtableau?
 
+[![vvtableau](/assets/hex-vvtableau.png)](https://vusaverse.github.io/vvtableau/)
+
 `vvtableau` is an R package that provides a seamless interface for interacting with Tableau Server using the Tableau REST API. It is part of the `vusaverse` collection, a set of packages developed by VU Analytics to support data pipelines. With `vvtableau`, you can automate various Tableau tasks, such as:
 
 -   downloading workbooks from the server;
