@@ -115,6 +115,10 @@ font-style: italic;">## The above "tableau" object can now be passed in every Ta
 <section id="contributing-to-vvtableau" class="level3">
 <h3 class="anchored" data-anchor-id="contributing-to-vvtableau">Contributing to vvtableau</h3>
 <p><code>vvtableau</code> is an open-source project, and contributions from the community are highly encouraged. If you encounter any bugs, have feature requests, or would like to contribute code improvements, you can open an issue or submit a pull request on the <a href="https://github.com/vusaverse/vvtableau" title="https://github.com/vusaverse/vvtableau">GitHub</a> repository.</p>
+</section>
+<section id="further-reading" class="level3">
+<h3 class="anchored" data-anchor-id="further-reading">Further reading</h3>
+<p><strong>Liked this post?</strong> Check out more R-related content on <a href="https://www.r-bloggers.com/">r-bloggers.com</a>.</p>
 
 
 </section>
