@@ -63,5 +63,5 @@ For a comprehensive list of features and detailed documentation, we recommend re
 
 `vvtableau` is an open-source project, and contributions from the community are highly encouraged. If you encounter any bugs, have feature requests, or would like to contribute code improvements, you can open an issue or submit a pull request on the [GitHub](https://github.com/vusaverse/vvtableau "https://github.com/vusaverse/vvtableau") repository.
 
-
+### Further reading
 **Liked this post?** Check out more R-related content on [r-bloggers.com](https://www.r-bloggers.com/).
