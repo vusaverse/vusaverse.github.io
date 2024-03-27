@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="John Doe">
-<meta name="dcterms.date" content="2023-07-10">
+<meta name="author" content="VU Analytics">
+<meta name="dcterms.date" content="2024-03-27">
 
-<title>vusaverse - Exploring Data Visualization with Tableau</title>
+<title>vusaverse - Update vvtableau: Tableau Cloud Support</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -138,10 +172,12 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Exploring Data Visualization with Tableau</h1>
+      <h1 class="title">Update vvtableau: Tableau Cloud Support</h1>
                                 <div class="quarto-categories">
+                <div class="quarto-category">R</div>
+                <div class="quarto-category">Packages</div>
                 <div class="quarto-category">Tableau</div>
-                <div class="quarto-category">Visualisations</div>
+                <div class="quarto-category">vusaverse</div>
               </div>
                   </div>
   </div>
@@ -152,14 +188,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>John Doe </p>
+               <p>VU Analytics </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">2023-07-10</p>
+        <p class="date">March 27, 2024</p>
       </div>
     </div>
     
@@ -175,18 +211,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#exploring-data-visualization-with-tableau" id="toc-exploring-data-visualization-with-tableau" class="nav-link active" data-scroll-target="#exploring-data-visualization-with-tableau">Exploring Data Visualization with Tableau</a>
+  <li><a href="#announcing-tableau-cloud-support" id="toc-announcing-tableau-cloud-support" class="nav-link active" data-scroll-target="#announcing-tableau-cloud-support">Announcing Tableau Cloud Support</a>
   <ul class="collapse">
-  <li><a href="#what-is-tableau" id="toc-what-is-tableau" class="nav-link" data-scroll-target="#what-is-tableau">What is Tableau?</a></li>
-  <li><a href="#benefits-of-using-tableau" id="toc-benefits-of-using-tableau" class="nav-link" data-scroll-target="#benefits-of-using-tableau">Benefits of Using Tableau</a>
+  <li><a href="#whats-new-in-vvtableau-0.6.0" id="toc-whats-new-in-vvtableau-0.6.0" class="nav-link" data-scroll-target="#whats-new-in-vvtableau-0.6.0">What’s New in vvtableau 0.6.0?</a>
   <ul class="collapse">
-  <li><a href="#easy-data-connection-and-integration" id="toc-easy-data-connection-and-integration" class="nav-link" data-scroll-target="#easy-data-connection-and-integration">1. Easy Data Connection and Integration</a></li>
-  <li><a href="#interactive-visualizations" id="toc-interactive-visualizations" class="nav-link" data-scroll-target="#interactive-visualizations">2. Interactive Visualizations</a></li>
-  <li><a href="#powerful-analytics-and-statistics" id="toc-powerful-analytics-and-statistics" class="nav-link" data-scroll-target="#powerful-analytics-and-statistics">3. Powerful Analytics and Statistics</a></li>
-  <li><a href="#dashboard-creation" id="toc-dashboard-creation" class="nav-link" data-scroll-target="#dashboard-creation">4. Dashboard Creation</a></li>
+  <li><a href="#getting-started-with-the-updated-vvtableau" id="toc-getting-started-with-the-updated-vvtableau" class="nav-link" data-scroll-target="#getting-started-with-the-updated-vvtableau">Getting Started with the Updated vvtableau</a></li>
+  <li><a href="#key-features-of-vvtableau" id="toc-key-features-of-vvtableau" class="nav-link" data-scroll-target="#key-features-of-vvtableau">Key Features of vvtableau</a></li>
+  <li><a href="#contributing-to-vvtableau" id="toc-contributing-to-vvtableau" class="nav-link" data-scroll-target="#contributing-to-vvtableau">Contributing to vvtableau</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
   </ul></li>
-  <li><a href="#getting-started-with-tableau" id="toc-getting-started-with-tableau" class="nav-link" data-scroll-target="#getting-started-with-tableau">Getting Started with Tableau</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -197,52 +230,84 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="exploring-data-visualization-with-tableau" class="level1">
-<h1>Exploring Data Visualization with Tableau</h1>
-<p>Data visualization is an essential component of data science. It allows us to present complex information in a visually appealing and easily understandable manner. In this blog post, we will explore the power of Tableau, a popular data visualization tool.</p>
-<section id="what-is-tableau" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-tableau">What is Tableau?</h2>
-<p>Tableau is a powerful and intuitive data visualization tool that enables users to create interactive and dynamic visualizations. It offers a wide range of visualization options, including charts, graphs, maps, and dashboards. Tableau’s drag-and-drop interface makes it accessible to both data scientists and non-technical users.</p>
+<section id="announcing-tableau-cloud-support" class="level1">
+<h1>Announcing Tableau Cloud Support</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://vusaverse.github.io/vvtableau/"><img src="..\assets/hex-vvtableau.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">vvtableau</figcaption>
+</figure>
+</div>
+<p>In our latest update, we’re excited to announce that <code>vvtableau</code> now supports Tableau Cloud, expanding its capabilities beyond Tableau Server to include the cloud-based platform. This significant enhancement allows users to automate tasks across both Tableau Server and Tableau Cloud, providing a unified interface for managing Tableau resources.</p>
+<section id="whats-new-in-vvtableau-0.6.0" class="level2">
+<h2 class="anchored" data-anchor-id="whats-new-in-vvtableau-0.6.0">What’s New in vvtableau 0.6.0?</h2>
+<p>The <code>vvtableau</code> 0.6.0 release brings several key updates that significantly enhance its functionality and usability:</p>
+<ul>
+<li><p><strong>Extract Refresh Task Execution</strong>: A new function has been added to run extract refresh tasks immediately on the server. This feature is particularly useful for ensuring that your data is always up-to-date without manual intervention.</p></li>
+<li><p><strong>Data Source and Workbook Updates</strong>: Functions to update a data source and a workbook on the server have been introduced. These updates allow for dynamic changes to data sources and workbooks, enabling more flexible and responsive data management workflows.</p></li>
+<li><p><strong>Enhanced User and Group Management</strong>: With the addition of Users and Groups Tableau REST API methods in <code>vvtableau</code> 0.4.0, the package now offers a more comprehensive set of tools for managing users and groups on Tableau Server and Cloud.</p></li>
+</ul>
+<section id="getting-started-with-the-updated-vvtableau" class="level3">
+<h3 class="anchored" data-anchor-id="getting-started-with-the-updated-vvtableau">Getting Started with the Updated vvtableau</h3>
+<p>To take advantage of these new features, you’ll need to update your vvtableau package. Here’s how you can do it:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="do">## Install the package from CRAN</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"vvtableau"</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="do">## Or install the development version from GitHub</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"vusaverse/vvtableau"</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="do">## Load package</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(vvtableau)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="do">## Authenticate on the Tableau Server using password</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>tableau <span class="ot">&lt;-</span> <span class="fu">authenticate_server</span>(</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">username =</span> <span class="fu">tableau_username</span>(),</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">password =</span> <span class="fu">tableau_password</span>(),</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">base_url =</span> <span class="fu">tableau_base_url</span>(),</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="at">api_version =</span> <span class="fl">3.4</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="do">## Authenticate on the Tableau Server or Tableau Cloud using Personal Access Token (PAT)</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>tableau <span class="ot">&lt;-</span> <span class="fu">authenticate_PAT</span>(</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  <span class="at">pat_name =</span> <span class="fu">tableau_pat_name</span>(),</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="at">pat_secret =</span> <span class="fu">tableau_pat_secret</span>(),</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  <span class="at">content_url =</span> <span class="fu">tableau_content_url</span>(),</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  <span class="at">base_url =</span> <span class="fu">tableau_base_url</span>(),</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  <span class="at">api_version =</span> <span class="fl">3.4</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="do">## The above "tableau" object can now be passed in every Tableau REST API method.</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="do">## Example: get all users</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>users <span class="ot">&lt;-</span> <span class="fu">get_server_users</span>(</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>  tableau,</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>  <span class="at">api_version =</span> <span class="fl">3.4</span>,</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>  <span class="at">page_number =</span> <span class="dv">1</span>,</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>  <span class="at">page_size =</span> <span class="dv">100</span>,</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>  <span class="at">include_metadata =</span> <span class="cn">FALSE</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Please refer to the function documentation on what values to pass for the argument when using either Tableau Server or Tableau Cloud.</p>
 </section>
-<section id="benefits-of-using-tableau" class="level2">
-<h2 class="anchored" data-anchor-id="benefits-of-using-tableau">Benefits of Using Tableau</h2>
-<p>Tableau provides numerous benefits for data scientists and analysts:</p>
-<section id="easy-data-connection-and-integration" class="level3">
-<h3 class="anchored" data-anchor-id="easy-data-connection-and-integration">1. Easy Data Connection and Integration</h3>
-<p>Tableau supports various data sources, such as CSV files, Excel spreadsheets, databases, and cloud services. It allows users to connect and integrate data from multiple sources seamlessly. With Tableau’s data blending capabilities, you can combine different datasets to uncover valuable insights.</p>
+<section id="key-features-of-vvtableau" class="level3">
+<h3 class="anchored" data-anchor-id="key-features-of-vvtableau">Key Features of vvtableau</h3>
+<p>For a comprehensive list of features and detailed documentation, we recommend referring to the official <code>vvtableau</code> <a href="https://vusaverse.github.io/vvtableau/" title="https://vusaverse.github.io/vvtableau/">documentation</a>. It provides in-depth explanations and examples to help you make the most of <code>vvtableau</code> in your R workflows.</p>
 </section>
-<section id="interactive-visualizations" class="level3">
-<h3 class="anchored" data-anchor-id="interactive-visualizations">2. Interactive Visualizations</h3>
-<p>One of Tableau’s standout features is its ability to create interactive visualizations. Users can filter, drill down, and explore data dynamically. This interactivity empowers stakeholders to gain deeper insights and ask ad hoc questions, leading to more informed decision-making.</p>
+<section id="contributing-to-vvtableau" class="level3">
+<h3 class="anchored" data-anchor-id="contributing-to-vvtableau">Contributing to vvtableau</h3>
+<p><code>vvtableau</code> is an open-source project, and contributions from the community are highly encouraged. If you encounter any bugs, have feature requests, or would like to contribute code improvements, you can open an issue or submit a pull request on the <a href="https://github.com/vusaverse/vvtableau" title="https://github.com/vusaverse/vvtableau">GitHub</a> repository.</p>
 </section>
-<section id="powerful-analytics-and-statistics" class="level3">
-<h3 class="anchored" data-anchor-id="powerful-analytics-and-statistics">3. Powerful Analytics and Statistics</h3>
-<p>Tableau offers built-in analytics and statistical functions that enhance data exploration. Users can perform calculations, trend analysis, forecasting, clustering, and more. These analytical capabilities enable data scientists to dig deeper into the data and uncover patterns and relationships.</p>
-</section>
-<section id="dashboard-creation" class="level3">
-<h3 class="anchored" data-anchor-id="dashboard-creation">4. Dashboard Creation</h3>
-<p>Tableau allows the creation of interactive dashboards that consolidate multiple visualizations into a single view. Dashboards provide an overview of key metrics and allow users to explore data across different dimensions. They can be customized with filters, parameters, and actions to enable users to interact with the data.</p>
-</section>
-</section>
-<section id="getting-started-with-tableau" class="level2">
-<h2 class="anchored" data-anchor-id="getting-started-with-tableau">Getting Started with Tableau</h2>
-<p>To get started with Tableau, follow these steps:</p>
-<ol type="1">
-<li>Download and install Tableau Desktop from the official website.</li>
-<li>Launch Tableau Desktop and connect to your desired data source.</li>
-<li>Choose the appropriate visualization type and drag and drop fields onto the canvas.</li>
-<li>Customize the visualization by applying filters, sorting, formatting, and adding interactivity.</li>
-<li>Create a dashboard to combine multiple visualizations and enhance data exploration.</li>
-<li>Publish your visualizations to Tableau Server or Tableau Public for sharing and collaboration.</li>
-</ol>
-</section>
-<section id="conclusion" class="level2">
-<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Tableau is a powerful tool that empowers data scientists and analysts to create stunning and interactive data visualizations. Its intuitive interface, extensive feature set, and ability to integrate with various data sources make it a popular choice in the data science community.</p>
-<p>By leveraging Tableau’s capabilities, data scientists can effectively communicate insights, drive decision-making, and extract maximum value from their data.</p>
-<p>If you haven’t explored Tableau yet, I highly recommend giving it a try. Start visualizing your data in new and insightful ways with Tableau today!</p>
+<section id="further-reading" class="level3">
+<h3 class="anchored" data-anchor-id="further-reading">Further reading</h3>
+<p><strong>Liked this post?</strong> Check out more R-related content on <a href="https://www.r-bloggers.com/">r-bloggers.com</a>.</p>
 
 
+</section>
 </section>
 </section>
 

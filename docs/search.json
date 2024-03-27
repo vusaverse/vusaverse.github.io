@@ -1,159 +1,5 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About VU Analytics",
-    "section": "",
-    "text": "We are a small and dynamic team of professionals and students who are passionate about data and analytics. Our team consists of 2 data engineers, 2 data scientists, and 2 student assistants.\n\nData Engineers\nOur data engineers are skilled in handling data and building robust data pipelines. They specialize in designing and implementing data storage systems, data integration, and data processing frameworks. They ensure that our data infrastructure is efficient and reliable.\n\n\nData Scientists\nOur data scientists are the analytical minds behind our projects. They excel in extracting insights from complex datasets, building predictive models, and discovering patterns that drive informed decision-making. They employ their visualization skills and report to our stakeholders.\n\n\nStudent Assistants\nOur student assistants play a vital role in supporting our team by assisting with various tasks related to data analysis and project management. They are eager learners, always striving to gain practical experience and contribute to the success of our projects. Their fresh perspective and enthusiasm bring valuable ideas and perspectives to our team.\nAt our core, we are a team that values collaboration, continuous learning, and pushing the boundaries of what is possible with data. Together, we work towards delivering impactful insights for higher education."
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Introduction to vvtableau\n\n\n\n\n\n\n\nR\n\n\nPackages\n\n\nTableau\n\n\nvusaverse\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nVU Analytics\n\n\n\n\n\n\n  \n\n\n\n\nUsing Rocker docker for R package development\n\n\n\n\n\n\n\nR\n\n\nPackages\n\n\nDocker\n\n\nRocker\n\n\n\n\n\n\n\n\n\n\n\nJul 18, 2023\n\n\nJohn Doe\n\n\n\n\n\n\n  \n\n\n\n\nExploring Data Visualization with Tableau\n\n\n\n\n\n\n\nTableau\n\n\nVisualisations\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2023\n\n\nJohn Doe\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "faq.html",
-    "href": "faq.html",
-    "title": "FAQ",
-    "section": "",
-    "text": "Data\nQ: What are your data sources?\nA: Our data sources include various sources within the university’s systems and databases. These sources may include student information systems, learning management systems, registration systems, and academic databases. We ensure that the data we collect is relevant, accurate, and up-to-date to provide meaningful insights into student success.\n\n\nStudents\nQ: How is my student performance data collected and used?\nA: Student performance data is collected through various means, such as grades, assessments, and evaluations. This data is securely stored and used for analyzing student performance trends, identifying areas of improvement, and informing decision-making processes related to curriculum enhancements, teaching methodologies, and student support services. The data helps us understand how students perform per program per year and enables us to develop strategies to enhance student success.\n\n\nPrivacy\nQ: How is data anonymized and aggregated to protect individual privacy?\nA: Data anonymization is an important aspect of protecting individual privacy. Before any analysis or reporting takes place, personally identifiable information (PII) is removed or transformed to ensure that individuals cannot be identified. This process involves techniques such as …\n\n\nCollaboration\nQ: Are there any existing collaborations or success stories with other universities?\nA: Yes! We have had successful collaborations with several institutions in the past. Some examples of universities we have collaborated with include “De Haagse Hogeschool” and “Universiteit Twente”. These collaborations have allowed us to share knowledge, exchange best practices, and work together to improve student success initiatives."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "VU Analytics",
-    "section": "",
-    "text": "VU Analytics is a VU data facility that analyses education and student data in order to improve student intake, progression and graduation in all phases of education.\nVU Analytics is committed to using data to support policy making, student guidance and scientific research into academic success as effectively as possible. We call this data-informed policy. We provide the VU with insights into student intake, progression and graduation and thus contribute to the quality of education at the VU.\nVU Analytics investigates VU study data. This study data is created during the paths students take within the VU ‘garden’.\n\nPart of it is about the origin of students and what they did ‘before the gate’: their previous education in the Netherlands or abroad, how they oriented themselves at the VU, which study choices they made. This includes data from Studielink, orientation data, data from the study choice trajectory, the introduction and the language proficiency test.\nThe next part is about what they do in the garden: where the VU career of students starts, what choices students make about their routes within and between programmes, their study results and academic success. VU Analytics largely receives this data from the student administration via VUdata.\nFinally, it is about how our students fare after they leave the garden with a diploma: a follow-up study or their labour market success.\n\nAll these data are traces left behind in the garden. The team combines study data to create an enriched dataset. We use the study data in our dataset to understand our students better, to improve the quality of education, and to study student intake, progression and graduation.\nOn their path, students may come across many things that are beautiful or could be improved. Attractive places to talk to a lecturer or study advisor, interesting paths and flowers, but also fallen trees or small rivers that are difficult to cross without help. VU policy officers and programme managers turn to VU Analytics for good advice on routes to be recommended. Together, they discuss possible barriers. Under the watchful eye of the privacy officer, the team investigates relevant data and provides specific advice that can be used by colleagues and, ultimately, by students. Through all these investigations, the team gets a good picture of the entire VU, which helps with general issues for the VU as a whole. \nTo achieve this, Team VU Analytics has contact with a broad network of policy staff and members of education management. VU Analytics regularly participates in various educational consultations within the VU. We also proactively organise a sounding board group to ensure that the initiatives and services of VU Analytics are as closely aligned as possible with the wishes and needs of the organisation. The sounding board group consists of representatives from the various bodies and target groups.\nWe can be reached for questions about data for educational policy or scientific research at: VU-analytics@vu.nl."
-  },
-  {
-    "objectID": "packages.html",
-    "href": "packages.html",
-    "title": "Packages",
-    "section": "",
-    "text": "VU Analytics has created a number of packages to simplify its work. These packages are part of the so-called vusaverse. Two types of packages are distinguished:"
-  },
-  {
-    "objectID": "packages.html#packages-for-external-tools",
-    "href": "packages.html#packages-for-external-tools",
-    "title": "Packages",
-    "section": "Packages for external tools",
-    "text": "Packages for external tools\nThese packages include:\n\nvvcanvas; for communicating with the CANVAS LMS\nvvtableau; for using Tableau REST API\nvvtermtime; for scheduling tasks"
-  },
-  {
-    "objectID": "packages.html#packages-for-data-science-tasks",
-    "href": "packages.html#packages-for-data-science-tasks",
-    "title": "Packages",
-    "section": "Packages for data science tasks",
-    "text": "Packages for data science tasks\n\nvvauditor\nvvcommander\nvvconverter\nvvdoctor\nvvfiller\nvvmover\nvvmodeller (Deprecated)\nvvsculptor\nvvshiny"
-  },
-  {
-    "objectID": "posts/example_blog.html",
-    "href": "posts/example_blog.html",
-    "title": "Exploring Data Visualization with Tableau",
-    "section": "",
-    "text": "Data visualization is an essential component of data science. It allows us to present complex information in a visually appealing and easily understandable manner. In this blog post, we will explore the power of Tableau, a popular data visualization tool.\n\n\nTableau is a powerful and intuitive data visualization tool that enables users to create interactive and dynamic visualizations. It offers a wide range of visualization options, including charts, graphs, maps, and dashboards. Tableau’s drag-and-drop interface makes it accessible to both data scientists and non-technical users.\n\n\n\nTableau provides numerous benefits for data scientists and analysts:\n\n\nTableau supports various data sources, such as CSV files, Excel spreadsheets, databases, and cloud services. It allows users to connect and integrate data from multiple sources seamlessly. With Tableau’s data blending capabilities, you can combine different datasets to uncover valuable insights.\n\n\n\nOne of Tableau’s standout features is its ability to create interactive visualizations. Users can filter, drill down, and explore data dynamically. This interactivity empowers stakeholders to gain deeper insights and ask ad hoc questions, leading to more informed decision-making.\n\n\n\nTableau offers built-in analytics and statistical functions that enhance data exploration. Users can perform calculations, trend analysis, forecasting, clustering, and more. These analytical capabilities enable data scientists to dig deeper into the data and uncover patterns and relationships.\n\n\n\nTableau allows the creation of interactive dashboards that consolidate multiple visualizations into a single view. Dashboards provide an overview of key metrics and allow users to explore data across different dimensions. They can be customized with filters, parameters, and actions to enable users to interact with the data.\n\n\n\n\nTo get started with Tableau, follow these steps:\n\nDownload and install Tableau Desktop from the official website.\nLaunch Tableau Desktop and connect to your desired data source.\nChoose the appropriate visualization type and drag and drop fields onto the canvas.\nCustomize the visualization by applying filters, sorting, formatting, and adding interactivity.\nCreate a dashboard to combine multiple visualizations and enhance data exploration.\nPublish your visualizations to Tableau Server or Tableau Public for sharing and collaboration.\n\n\n\n\nTableau is a powerful tool that empowers data scientists and analysts to create stunning and interactive data visualizations. Its intuitive interface, extensive feature set, and ability to integrate with various data sources make it a popular choice in the data science community.\nBy leveraging Tableau’s capabilities, data scientists can effectively communicate insights, drive decision-making, and extract maximum value from their data.\nIf you haven’t explored Tableau yet, I highly recommend giving it a try. Start visualizing your data in new and insightful ways with Tableau today!"
-  },
-  {
-    "objectID": "posts/example_blog.html#what-is-tableau",
-    "href": "posts/example_blog.html#what-is-tableau",
-    "title": "Exploring Data Visualization with Tableau",
-    "section": "",
-    "text": "Tableau is a powerful and intuitive data visualization tool that enables users to create interactive and dynamic visualizations. It offers a wide range of visualization options, including charts, graphs, maps, and dashboards. Tableau’s drag-and-drop interface makes it accessible to both data scientists and non-technical users."
-  },
-  {
-    "objectID": "posts/example_blog.html#benefits-of-using-tableau",
-    "href": "posts/example_blog.html#benefits-of-using-tableau",
-    "title": "Exploring Data Visualization with Tableau",
-    "section": "",
-    "text": "Tableau provides numerous benefits for data scientists and analysts:\n\n\nTableau supports various data sources, such as CSV files, Excel spreadsheets, databases, and cloud services. It allows users to connect and integrate data from multiple sources seamlessly. With Tableau’s data blending capabilities, you can combine different datasets to uncover valuable insights.\n\n\n\nOne of Tableau’s standout features is its ability to create interactive visualizations. Users can filter, drill down, and explore data dynamically. This interactivity empowers stakeholders to gain deeper insights and ask ad hoc questions, leading to more informed decision-making.\n\n\n\nTableau offers built-in analytics and statistical functions that enhance data exploration. Users can perform calculations, trend analysis, forecasting, clustering, and more. These analytical capabilities enable data scientists to dig deeper into the data and uncover patterns and relationships.\n\n\n\nTableau allows the creation of interactive dashboards that consolidate multiple visualizations into a single view. Dashboards provide an overview of key metrics and allow users to explore data across different dimensions. They can be customized with filters, parameters, and actions to enable users to interact with the data."
-  },
-  {
-    "objectID": "posts/example_blog.html#getting-started-with-tableau",
-    "href": "posts/example_blog.html#getting-started-with-tableau",
-    "title": "Exploring Data Visualization with Tableau",
-    "section": "",
-    "text": "To get started with Tableau, follow these steps:\n\nDownload and install Tableau Desktop from the official website.\nLaunch Tableau Desktop and connect to your desired data source.\nChoose the appropriate visualization type and drag and drop fields onto the canvas.\nCustomize the visualization by applying filters, sorting, formatting, and adding interactivity.\nCreate a dashboard to combine multiple visualizations and enhance data exploration.\nPublish your visualizations to Tableau Server or Tableau Public for sharing and collaboration."
-  },
-  {
-    "objectID": "posts/example_blog.html#conclusion",
-    "href": "posts/example_blog.html#conclusion",
-    "title": "Exploring Data Visualization with Tableau",
-    "section": "",
-    "text": "Tableau is a powerful tool that empowers data scientists and analysts to create stunning and interactive data visualizations. Its intuitive interface, extensive feature set, and ability to integrate with various data sources make it a popular choice in the data science community.\nBy leveraging Tableau’s capabilities, data scientists can effectively communicate insights, drive decision-making, and extract maximum value from their data.\nIf you haven’t explored Tableau yet, I highly recommend giving it a try. Start visualizing your data in new and insightful ways with Tableau today!"
-  },
-  {
-    "objectID": "posts/Rocker.html",
-    "href": "posts/Rocker.html",
-    "title": "Using Rocker docker for R package development",
-    "section": "",
-    "text": "In the world of data science, developing and sharing R packages is a crucial aspect of collaborative work. However, ensuring reproducibility, managing dependencies, and maintaining a consistent development environment can be challenging. This is where Docker Rocker comes in. In this blog post, we will explore the pros and cons of using Docker Rocker for R package development and provide a step-by-step guide to help you get started.\n\n\n\nReproducibility: Docker allows you to create a containerized environment that encapsulates all the dependencies required for your R package. This ensures that your code will run consistently across different systems, making it easier to reproduce your work.\nIsolation: Docker containers provide a sandboxed environment, allowing you to isolate your R package development from other dependencies or configurations on your system. This helps prevent conflicts and ensures that your package development environment remains stable.\nPortability: Docker containers can be easily shared and deployed across different platforms and systems, making it convenient for collaboration and deployment.\nVersion Control: With Docker, you can version control your containerized environment, including the specific versions of R, packages, and system dependencies. This makes it easier to track changes and roll back to previous versions if needed.\nFlexibility: Docker Rocker provides a wide range of pre-built containers for different versions of R, allowing you to easily switch between R versions for testing and development purposes.\n\n\n\n\nCons of Using Docker Rocker for R Package Development:\n\nLearning Curve: Docker has its own set of commands and concepts that may require some learning and adjustment if you are new to it.\nIncreased Complexity: Docker adds an additional layer of complexity to your development workflow, as you need to manage and maintain the Docker images and containers alongside your R package code.\nResource Overhead: Running R packages within Docker containers may consume more system resources compared to running them directly on the host system. This can impact the performance and responsiveness of your development environment.\nBuild Time: Building Docker images can take some time, especially when installing and configuring dependencies. However, this build time is a one-time cost, and subsequent container launches are faster."
-  },
-  {
-    "objectID": "posts/Rocker.html#pros-of-using-docker-rocker-for-r-package-development",
-    "href": "posts/Rocker.html#pros-of-using-docker-rocker-for-r-package-development",
-    "title": "Using Rocker docker for R package development",
-    "section": "",
-    "text": "Reproducibility: Docker allows you to create a containerized environment that encapsulates all the dependencies required for your R package. This ensures that your code will run consistently across different systems, making it easier to reproduce your work.\nIsolation: Docker containers provide a sandboxed environment, allowing you to isolate your R package development from other dependencies or configurations on your system. This helps prevent conflicts and ensures that your package development environment remains stable.\nPortability: Docker containers can be easily shared and deployed across different platforms and systems, making it convenient for collaboration and deployment.\nVersion Control: With Docker, you can version control your containerized environment, including the specific versions of R, packages, and system dependencies. This makes it easier to track changes and roll back to previous versions if needed.\nFlexibility: Docker Rocker provides a wide range of pre-built containers for different versions of R, allowing you to easily switch between R versions for testing and development purposes."
-  },
-  {
-    "objectID": "posts/Rocker.html#cons-of-using-docker-rocker-for-r-package-development",
-    "href": "posts/Rocker.html#cons-of-using-docker-rocker-for-r-package-development",
-    "title": "Using Rocker docker for R package development",
-    "section": "",
-    "text": "Cons of Using Docker Rocker for R Package Development:\n\nLearning Curve: Docker has its own set of commands and concepts that may require some learning and adjustment if you are new to it.\nIncreased Complexity: Docker adds an additional layer of complexity to your development workflow, as you need to manage and maintain the Docker images and containers alongside your R package code.\nResource Overhead: Running R packages within Docker containers may consume more system resources compared to running them directly on the host system. This can impact the performance and responsiveness of your development environment.\nBuild Time: Building Docker images can take some time, especially when installing and configuring dependencies. However, this build time is a one-time cost, and subsequent container launches are faster."
-  },
-  {
-    "objectID": "posts/vvtableau.html",
-    "href": "posts/vvtableau.html",
-    "title": "Introduction to vvtableau",
-    "section": "",
-    "text": "Automate Tableau Tasks with vvtableau\n\nIntroduction\nWelcome to the world of automated Tableau tasks! In this blog post, we will explore vvtableau, an R package developed by VU Analytics at Vrije Universiteit Amsterdam as part of the vusaverse collection. With vvtableau, you can streamline your Tableau workflows and save time by automating repetitive tasks in Tableau Server. Let’s explore the vvtableau package and how it could enhance your Tableau experience with R!\n\n\nWhat is vvtableau?\n\n\n\nvvtableau\n\n\nvvtableau is an R package that provides a seamless interface for interacting with Tableau Server using the Tableau REST API. It is part of the vusaverse collection, a set of packages developed by VU Analytics to support data pipelines. With vvtableau, you can automate various Tableau tasks, such as:\n\ndownloading workbooks from the server;\nsetting up refresh data extract data alerts;\nretrieving server object information directly from R; and\nmanaging locally hosted workbooks through the XML methods.\n\n\n\nGetting Started with vvtableau\nTo get started with vvtableau, follow these simple steps:\n## Install the package from CRAN \ninstall.packages(\"vvtableau\")\n\n## Or install the development version from GitHub \ndevtools::install_github(\"vusaverse/vvtableau\")\n\n## Load package \nlibrary(vvtableau)\n\n## Authenticate on the Tableau Server\n\ntableau &lt;- authenticate_server(\n  server = \"https://your.tableau.server.com\",\n  username = \"your_username\",\n  password = \"your_password\" \n) \n\n## The above \"tableau\" object can now be passed in every Tableau REST API method.\n\n\nKey Features of vvtableau\nvvtableau offers a range of features to automate Tableau tasks and enhance your Tableau experience. Here are some key features:\n\ndownload_workbooks_server(): This function allows you to download workbooks from Tableau Server. You can use it to automate the process of retrieving workbooks and saving them locally, which can be helpful for regular backups.\nget_server_refresh_tasks(): With this function, you can retrieve information about extract refresh tasks on Tableau Server. By automating the retrieval of refresh task details, you can monitor and manage data refresh processes more efficiently.\nget_server_users(): This function enables you to retrieve information about users on Tableau Server.\n\nFor a comprehensive list of features and detailed documentation, we recommend referring to the official vvtableau documentation. It provides in-depth explanations and examples to help you make the most of vvtableau in your R workflows.\n\n\nContributing to vvtableau\nvvtableau is an open-source project, and contributions from the community are highly encouraged. If you encounter any bugs, have feature requests, or would like to contribute code improvements, you can open an issue or submit a pull request on the GitHub repository.\n\n\nFurther reading\nLiked this post? Check out more R-related content on r-bloggers.com."
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "This page serves as a showcase for a selection of our projects."
-  },
-  {
-    "objectID": "projects.html#effect-of-the-covid-19-pandemic-on-student-performances",
-    "href": "projects.html#effect-of-the-covid-19-pandemic-on-student-performances",
-    "title": "Projects",
-    "section": "Effect of the COVID-19 Pandemic on Student Performances",
-    "text": "Effect of the COVID-19 Pandemic on Student Performances\nProject Objectives:\n\nUnderstand the impact of the COVID-19 pandemic on student performance and academic outcomes.\nIdentify factors contributing to variations in student success during remote learning.\nProvide recommendations and insights to inform future planning and decision-making related to student support, curriculum adjustments, and resource allocation."
-  },
-  {
-    "objectID": "projects.html#project-2",
-    "href": "projects.html#project-2",
-    "title": "Projects",
-    "section": "Project 2",
-    "text": "Project 2"
-  },
-  {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Resources",
-    "section": "",
-    "text": "Some resources we have used in our team:"
-  },
-  {
-    "objectID": "resources.html#books",
-    "href": "resources.html#books",
-    "title": "Resources",
-    "section": "Books",
-    "text": "Books\n\nR programming\n\nR packages by Hadley Wickham. This book is an essential resource for R programming, particularly for building and maintaining R packages. It covers best practices for package development, documentation, testing, and distribution. The book is authored by Hadley Wickham, a prominent figure in the R community and a leading developer of many popular R packages.\n\n\n\nVisualisations\n\nInformation Dashboard Design by Stephen Few. This book focuses on the principles and best practices of designing effective information dashboards. It provides guidance on visualizing data in a way that maximizes understanding and supports decision-making. The book covers topics such as data visualization techniques, dashboard layout, color usage, and creating interactive dashboards."
-  },
-  {
-    "objectID": "resources.html#channels",
-    "href": "resources.html#channels",
-    "title": "Resources",
-    "section": "Channels",
-    "text": "Channels\n\nVisualisations\n\nTableau Tim on YouTube. Tableau Tim is a YouTube channel that provides tutorials and tips for using Tableau for data visualization and analysis. The channel covers various topics, including Tableau basics, advanced techniques, creating interactive dashboards, data blending, and more."
-  },
-  {
     "objectID": "styleguides.html",
     "href": "styleguides.html",
     "title": "Style Guides",
@@ -257,5 +103,173 @@
     "title": "Style Guides",
     "section": "Documentation",
     "text": "Documentation\n\nDocument the purpose and context of the dashboard.\nProvide a description of the data sources and any transformations applied.\nInclude any assumptions or limitations of the dashboard.\nDocument any calculations or custom fields used."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "This page serves as a showcase for a selection of our projects."
+  },
+  {
+    "objectID": "projects.html#effect-of-the-covid-19-pandemic-on-student-performances",
+    "href": "projects.html#effect-of-the-covid-19-pandemic-on-student-performances",
+    "title": "Projects",
+    "section": "Effect of the COVID-19 Pandemic on Student Performances",
+    "text": "Effect of the COVID-19 Pandemic on Student Performances\nProject Objectives:\n\nUnderstand the impact of the COVID-19 pandemic on student performance and academic outcomes.\nIdentify factors contributing to variations in student success during remote learning.\nProvide recommendations and insights to inform future planning and decision-making related to student support, curriculum adjustments, and resource allocation."
+  },
+  {
+    "objectID": "projects.html#project-2",
+    "href": "projects.html#project-2",
+    "title": "Projects",
+    "section": "Project 2",
+    "text": "Project 2"
+  },
+  {
+    "objectID": "posts/vvtableau.html",
+    "href": "posts/vvtableau.html",
+    "title": "Introduction to vvtableau",
+    "section": "",
+    "text": "Automate Tableau Tasks with vvtableau\n\nIntroduction\nWelcome to the world of automated Tableau tasks! In this blog post, we will explore vvtableau, an R package developed by VU Analytics at Vrije Universiteit Amsterdam as part of the vusaverse collection. With vvtableau, you can streamline your Tableau workflows and save time by automating repetitive tasks in Tableau Server. Let’s explore the vvtableau package and how it could enhance your Tableau experience with R!\n\n\nWhat is vvtableau?\n\n\n\nvvtableau\n\n\nvvtableau is an R package that provides a seamless interface for interacting with Tableau Server using the Tableau REST API. It is part of the vusaverse collection, a set of packages developed by VU Analytics to support data pipelines. With vvtableau, you can automate various Tableau tasks, such as:\n\ndownloading workbooks from the server;\nsetting up refresh data extract data alerts;\nretrieving server object information directly from R; and\nmanaging locally hosted workbooks through the XML methods.\n\n\n\nGetting Started with vvtableau\nTo get started with vvtableau, follow these simple steps:\n## Install the package from CRAN \ninstall.packages(\"vvtableau\")\n\n## Or install the development version from GitHub \ndevtools::install_github(\"vusaverse/vvtableau\")\n\n## Load package \nlibrary(vvtableau)\n\n## Authenticate on the Tableau Server\n\ntableau &lt;- authenticate_server(\n  server = \"https://your.tableau.server.com\",\n  username = \"your_username\",\n  password = \"your_password\" \n) \n\n## The above \"tableau\" object can now be passed in every Tableau REST API method.\n\n\nKey Features of vvtableau\nvvtableau offers a range of features to automate Tableau tasks and enhance your Tableau experience. Here are some key features:\n\ndownload_workbooks_server(): This function allows you to download workbooks from Tableau Server. You can use it to automate the process of retrieving workbooks and saving them locally, which can be helpful for regular backups.\nget_server_refresh_tasks(): With this function, you can retrieve information about extract refresh tasks on Tableau Server. By automating the retrieval of refresh task details, you can monitor and manage data refresh processes more efficiently.\nget_server_users(): This function enables you to retrieve information about users on Tableau Server.\n\nFor a comprehensive list of features and detailed documentation, we recommend referring to the official vvtableau documentation. It provides in-depth explanations and examples to help you make the most of vvtableau in your R workflows.\n\n\nContributing to vvtableau\nvvtableau is an open-source project, and contributions from the community are highly encouraged. If you encounter any bugs, have feature requests, or would like to contribute code improvements, you can open an issue or submit a pull request on the GitHub repository.\n\n\nFurther reading\nLiked this post? Check out more R-related content on r-bloggers.com."
+  },
+  {
+    "objectID": "posts/example_blog.html",
+    "href": "posts/example_blog.html",
+    "title": "Exploring Data Visualization with Tableau",
+    "section": "",
+    "text": "Data visualization is an essential component of data science. It allows us to present complex information in a visually appealing and easily understandable manner. In this blog post, we will explore the power of Tableau, a popular data visualization tool.\n\n\nTableau is a powerful and intuitive data visualization tool that enables users to create interactive and dynamic visualizations. It offers a wide range of visualization options, including charts, graphs, maps, and dashboards. Tableau’s drag-and-drop interface makes it accessible to both data scientists and non-technical users.\n\n\n\nTableau provides numerous benefits for data scientists and analysts:\n\n\nTableau supports various data sources, such as CSV files, Excel spreadsheets, databases, and cloud services. It allows users to connect and integrate data from multiple sources seamlessly. With Tableau’s data blending capabilities, you can combine different datasets to uncover valuable insights.\n\n\n\nOne of Tableau’s standout features is its ability to create interactive visualizations. Users can filter, drill down, and explore data dynamically. This interactivity empowers stakeholders to gain deeper insights and ask ad hoc questions, leading to more informed decision-making.\n\n\n\nTableau offers built-in analytics and statistical functions that enhance data exploration. Users can perform calculations, trend analysis, forecasting, clustering, and more. These analytical capabilities enable data scientists to dig deeper into the data and uncover patterns and relationships.\n\n\n\nTableau allows the creation of interactive dashboards that consolidate multiple visualizations into a single view. Dashboards provide an overview of key metrics and allow users to explore data across different dimensions. They can be customized with filters, parameters, and actions to enable users to interact with the data.\n\n\n\n\nTo get started with Tableau, follow these steps:\n\nDownload and install Tableau Desktop from the official website.\nLaunch Tableau Desktop and connect to your desired data source.\nChoose the appropriate visualization type and drag and drop fields onto the canvas.\nCustomize the visualization by applying filters, sorting, formatting, and adding interactivity.\nCreate a dashboard to combine multiple visualizations and enhance data exploration.\nPublish your visualizations to Tableau Server or Tableau Public for sharing and collaboration.\n\n\n\n\nTableau is a powerful tool that empowers data scientists and analysts to create stunning and interactive data visualizations. Its intuitive interface, extensive feature set, and ability to integrate with various data sources make it a popular choice in the data science community.\nBy leveraging Tableau’s capabilities, data scientists can effectively communicate insights, drive decision-making, and extract maximum value from their data.\nIf you haven’t explored Tableau yet, I highly recommend giving it a try. Start visualizing your data in new and insightful ways with Tableau today!"
+  },
+  {
+    "objectID": "posts/example_blog.html#what-is-tableau",
+    "href": "posts/example_blog.html#what-is-tableau",
+    "title": "Exploring Data Visualization with Tableau",
+    "section": "",
+    "text": "Tableau is a powerful and intuitive data visualization tool that enables users to create interactive and dynamic visualizations. It offers a wide range of visualization options, including charts, graphs, maps, and dashboards. Tableau’s drag-and-drop interface makes it accessible to both data scientists and non-technical users."
+  },
+  {
+    "objectID": "posts/example_blog.html#benefits-of-using-tableau",
+    "href": "posts/example_blog.html#benefits-of-using-tableau",
+    "title": "Exploring Data Visualization with Tableau",
+    "section": "",
+    "text": "Tableau provides numerous benefits for data scientists and analysts:\n\n\nTableau supports various data sources, such as CSV files, Excel spreadsheets, databases, and cloud services. It allows users to connect and integrate data from multiple sources seamlessly. With Tableau’s data blending capabilities, you can combine different datasets to uncover valuable insights.\n\n\n\nOne of Tableau’s standout features is its ability to create interactive visualizations. Users can filter, drill down, and explore data dynamically. This interactivity empowers stakeholders to gain deeper insights and ask ad hoc questions, leading to more informed decision-making.\n\n\n\nTableau offers built-in analytics and statistical functions that enhance data exploration. Users can perform calculations, trend analysis, forecasting, clustering, and more. These analytical capabilities enable data scientists to dig deeper into the data and uncover patterns and relationships.\n\n\n\nTableau allows the creation of interactive dashboards that consolidate multiple visualizations into a single view. Dashboards provide an overview of key metrics and allow users to explore data across different dimensions. They can be customized with filters, parameters, and actions to enable users to interact with the data."
+  },
+  {
+    "objectID": "posts/example_blog.html#getting-started-with-tableau",
+    "href": "posts/example_blog.html#getting-started-with-tableau",
+    "title": "Exploring Data Visualization with Tableau",
+    "section": "",
+    "text": "To get started with Tableau, follow these steps:\n\nDownload and install Tableau Desktop from the official website.\nLaunch Tableau Desktop and connect to your desired data source.\nChoose the appropriate visualization type and drag and drop fields onto the canvas.\nCustomize the visualization by applying filters, sorting, formatting, and adding interactivity.\nCreate a dashboard to combine multiple visualizations and enhance data exploration.\nPublish your visualizations to Tableau Server or Tableau Public for sharing and collaboration."
+  },
+  {
+    "objectID": "posts/example_blog.html#conclusion",
+    "href": "posts/example_blog.html#conclusion",
+    "title": "Exploring Data Visualization with Tableau",
+    "section": "",
+    "text": "Tableau is a powerful tool that empowers data scientists and analysts to create stunning and interactive data visualizations. Its intuitive interface, extensive feature set, and ability to integrate with various data sources make it a popular choice in the data science community.\nBy leveraging Tableau’s capabilities, data scientists can effectively communicate insights, drive decision-making, and extract maximum value from their data.\nIf you haven’t explored Tableau yet, I highly recommend giving it a try. Start visualizing your data in new and insightful ways with Tableau today!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "VU Analytics",
+    "section": "",
+    "text": "VU Analytics is a VU data facility that analyses education and student data in order to improve student intake, progression and graduation in all phases of education.\nVU Analytics is committed to using data to support policy making, student guidance and scientific research into academic success as effectively as possible. We call this data-informed policy. We provide the VU with insights into student intake, progression and graduation and thus contribute to the quality of education at the VU.\nVU Analytics investigates VU study data. This study data is created during the paths students take within the VU ‘garden’.\n\nPart of it is about the origin of students and what they did ‘before the gate’: their previous education in the Netherlands or abroad, how they oriented themselves at the VU, which study choices they made. This includes data from Studielink, orientation data, data from the study choice trajectory, the introduction and the language proficiency test.\nThe next part is about what they do in the garden: where the VU career of students starts, what choices students make about their routes within and between programmes, their study results and academic success. VU Analytics largely receives this data from the student administration via VUdata.\nFinally, it is about how our students fare after they leave the garden with a diploma: a follow-up study or their labour market success.\n\nAll these data are traces left behind in the garden. The team combines study data to create an enriched dataset. We use the study data in our dataset to understand our students better, to improve the quality of education, and to study student intake, progression and graduation.\nOn their path, students may come across many things that are beautiful or could be improved. Attractive places to talk to a lecturer or study advisor, interesting paths and flowers, but also fallen trees or small rivers that are difficult to cross without help. VU policy officers and programme managers turn to VU Analytics for good advice on routes to be recommended. Together, they discuss possible barriers. Under the watchful eye of the privacy officer, the team investigates relevant data and provides specific advice that can be used by colleagues and, ultimately, by students. Through all these investigations, the team gets a good picture of the entire VU, which helps with general issues for the VU as a whole. \nTo achieve this, Team VU Analytics has contact with a broad network of policy staff and members of education management. VU Analytics regularly participates in various educational consultations within the VU. We also proactively organise a sounding board group to ensure that the initiatives and services of VU Analytics are as closely aligned as possible with the wishes and needs of the organisation. The sounding board group consists of representatives from the various bodies and target groups.\nWe can be reached for questions about data for educational policy or scientific research at: VU-analytics@vu.nl."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Update vvtableau: Tableau Cloud Support\n\n\n\n\n\n\n\nR\n\n\nPackages\n\n\nTableau\n\n\nvusaverse\n\n\n\n\n\n\n\n\n\n\n\n\nMar 27, 2024\n\n\nVU Analytics\n\n\n\n\n\n\n  \n\n\n\n\nIntroduction to vvtableau\n\n\n\n\n\n\n\nR\n\n\nPackages\n\n\nTableau\n\n\nvusaverse\n\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nVU Analytics\n\n\n\n\n\n\n  \n\n\n\n\nUsing Rocker docker for R package development\n\n\n\n\n\n\n\nR\n\n\nPackages\n\n\nDocker\n\n\nRocker\n\n\n\n\n\n\n\n\n\n\n\nJul 18, 2023\n\n\nJohn Doe\n\n\n\n\n\n\n  \n\n\n\n\nExploring Data Visualization with Tableau\n\n\n\n\n\n\n\nTableau\n\n\nVisualisations\n\n\n\n\n\n\n\n\n\n\n\nJul 10, 2023\n\n\nJohn Doe\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About VU Analytics",
+    "section": "",
+    "text": "We are a small and dynamic team of professionals and students who are passionate about data and analytics. Our team consists of 2 data engineers, 2 data scientists, and 2 student assistants.\n\nData Engineers\nOur data engineers are skilled in handling data and building robust data pipelines. They specialize in designing and implementing data storage systems, data integration, and data processing frameworks. They ensure that our data infrastructure is efficient and reliable.\n\n\nData Scientists\nOur data scientists are the analytical minds behind our projects. They excel in extracting insights from complex datasets, building predictive models, and discovering patterns that drive informed decision-making. They employ their visualization skills and report to our stakeholders.\n\n\nStudent Assistants\nOur student assistants play a vital role in supporting our team by assisting with various tasks related to data analysis and project management. They are eager learners, always striving to gain practical experience and contribute to the success of our projects. Their fresh perspective and enthusiasm bring valuable ideas and perspectives to our team.\nAt our core, we are a team that values collaboration, continuous learning, and pushing the boundaries of what is possible with data. Together, we work towards delivering impactful insights for higher education."
+  },
+  {
+    "objectID": "faq.html",
+    "href": "faq.html",
+    "title": "FAQ",
+    "section": "",
+    "text": "Data\nQ: What are your data sources?\nA: Our data sources include various sources within the university’s systems and databases. These sources may include student information systems, learning management systems, registration systems, and academic databases. We ensure that the data we collect is relevant, accurate, and up-to-date to provide meaningful insights into student success.\n\n\nStudents\nQ: How is my student performance data collected and used?\nA: Student performance data is collected through various means, such as grades, assessments, and evaluations. This data is securely stored and used for analyzing student performance trends, identifying areas of improvement, and informing decision-making processes related to curriculum enhancements, teaching methodologies, and student support services. The data helps us understand how students perform per program per year and enables us to develop strategies to enhance student success.\n\n\nPrivacy\nQ: How is data anonymized and aggregated to protect individual privacy?\nA: Data anonymization is an important aspect of protecting individual privacy. Before any analysis or reporting takes place, personally identifiable information (PII) is removed or transformed to ensure that individuals cannot be identified. This process involves techniques such as …\n\n\nCollaboration\nQ: Are there any existing collaborations or success stories with other universities?\nA: Yes! We have had successful collaborations with several institutions in the past. Some examples of universities we have collaborated with include “De Haagse Hogeschool” and “Universiteit Twente”. These collaborations have allowed us to share knowledge, exchange best practices, and work together to improve student success initiatives."
+  },
+  {
+    "objectID": "packages.html",
+    "href": "packages.html",
+    "title": "Packages",
+    "section": "",
+    "text": "VU Analytics has created a number of packages to simplify its work. These packages are part of the so-called vusaverse. Two types of packages are distinguished:"
+  },
+  {
+    "objectID": "packages.html#packages-for-external-tools",
+    "href": "packages.html#packages-for-external-tools",
+    "title": "Packages",
+    "section": "Packages for external tools",
+    "text": "Packages for external tools\nThese packages include:\n\nvvcanvas; for communicating with the CANVAS LMS\nvvtableau; for using Tableau REST API\nvvtermtime; for scheduling tasks"
+  },
+  {
+    "objectID": "packages.html#packages-for-data-science-tasks",
+    "href": "packages.html#packages-for-data-science-tasks",
+    "title": "Packages",
+    "section": "Packages for data science tasks",
+    "text": "Packages for data science tasks\n\nvvauditor\nvvcommander\nvvconverter\nvvdoctor\nvvfiller\nvvmover\nvvmodeller (Deprecated)\nvvsculptor\nvvshiny"
+  },
+  {
+    "objectID": "posts/Rocker.html",
+    "href": "posts/Rocker.html",
+    "title": "Using Rocker docker for R package development",
+    "section": "",
+    "text": "In the world of data science, developing and sharing R packages is a crucial aspect of collaborative work. However, ensuring reproducibility, managing dependencies, and maintaining a consistent development environment can be challenging. This is where Docker Rocker comes in. In this blog post, we will explore the pros and cons of using Docker Rocker for R package development and provide a step-by-step guide to help you get started.\n\n\n\nReproducibility: Docker allows you to create a containerized environment that encapsulates all the dependencies required for your R package. This ensures that your code will run consistently across different systems, making it easier to reproduce your work.\nIsolation: Docker containers provide a sandboxed environment, allowing you to isolate your R package development from other dependencies or configurations on your system. This helps prevent conflicts and ensures that your package development environment remains stable.\nPortability: Docker containers can be easily shared and deployed across different platforms and systems, making it convenient for collaboration and deployment.\nVersion Control: With Docker, you can version control your containerized environment, including the specific versions of R, packages, and system dependencies. This makes it easier to track changes and roll back to previous versions if needed.\nFlexibility: Docker Rocker provides a wide range of pre-built containers for different versions of R, allowing you to easily switch between R versions for testing and development purposes.\n\n\n\n\nCons of Using Docker Rocker for R Package Development:\n\nLearning Curve: Docker has its own set of commands and concepts that may require some learning and adjustment if you are new to it.\nIncreased Complexity: Docker adds an additional layer of complexity to your development workflow, as you need to manage and maintain the Docker images and containers alongside your R package code.\nResource Overhead: Running R packages within Docker containers may consume more system resources compared to running them directly on the host system. This can impact the performance and responsiveness of your development environment.\nBuild Time: Building Docker images can take some time, especially when installing and configuring dependencies. However, this build time is a one-time cost, and subsequent container launches are faster."
+  },
+  {
+    "objectID": "posts/Rocker.html#pros-of-using-docker-rocker-for-r-package-development",
+    "href": "posts/Rocker.html#pros-of-using-docker-rocker-for-r-package-development",
+    "title": "Using Rocker docker for R package development",
+    "section": "",
+    "text": "Reproducibility: Docker allows you to create a containerized environment that encapsulates all the dependencies required for your R package. This ensures that your code will run consistently across different systems, making it easier to reproduce your work.\nIsolation: Docker containers provide a sandboxed environment, allowing you to isolate your R package development from other dependencies or configurations on your system. This helps prevent conflicts and ensures that your package development environment remains stable.\nPortability: Docker containers can be easily shared and deployed across different platforms and systems, making it convenient for collaboration and deployment.\nVersion Control: With Docker, you can version control your containerized environment, including the specific versions of R, packages, and system dependencies. This makes it easier to track changes and roll back to previous versions if needed.\nFlexibility: Docker Rocker provides a wide range of pre-built containers for different versions of R, allowing you to easily switch between R versions for testing and development purposes."
+  },
+  {
+    "objectID": "posts/Rocker.html#cons-of-using-docker-rocker-for-r-package-development",
+    "href": "posts/Rocker.html#cons-of-using-docker-rocker-for-r-package-development",
+    "title": "Using Rocker docker for R package development",
+    "section": "",
+    "text": "Cons of Using Docker Rocker for R Package Development:\n\nLearning Curve: Docker has its own set of commands and concepts that may require some learning and adjustment if you are new to it.\nIncreased Complexity: Docker adds an additional layer of complexity to your development workflow, as you need to manage and maintain the Docker images and containers alongside your R package code.\nResource Overhead: Running R packages within Docker containers may consume more system resources compared to running them directly on the host system. This can impact the performance and responsiveness of your development environment.\nBuild Time: Building Docker images can take some time, especially when installing and configuring dependencies. However, this build time is a one-time cost, and subsequent container launches are faster."
+  },
+  {
+    "objectID": "posts/vvtableau_3_24.html",
+    "href": "posts/vvtableau_3_24.html",
+    "title": "Update vvtableau: Tableau Cloud Support",
+    "section": "",
+    "text": "vvtableau\n\n\nIn our latest update, we’re excited to announce that vvtableau now supports Tableau Cloud, expanding its capabilities beyond Tableau Server to include the cloud-based platform. This significant enhancement allows users to automate tasks across both Tableau Server and Tableau Cloud, providing a unified interface for managing Tableau resources.\n\n\nThe vvtableau 0.6.0 release brings several key updates that significantly enhance its functionality and usability:\n\nExtract Refresh Task Execution: A new function has been added to run extract refresh tasks immediately on the server. This feature is particularly useful for ensuring that your data is always up-to-date without manual intervention.\nData Source and Workbook Updates: Functions to update a data source and a workbook on the server have been introduced. These updates allow for dynamic changes to data sources and workbooks, enabling more flexible and responsive data management workflows.\nEnhanced User and Group Management: With the addition of Users and Groups Tableau REST API methods in vvtableau 0.4.0, the package now offers a more comprehensive set of tools for managing users and groups on Tableau Server and Cloud.\n\n\n\nTo take advantage of these new features, you’ll need to update your vvtableau package. Here’s how you can do it:\n\n## Install the package from CRAN\n\ninstall.packages(\"vvtableau\")\n\n## Or install the development version from GitHub\n\ndevtools::install_github(\"vusaverse/vvtableau\")\n\n## Load package\n\nlibrary(vvtableau)\n\n## Authenticate on the Tableau Server using password\n\ntableau &lt;- authenticate_server(\n  username = tableau_username(),\n  password = tableau_password(),\n  base_url = tableau_base_url(),\n  api_version = 3.4\n)\n\n## Authenticate on the Tableau Server or Tableau Cloud using Personal Access Token (PAT)\n\ntableau &lt;- authenticate_PAT(\n  pat_name = tableau_pat_name(),\n  pat_secret = tableau_pat_secret(),\n  content_url = tableau_content_url(),\n  base_url = tableau_base_url(),\n  api_version = 3.4\n)\n\n## The above \"tableau\" object can now be passed in every Tableau REST API method.\n## Example: get all users\n\nusers &lt;- get_server_users(\n  tableau,\n  api_version = 3.4,\n  page_number = 1,\n  page_size = 100,\n  include_metadata = FALSE\n)\nPlease refer to the function documentation on what values to pass for the argument when using either Tableau Server or Tableau Cloud.\n\n\n\nFor a comprehensive list of features and detailed documentation, we recommend referring to the official vvtableau documentation. It provides in-depth explanations and examples to help you make the most of vvtableau in your R workflows.\n\n\n\nvvtableau is an open-source project, and contributions from the community are highly encouraged. If you encounter any bugs, have feature requests, or would like to contribute code improvements, you can open an issue or submit a pull request on the GitHub repository.\n\n\n\nLiked this post? Check out more R-related content on r-bloggers.com."
+  },
+  {
+    "objectID": "posts/vvtableau_3_24.html#whats-new-in-vvtableau-0.6.0",
+    "href": "posts/vvtableau_3_24.html#whats-new-in-vvtableau-0.6.0",
+    "title": "Update vvtableau: Tableau Cloud Support",
+    "section": "",
+    "text": "The vvtableau 0.6.0 release brings several key updates that significantly enhance its functionality and usability:\n\nExtract Refresh Task Execution: A new function has been added to run extract refresh tasks immediately on the server. This feature is particularly useful for ensuring that your data is always up-to-date without manual intervention.\nData Source and Workbook Updates: Functions to update a data source and a workbook on the server have been introduced. These updates allow for dynamic changes to data sources and workbooks, enabling more flexible and responsive data management workflows.\nEnhanced User and Group Management: With the addition of Users and Groups Tableau REST API methods in vvtableau 0.4.0, the package now offers a more comprehensive set of tools for managing users and groups on Tableau Server and Cloud.\n\n\n\nTo take advantage of these new features, you’ll need to update your vvtableau package. Here’s how you can do it:\n\n## Install the package from CRAN\n\ninstall.packages(\"vvtableau\")\n\n## Or install the development version from GitHub\n\ndevtools::install_github(\"vusaverse/vvtableau\")\n\n## Load package\n\nlibrary(vvtableau)\n\n## Authenticate on the Tableau Server using password\n\ntableau &lt;- authenticate_server(\n  username = tableau_username(),\n  password = tableau_password(),\n  base_url = tableau_base_url(),\n  api_version = 3.4\n)\n\n## Authenticate on the Tableau Server or Tableau Cloud using Personal Access Token (PAT)\n\ntableau &lt;- authenticate_PAT(\n  pat_name = tableau_pat_name(),\n  pat_secret = tableau_pat_secret(),\n  content_url = tableau_content_url(),\n  base_url = tableau_base_url(),\n  api_version = 3.4\n)\n\n## The above \"tableau\" object can now be passed in every Tableau REST API method.\n## Example: get all users\n\nusers &lt;- get_server_users(\n  tableau,\n  api_version = 3.4,\n  page_number = 1,\n  page_size = 100,\n  include_metadata = FALSE\n)\nPlease refer to the function documentation on what values to pass for the argument when using either Tableau Server or Tableau Cloud.\n\n\n\nFor a comprehensive list of features and detailed documentation, we recommend referring to the official vvtableau documentation. It provides in-depth explanations and examples to help you make the most of vvtableau in your R workflows.\n\n\n\nvvtableau is an open-source project, and contributions from the community are highly encouraged. If you encounter any bugs, have feature requests, or would like to contribute code improvements, you can open an issue or submit a pull request on the GitHub repository.\n\n\n\nLiked this post? Check out more R-related content on r-bloggers.com."
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Some resources we have used in our team:"
+  },
+  {
+    "objectID": "resources.html#books",
+    "href": "resources.html#books",
+    "title": "Resources",
+    "section": "Books",
+    "text": "Books\n\nR programming\n\nR packages by Hadley Wickham. This book is an essential resource for R programming, particularly for building and maintaining R packages. It covers best practices for package development, documentation, testing, and distribution. The book is authored by Hadley Wickham, a prominent figure in the R community and a leading developer of many popular R packages.\n\n\n\nVisualisations\n\nInformation Dashboard Design by Stephen Few. This book focuses on the principles and best practices of designing effective information dashboards. It provides guidance on visualizing data in a way that maximizes understanding and supports decision-making. The book covers topics such as data visualization techniques, dashboard layout, color usage, and creating interactive dashboards."
+  },
+  {
+    "objectID": "resources.html#channels",
+    "href": "resources.html#channels",
+    "title": "Resources",
+    "section": "Channels",
+    "text": "Channels\n\nVisualisations\n\nTableau Tim on YouTube. Tableau Tim is a YouTube channel that provides tutorials and tips for using Tableau for data visualization and analysis. The channel covers various topics, including Tableau basics, advanced techniques, creating interactive dashboards, data blending, and more."
   }
 ]
