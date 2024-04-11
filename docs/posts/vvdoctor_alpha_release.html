@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="VU Analytics">
+<meta name="dcterms.date" content="2024-04-11">
 
-<title>vusaverse - Projects</title>
+<title>vusaverse - Announcing vvdoctor Alpha Release</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,25 +22,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -60,7 +96,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -70,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">vusaverse</span>
     </a>
   </div>
@@ -81,35 +117,35 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
+    <a class="nav-link" href="../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
+    <a class="nav-link" href="../about.html" rel="" target="">
  <span class="menu-text">About VU Analytics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./packages.html" rel="" target="">
+    <a class="nav-link" href="../packages.html" rel="" target="">
  <span class="menu-text">Packages</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./faq.html" rel="" target="">
+    <a class="nav-link" href="../faq.html" rel="" target="">
  <span class="menu-text">FAQ</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../projects.html" rel="" target="">
  <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./resources.html" rel="" target="">
+    <a class="nav-link" href="../resources.html" rel="" target="">
  <span class="menu-text">Resources</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html" rel="" target="">
+    <a class="nav-link" href="../blog.html" rel="" target="">
  <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./styleguides.html" rel="" target="">
+    <a class="nav-link" href="../styleguides.html" rel="" target="">
  <span class="menu-text">Style Guides</span></a>
   </li>  
 </ul>
@@ -120,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./docs/blog.xml" rel="" target=""><i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../docs/blog.xml" rel="" target=""><i class="bi bi-rss" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -132,7 +168,42 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Announcing vvdoctor Alpha Release</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">R</div>
+                <div class="quarto-category">Shiny</div>
+                <div class="quarto-category">Packages</div>
+                <div class="quarto-category">Statistics</div>
+                <div class="quarto-category">vusaverse</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>VU Analytics </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">April 11, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -140,45 +211,67 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#effect-of-the-covid-19-pandemic-on-student-performances" id="toc-effect-of-the-covid-19-pandemic-on-student-performances" class="nav-link active" data-scroll-target="#effect-of-the-covid-19-pandemic-on-student-performances"><strong>Effect of the COVID-19 Pandemic on Student Performances</strong></a></li>
-  <li><a href="#project-2" id="toc-project-2" class="nav-link" data-scroll-target="#project-2">Project 2</a></li>
+  <li><a href="#announcing-the-launch-of-vvdoctor-a-shiny-app-for-effortless-data-analysis" id="toc-announcing-the-launch-of-vvdoctor-a-shiny-app-for-effortless-data-analysis" class="nav-link active" data-scroll-target="#announcing-the-launch-of-vvdoctor-a-shiny-app-for-effortless-data-analysis">Announcing the Launch of vvdoctor: A Shiny App for Effortless Data Analysis</a>
+  <ul class="collapse">
+  <li><a href="#key-features" id="toc-key-features" class="nav-link" data-scroll-target="#key-features">Key Features</a></li>
+  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting Started</a></li>
+  <li><a href="#contributing-and-feedback" id="toc-contributing-and-feedback" class="nav-link" data-scroll-target="#contributing-and-feedback">Contributing and Feedback</a>
+  <ul class="collapse">
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Projects</h1>
+
+
+
+<section id="announcing-the-launch-of-vvdoctor-a-shiny-app-for-effortless-data-analysis" class="level1">
+<h1>Announcing the Launch of vvdoctor: A Shiny App for Effortless Data Analysis</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://edulytics.shinyapps.io/vvdoctor/"><img src="..\assets/hex-vvdoctor.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">vvdoctor</figcaption>
+</figure>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-</header>
-
-<p>This page serves as a showcase for a selection of our projects.</p>
-<section id="effect-of-the-covid-19-pandemic-on-student-performances" class="level2">
-<h2 class="anchored" data-anchor-id="effect-of-the-covid-19-pandemic-on-student-performances"><strong>Effect of the COVID-19 Pandemic on Student Performances</strong></h2>
-<p>Project Objectives:</p>
+<p>We are excited to announce the launch of <code>vvdoctor</code>, a new R Shiny app (and package) that provides a user-friendly interface for statistical testing from data! The goal is to aid to data-driven decision making from a statistical perspective. When is a difference large enough? Is there a notable increase from last year? Is there a difference between group A and B? These questions can be difficult to answer from solely a data-analytical perspective. <code>vvdoctor</code> alleviates this difficulty by easily allowing researchers, data analysts, and anyone interested in exploring data to easily conduct statistical tests from data! Upload your file, visualize your data, and perform a wide range of statistical tests in <code>vvdoctor</code>.</p>
+<p><code>vvdoctor</code> is now live and is accessible at: <a href="https://edulytics.shinyapps.io/vvdoctor/">shinyapps.io</a>. This app is the result of a collaborative effort by the team at Vusaverse, and it aims to simplify the process of conducting statistical tests from data.</p>
+<section id="key-features" class="level2">
+<h2 class="anchored" data-anchor-id="key-features">Key Features</h2>
 <ul>
-<li><p>Understand the impact of the COVID-19 pandemic on student performance and academic outcomes.</p></li>
-<li><p>Identify factors contributing to variations in student success during remote learning.</p></li>
-<li><p>Provide recommendations and insights to inform future planning and decision-making related to student support, curriculum adjustments, and resource allocation.</p></li>
+<li><p>Seamless Data Uploading: With just a few clicks, you can upload your data files in various formats, including CSV, RDS, Parquet, and more. The app will automatically display the data in a dataframe.</p></li>
+<li><p>Data Visualization: Generating histograms and other visualizations is a breeze. Simply select the variable you want to explore, and the app will generate the corresponding plot.</p></li>
+<li><p>Comprehensive Statistical Testing: <code>vvdoctor</code> offers a wide range of statistical tests, including t-tests, ANOVA, correlations, and more. The app will guide you through the process of selecting the appropriate test based on the characteristics of your data.</p></li>
+<li><p>Interpretable Results: Once you’ve run a statistical test, the app will display the test statistic, p-value, and any other relevant information, making it easy to interpret the results.</p></li>
 </ul>
+<p>Please refer to the <code>vvdoctor</code> <a href="https://github.com/vusaverse/vvdoctor">GitHub repository</a> of the project for further specification.</p>
 </section>
-<section id="project-2" class="level2">
-<h2 class="anchored" data-anchor-id="project-2">Project 2</h2>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting Started</h2>
+<p>To start using vvdoctor, simply visit the app at <a href="https://edulytics.shinyapps.io/vvdoctor/">shinyapps.io</a>. Alternatively, you can install the package directly in R and run the app locally:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Install the package </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"vusaverse/vvdoctor"</span>) </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="do">## Load the package and run the app </span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(vvdoctor) </span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>vvdoctor<span class="sc">::</span><span class="fu">diagnose</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="contributing-and-feedback" class="level2">
+<h2 class="anchored" data-anchor-id="contributing-and-feedback">Contributing and Feedback</h2>
+<p>This release of <code>vvdoctor</code> is an alpha-version. There are many improvements being made currently and many improvements to be made! We aim to polish up <code>vvdoctor</code> with the help of the R community! We’re committed to continuously improving <code>vvdoctor</code> and adding new features to make data analysis even more accessible. If you have any suggestions, ideas, or encounter any issues, please don’t hesitate to reach out to us. You can submit your feedback through GitHub issues or contribute to the project by submitting pull requests. We appreciate your support!</p>
+<p>Happy analyzing!</p>
+<section id="further-reading" class="level3">
+<h3 class="anchored" data-anchor-id="further-reading">Further reading</h3>
+<p><strong>Liked this post?</strong> Check out more R-related content on <a href="https://www.r-bloggers.com/">r-bloggers.com</a>.</p>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
