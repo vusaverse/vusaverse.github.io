@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>vusaverse</title>
+<link>https://vusaverse.github.io/blog.html</link>
+<atom:link href="https://vusaverse.github.io/blog.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.3.450</generator>
+<lastBuildDate>Wed, 10 Apr 2024 22:00:00 GMT</lastBuildDate>
+<item>
+  <title>Announcing vvdoctor Alpha Release</title>
+  <dc:creator>VU Analytics</dc:creator>
+  <link>https://vusaverse.github.io/posts/vvdoctor_alpha_release.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="announcing-the-launch-of-vvdoctor-a-shiny-app-for-effortless-data-analysis" class="level1">
+<h1>Announcing the Launch of vvdoctor: A Shiny App for Effortless Data Analysis</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://edulytics.shinyapps.io/vvdoctor/"><img src="https://vusaverse.github.io/assets/hex-vvdoctor.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">vvdoctor</figcaption>
+</figure>
+</div>
+<p>We are excited to announce the launch of <code>vvdoctor</code>, a new R Shiny app (and package) that provides a user-friendly interface for statistical testing from data! The goal is to aid to data-driven decision making from a statistical perspective. When is a difference large enough? Is there a notable increase from last year? Is there a difference between group A and B? These questions can be difficult to answer from solely a data-analytical perspective. <code>vvdoctor</code> alleviates this difficulty by easily allowing researchers, data analysts, and anyone interested in exploring data to easily conduct statistical tests from data! Upload your file, visualize your data, and perform a wide range of statistical tests in <code>vvdoctor</code>.</p>
+<p><code>vvdoctor</code> is now live and is accessible at: <a href="https://edulytics.shinyapps.io/vvdoctor/">shinyapps.io</a>. This app is the result of a collaborative effort by the team at Vusaverse, and it aims to simplify the process of conducting statistical tests from data.</p>
+<section id="key-features" class="level2">
+<h2 class="anchored" data-anchor-id="key-features">Key Features</h2>
+<ul>
+<li><p>Seamless Data Uploading: With just a few clicks, you can upload your data files in various formats, including CSV, RDS, Parquet, and more. The app will automatically display the data in a dataframe.</p></li>
+<li><p>Data Visualization: Generating histograms and other visualizations is a breeze. Simply select the variable you want to explore, and the app will generate the corresponding plot.</p></li>
+<li><p>Comprehensive Statistical Testing: <code>vvdoctor</code> offers a wide range of statistical tests, including t-tests, ANOVA, correlations, and more. The app will guide you through the process of selecting the appropriate test based on the characteristics of your data.</p></li>
+<li><p>Interpretable Results: Once you’ve run a statistical test, the app will display the test statistic, p-value, and any other relevant information, making it easy to interpret the results.</p></li>
+</ul>
+<p>Please refer to the <code>vvdoctor</code> <a href="https://github.com/vusaverse/vvdoctor">GitHub repository</a> of the project for further specification.</p>
+</section>
+<section id="getting-started" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started">Getting Started</h2>
+<p>To start using vvdoctor, simply visit the app at <a href="https://edulytics.shinyapps.io/vvdoctor/">shinyapps.io</a>. Alternatively, you can install the package directly in R and run the app locally:</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## Install the package </span></span>
+<span id="cb1-2"></span>
+<span id="cb1-3">devtools<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">install_github</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"vusaverse/vvdoctor"</span>) </span>
+<span id="cb1-4"></span>
+<span id="cb1-5"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## Load the package and run the app </span></span>
+<span id="cb1-6"></span>
+<span id="cb1-7"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(vvdoctor) </span>
+<span id="cb1-8">vvdoctor<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">diagnose</span>()</span></code></pre></div>
+</section>
+<section id="contributing-and-feedback" class="level2">
+<h2 class="anchored" data-anchor-id="contributing-and-feedback">Contributing and Feedback</h2>
+<p>This release of <code>vvdoctor</code> is an alpha-version. There are many improvements being made currently and many improvements to be made! We aim to polish up <code>vvdoctor</code> with the help of the R community! We’re committed to continuously improving <code>vvdoctor</code> and adding new features to make data analysis even more accessible. If you have any suggestions, ideas, or encounter any issues, please don’t hesitate to reach out to us. You can submit your feedback through GitHub issues or contribute to the project by submitting pull requests. We appreciate your support!</p>
+<p>Happy analyzing!</p>
+<section id="further-reading" class="level3">
+<h3 class="anchored" data-anchor-id="further-reading">Further reading</h3>
+<p><strong>Liked this post?</strong> Check out more R-related content on <a href="https://www.r-bloggers.com/">r-bloggers.com</a>.</p>
+
+
+</section>
+</section>
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <category>Shiny</category>
+  <category>Packages</category>
+  <category>Statistics</category>
+  <category>vusaverse</category>
+  <guid>https://vusaverse.github.io/posts/vvdoctor_alpha_release.html</guid>
+  <pubDate>Wed, 10 Apr 2024 22:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Update vvtableau: Tableau Cloud Support</title>
+  <dc:creator>VU Analytics</dc:creator>
+  <link>https://vusaverse.github.io/posts/vvtableau_3_24.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="announcing-tableau-cloud-support" class="level1">
+<h1>Announcing Tableau Cloud Support</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://vusaverse.github.io/vvtableau/"><img src="https://vusaverse.github.io/assets/hex-vvtableau.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">vvtableau</figcaption>
+</figure>
+</div>
+<p>In our latest update, we’re excited to announce that <code>vvtableau</code> now supports Tableau Cloud, expanding its capabilities beyond Tableau Server to include the cloud-based platform. This significant enhancement allows users to automate tasks across both Tableau Server and Tableau Cloud, providing a unified interface for managing Tableau resources.</p>
+<section id="whats-new-in-vvtableau-0.6.0" class="level2">
+<h2 class="anchored" data-anchor-id="whats-new-in-vvtableau-0.6.0">What’s New in vvtableau 0.6.0?</h2>
+<p>The <code>vvtableau</code> 0.6.0 release brings several key updates that significantly enhance its functionality and usability:</p>
+<ul>
+<li><p><strong>Extract Refresh Task Execution</strong>: A new function has been added to run extract refresh tasks immediately on the server. This feature is particularly useful for ensuring that your data is always up-to-date without manual intervention.</p></li>
+<li><p><strong>Data Source and Workbook Updates</strong>: Functions to update a data source and a workbook on the server have been introduced. These updates allow for dynamic changes to data sources and workbooks, enabling more flexible and responsive data management workflows.</p></li>
+<li><p><strong>Enhanced User and Group Management</strong>: With the addition of Users and Groups Tableau REST API methods in <code>vvtableau</code> 0.4.0, the package now offers a more comprehensive set of tools for managing users and groups on Tableau Server and Cloud.</p></li>
+</ul>
+<section id="getting-started-with-the-updated-vvtableau" class="level3">
+<h3 class="anchored" data-anchor-id="getting-started-with-the-updated-vvtableau">Getting Started with the Updated vvtableau</h3>
+<p>To take advantage of these new features, you’ll need to update your vvtableau package. Here’s how you can do it:</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"></span>
+<span id="cb1-2"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## Install the package from CRAN</span></span>
+<span id="cb1-3"></span>
+<span id="cb1-4"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">install.packages</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"vvtableau"</span>)</span>
+<span id="cb1-5"></span>
+<span id="cb1-6"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## Or install the development version from GitHub</span></span>
+<span id="cb1-7"></span>
+<span id="cb1-8">devtools<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">install_github</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"vusaverse/vvtableau"</span>)</span>
+<span id="cb1-9"></span>
+<span id="cb1-10"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## Load package</span></span>
+<span id="cb1-11"></span>
+<span id="cb1-12"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(vvtableau)</span>
+<span id="cb1-13"></span>
+<span id="cb1-14"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## Authenticate on the Tableau Server using password</span></span>
+<span id="cb1-15"></span>
+<span id="cb1-16">tableau <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">authenticate_server</span>(</span>
+<span id="cb1-17">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">username =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tableau_username</span>(),</span>
+<span id="cb1-18">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">password =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tableau_password</span>(),</span>
+<span id="cb1-19">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">base_url =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tableau_base_url</span>(),</span>
+<span id="cb1-20">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">api_version =</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3.4</span></span>
+<span id="cb1-21">)</span>
+<span id="cb1-22"></span>
+<span id="cb1-23"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## Authenticate on the Tableau Server or Tableau Cloud using Personal Access Token (PAT)</span></span>
+<span id="cb1-24"></span>
+<span id="cb1-25">tableau <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">authenticate_PAT</span>(</span>
+<span id="cb1-26">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">pat_name =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tableau_pat_name</span>(),</span>
+<span id="cb1-27">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">pat_secret =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tableau_pat_secret</span>(),</span>
+<span id="cb1-28">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">content_url =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tableau_content_url</span>(),</span>
+<span id="cb1-29">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">base_url =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">tableau_base_url</span>(),</span>
+<span id="cb1-30">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">api_version =</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3.4</span></span>
+<span id="cb1-31">)</span>
+<span id="cb1-32"></span>
+<span id="cb1-33"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## The above "tableau" object can now be passed in every Tableau REST API method.</span></span>
+<span id="cb1-34"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## Example: get all users</span></span>
+<span id="cb1-35"></span>
+<span id="cb1-36">users <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">get_server_users</span>(</span>
+<span id="cb1-37">  tableau,</span>
+<span id="cb1-38">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">api_version =</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">3.4</span>,</span>
+<span id="cb1-39">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">page_number =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1</span>,</span>
+<span id="cb1-40">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">page_size =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">100</span>,</span>
+<span id="cb1-41">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">include_metadata =</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">FALSE</span></span>
+<span id="cb1-42">)</span></code></pre></div>
+<p>Please refer to the function documentation on what values to pass for the argument when using either Tableau Server or Tableau Cloud.</p>
+</section>
+<section id="key-features-of-vvtableau" class="level3">
+<h3 class="anchored" data-anchor-id="key-features-of-vvtableau">Key Features of vvtableau</h3>
+<p>For a comprehensive list of features and detailed documentation, we recommend referring to the official <code>vvtableau</code> <a href="https://vusaverse.github.io/vvtableau/" title="https://vusaverse.github.io/vvtableau/">documentation</a>. It provides in-depth explanations and examples to help you make the most of <code>vvtableau</code> in your R workflows.</p>
+</section>
+<section id="contributing-to-vvtableau" class="level3">
+<h3 class="anchored" data-anchor-id="contributing-to-vvtableau">Contributing to vvtableau</h3>
+<p><code>vvtableau</code> is an open-source project, and contributions from the community are highly encouraged. If you encounter any bugs, have feature requests, or would like to contribute code improvements, you can open an issue or submit a pull request on the <a href="https://github.com/vusaverse/vvtableau" title="https://github.com/vusaverse/vvtableau">GitHub</a> repository.</p>
+</section>
+<section id="further-reading" class="level3">
+<h3 class="anchored" data-anchor-id="further-reading">Further reading</h3>
+<p><strong>Liked this post?</strong> Check out more R-related content on <a href="https://www.r-bloggers.com/">r-bloggers.com</a>.</p>
+
+
+</section>
+</section>
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <category>Packages</category>
+  <category>Tableau</category>
+  <category>vusaverse</category>
+  <guid>https://vusaverse.github.io/posts/vvtableau_3_24.html</guid>
+  <pubDate>Tue, 26 Mar 2024 23:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Introduction to vvtableau</title>
+  <dc:creator>VU Analytics</dc:creator>
+  <link>https://vusaverse.github.io/posts/vvtableau.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="automate-tableau-tasks-with-vvtableau" class="level1">
+<h1>Automate Tableau Tasks with vvtableau</h1>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<p>Welcome to the world of automated Tableau tasks! In this blog post, we will explore <code>vvtableau</code>, an R package developed by VU Analytics at Vrije Universiteit Amsterdam as part of the <a href="https://github.com/vusaverse">vusaverse</a> collection. With <code>vvtableau</code>, you can streamline your Tableau workflows and save time by automating repetitive tasks in Tableau Server. Let’s explore the <code>vvtableau</code> package and how it could enhance your Tableau experience with R!</p>
+</section>
+<section id="what-is-vvtableau" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-vvtableau">What is vvtableau?</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://vusaverse.github.io/vvtableau/"><img src="https://vusaverse.github.io/assets/hex-vvtableau.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">vvtableau</figcaption>
+</figure>
+</div>
+<p><code>vvtableau</code> is an R package that provides a seamless interface for interacting with Tableau Server using the Tableau REST API. It is part of the <code>vusaverse</code> collection, a set of packages developed by VU Analytics to support data pipelines. With <code>vvtableau</code>, you can automate various Tableau tasks, such as:</p>
+<ul>
+<li>downloading workbooks from the server;</li>
+<li>setting up refresh data extract data alerts;</li>
+<li>retrieving server object information directly from R; and</li>
+<li>managing locally hosted workbooks through the XML methods.</li>
+</ul>
+</section>
+<section id="getting-started-with-vvtableau" class="level3">
+<h3 class="anchored" data-anchor-id="getting-started-with-vvtableau">Getting Started with vvtableau</h3>
+<p>To get started with <code>vvtableau</code>, follow these simple steps:</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## Install the package from CRAN </span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">install.packages</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"vvtableau"</span>)</span>
+<span id="cb1-3"></span>
+<span id="cb1-4"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## Or install the development version from GitHub </span></span>
+<span id="cb1-5">devtools<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">install_github</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"vusaverse/vvtableau"</span>)</span>
+<span id="cb1-6"></span>
+<span id="cb1-7"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## Load package </span></span>
+<span id="cb1-8"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(vvtableau)</span>
+<span id="cb1-9"></span>
+<span id="cb1-10"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## Authenticate on the Tableau Server</span></span>
+<span id="cb1-11"></span>
+<span id="cb1-12">tableau <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">authenticate_server</span>(</span>
+<span id="cb1-13">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">server =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://your.tableau.server.com"</span>,</span>
+<span id="cb1-14">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">username =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"your_username"</span>,</span>
+<span id="cb1-15">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">password =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"your_password"</span> </span>
+<span id="cb1-16">) </span>
+<span id="cb1-17"></span>
+<span id="cb1-18"><span class="do" style="color: #5E5E5E;
+background-color: null;
+font-style: italic;">## The above "tableau" object can now be passed in every Tableau REST API method.</span></span></code></pre></div>
+</section>
+<section id="key-features-of-vvtableau" class="level3">
+<h3 class="anchored" data-anchor-id="key-features-of-vvtableau">Key Features of vvtableau</h3>
+<p><code>vvtableau</code> offers a range of features to automate Tableau tasks and enhance your Tableau experience. Here are some key features:</p>
+<ol type="1">
+<li><p><code>download_workbooks_server()</code>: This function allows you to download workbooks from Tableau Server. You can use it to automate the process of retrieving workbooks and saving them locally, which can be helpful for regular backups.</p></li>
+<li><p><code>get_server_refresh_tasks()</code>: With this function, you can retrieve information about extract refresh tasks on Tableau Server. By automating the retrieval of refresh task details, you can monitor and manage data refresh processes more efficiently.</p></li>
+<li><p><code>get_server_users()</code>: This function enables you to retrieve information about users on Tableau Server.</p></li>
+</ol>
+<p>For a comprehensive list of features and detailed documentation, we recommend referring to the official <code>vvtableau</code> <a href="https://vusaverse.github.io/vvtableau/" title="https://vusaverse.github.io/vvtableau/">documentation</a>. It provides in-depth explanations and examples to help you make the most of <code>vvtableau</code> in your R workflows.</p>
+</section>
+<section id="contributing-to-vvtableau" class="level3">
+<h3 class="anchored" data-anchor-id="contributing-to-vvtableau">Contributing to vvtableau</h3>
+<p><code>vvtableau</code> is an open-source project, and contributions from the community are highly encouraged. If you encounter any bugs, have feature requests, or would like to contribute code improvements, you can open an issue or submit a pull request on the <a href="https://github.com/vusaverse/vvtableau" title="https://github.com/vusaverse/vvtableau">GitHub</a> repository.</p>
+</section>
+<section id="further-reading" class="level3">
+<h3 class="anchored" data-anchor-id="further-reading">Further reading</h3>
+<p><strong>Liked this post?</strong> Check out more R-related content on <a href="https://www.r-bloggers.com/">r-bloggers.com</a>.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <category>Packages</category>
+  <category>Tableau</category>
+  <category>vusaverse</category>
+  <guid>https://vusaverse.github.io/posts/vvtableau.html</guid>
+  <pubDate>Mon, 31 Jul 2023 22:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Using Rocker docker for R package development</title>
+  <dc:creator>John Doe</dc:creator>
+  <link>https://vusaverse.github.io/posts/Rocker.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>In the world of data science, developing and sharing R packages is a crucial aspect of collaborative work. However, ensuring reproducibility, managing dependencies, and maintaining a consistent development environment can be challenging. This is where Docker Rocker comes in. In this blog post, we will explore the pros and cons of using Docker Rocker for R package development and provide a step-by-step guide to help you get started.</p>
+<section id="pros-of-using-docker-rocker-for-r-package-development" class="level2">
+<h2 class="anchored" data-anchor-id="pros-of-using-docker-rocker-for-r-package-development">Pros of Using Docker Rocker for R Package Development</h2>
+<ul>
+<li><p>Reproducibility: Docker allows you to create a containerized environment that encapsulates all the dependencies required for your R package. This ensures that your code will run consistently across different systems, making it easier to reproduce your work.</p></li>
+<li><p>Isolation: Docker containers provide a sandboxed environment, allowing you to isolate your R package development from other dependencies or configurations on your system. This helps prevent conflicts and ensures that your package development environment remains stable.</p></li>
+<li><p>Portability: Docker containers can be easily shared and deployed across different platforms and systems, making it convenient for collaboration and deployment.</p></li>
+<li><p>Version Control: With Docker, you can version control your containerized environment, including the specific versions of R, packages, and system dependencies. This makes it easier to track changes and roll back to previous versions if needed.</p></li>
+<li><p>Flexibility: Docker Rocker provides a wide range of pre-built containers for different versions of R, allowing you to easily switch between R versions for testing and development purposes.</p></li>
+</ul>
+</section>
+<section id="cons-of-using-docker-rocker-for-r-package-development" class="level2">
+<h2 class="anchored" data-anchor-id="cons-of-using-docker-rocker-for-r-package-development">Cons of Using Docker Rocker for R Package Development</h2>
+<p>Cons of Using Docker Rocker for R Package Development:</p>
+<ul>
+<li><p>Learning Curve: Docker has its own set of commands and concepts that may require some learning and adjustment if you are new to it.</p></li>
+<li><p>Increased Complexity: Docker adds an additional layer of complexity to your development workflow, as you need to manage and maintain the Docker images and containers alongside your R package code.</p></li>
+<li><p>Resource Overhead: Running R packages within Docker containers may consume more system resources compared to running them directly on the host system. This can impact the performance and responsiveness of your development environment.</p></li>
+<li><p>Build Time: Building Docker images can take some time, especially when installing and configuring dependencies. However, this build time is a one-time cost, and subsequent container launches are faster.</p></li>
+</ul>
+</section>
+</section>
+<section id="getting-started-with-docker-rocker" class="level1">
+<h1>Getting Started with Docker Rocker</h1>
+<ol type="1">
+<li><p>Install Docker: Start by installing Docker on your machine. Visit the official Docker website and follow the instructions for your operating system.</p></li>
+<li><p>Choose a Docker Image: Docker Rocker provides a variety of pre-built images for R development. Choose an image that suits your needs, considering the R version and additional packages or dependencies you require.</p></li>
+<li><p>Create a Dockerfile: Create a Dockerfile in your R package project directory. This file defines the steps to build your Docker image. Specify the base image, install necessary system dependencies, and copy your R package code into the image.</p></li>
+<li><p>Build the Docker Image: Use the docker build command to build your Docker image based on the Dockerfile. This process may take some time as it installs and configures the dependencies.</p></li>
+<li><p>Run the Docker Container: Once the image is built, you can run a Docker container based on that image. Use the docker run command to start the container, specifying any necessary options such as port mapping or volume mounting. You can now interact with your R package code within the container.</p></li>
+</ol>
+</section>
+<section id="bringing-it-all-together" class="level1">
+<h1>Bringing it all together</h1>
+<p>The above may seem intimidating at first, but do not worry. We have a pre-made custom rocker docker instance that you can easily use.</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode dockerfile code-with-copy"><code class="sourceCode dockerfile"><span id="cb1-1"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">FROM</span> rocker/tidyverse:latest</span>
+<span id="cb1-2"></span>
+<span id="cb1-3"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">COPY</span> .config /home/rstudio/.config</span>
+<span id="cb1-4"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">COPY</span> .Rprofile /home/rstudio/</span>
+<span id="cb1-5"></span>
+<span id="cb1-6"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">USER</span> root</span>
+<span id="cb1-7"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">RUN</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">chown</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-R</span> rstudio:rstudio /home/rstudio/</span>
+<span id="cb1-8"></span>
+<span id="cb1-9"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">RUN</span> <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">install2.r</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--error</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--deps</span> TRUE <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb1-10">    usethis <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb1-11">    testthat <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb1-12">    magick <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb1-13">    urltools <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb1-14">    markdown <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb1-15">    text2vec <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb1-16">    qpdf <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb1-17">    devtools <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb1-18">    <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&amp;&amp;</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">rm</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-rf</span> /tmp/downloaded_packages/ /tmp/<span class="pp" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">*</span>.rds</span>
+<span id="cb1-19"></span>
+<span id="cb1-20"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">RUN</span> <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">apt-get</span> clean <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&amp;&amp;</span> <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">apt-get</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-y</span> update <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&amp;&amp;</span> <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">apt-get</span> install <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-y</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--no-install-recommends</span> libxt6 imagemagick</span></code></pre></div>
+<p>Let’s break down the Dockerfile code step by step:</p>
+<ol type="1">
+<li><p>FROM rocker/tidyverse:latest: This line specifies the base image for our Docker image. In this case, we are using the rocker/tidyverse image, which provides a comprehensive set of R packages commonly used in data science.</p></li>
+<li><p>COPY .config /home/rstudio/.config and COPY .Rprofile /home/rstudio/: These lines copy the .config and .Rprofile files from the local directory to the /home/rstudio/ directory inside the Docker image. These files can contain custom configurations or settings for the R/RStudio environment.</p></li>
+<li><p>USER root and RUN chown -R rstudio:rstudio /home/rstudio/: These lines switch the user to root and change the ownership of the /home/rstudio/ directory to the rstudio user. This ensures that the rstudio user has the appropriate permissions to write files and install packages.</p></li>
+<li><p>RUN install2.r –error –deps TRUE …: This line installs several R packages using the install2.r function. The packages included in this example are <code>usethis</code>, <code>testthat</code>, <code>magick</code>, <code>urltools</code>, <code>markdown</code>, <code>text2vec</code>, <code>qpdf</code>, and <code>devtools</code>. Feel free to modify this list based on your specific package requirements. The –error flag ensures that the installation process stops if any errors occur, and the –deps TRUE flag installs the package dependencies.</p></li>
+<li><p>&amp;&amp; rm -rf /tmp/downloaded_packages/ /tmp/*.rds: This line removes any temporary files generated during the package installation process, freeing up disk space within the Docker image.</p></li>
+<li><p>RUN apt-get clean &amp;&amp; apt-get -y update &amp;&amp; apt-get install -y –no-install-recommends libxt6 imagemagick: These lines update the package lists, clean the package cache, and install the libxt6 and imagemagick packages using apt-get. These packages are often required for certain R packages that rely on external libraries or image manipulation.</p></li>
+</ol>
+</section>
+<section id="starting-up-the-docker-image" class="level1">
+<h1>Starting up the docker image</h1>
+<p>Next, we need to build our docker instance locally. For this we use a startup file.</p>
+<p>In this section, we will provide examples of startup files for both Windows (<code>.bat</code>) and Unix-based systems (<code>.sh</code>).</p>
+<p>For Windows (<code>.bat</code>) startup file:</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">@echo</span> off</span>
+<span id="cb2-2"></span>
+<span id="cb2-3"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">docker</span> build <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-t</span> custom-rocker-example .</span>
+<span id="cb2-4"></span>
+<span id="cb2-5"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">start</span> http://localhost:8787</span>
+<span id="cb2-6"></span>
+<span id="cb2-7"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">docker</span> run <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-e</span> PASSWORD=<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"%1"</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-p</span> 8787:8787 ^</span>
+<span id="cb2-8"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">-v</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"%cd%"</span>:/home/rstudio/output ^</span>
+<span id="cb2-9"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">--rm</span> custom-rocker-example</span></code></pre></div>
+<p>Explanation of the Windows startup file:</p>
+<ol type="1">
+<li><p>docker build -t custom-rocker-example .: This line builds the Docker image using the Dockerfile in the current directory and assigns it the name custom-rocker-example.</p></li>
+<li><p>start http://localhost:8787: This line opens a web browser and navigates to http://localhost:8787, which is the default address for the RStudio server running inside the Docker container.</p></li>
+<li><p>docker run -e PASSWORD=“%1” -p 8787:8787 …: This line runs the Docker container based on the custom-rocker-example image. The -e PASSWORD=“%1” flag sets the password for the RStudio server, which is passed as an argument when executing the startup file. The -p 8787:8787 flag maps the port 8787 from the container to the same port on the host system. The -v “%cd%”:/home/rstudio/output flag mounts the current directory as /home/rstudio/output inside the container, allowing you to access and save files between the host and container.</p></li>
+</ol>
+<p>For Unix-based systems (<code>.sh</code>) startup file:</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#!/bin/bash</span></span>
+<span id="cb3-2"></span>
+<span id="cb3-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Function that will get executed when the user presses Ctrl+C</span></span>
+<span id="cb3-4"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">handler()</span> <span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">{</span></span>
+<span id="cb3-5">    <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">echo</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Processing the Ctrl+C"</span></span>
+<span id="cb3-6">    <span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">docker</span> system prune <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-a</span></span>
+<span id="cb3-7">    <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">exit</span> 0</span>
+<span id="cb3-8"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">}</span></span>
+<span id="cb3-9"></span>
+<span id="cb3-10"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Assign the handler function to the SIGINT signal</span></span>
+<span id="cb3-11"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">trap</span> handler INT</span>
+<span id="cb3-12"></span>
+<span id="cb3-13"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">docker</span> build <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-t</span> custom-rocker-example .</span>
+<span id="cb3-14"></span>
+<span id="cb3-15"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">open</span> http://localhost:8787</span>
+<span id="cb3-16"></span>
+<span id="cb3-17"><span class="ex" style="color: null;
+background-color: null;
+font-style: inherit;">docker</span> run <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-e</span> PASSWORD=<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span><span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\$</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">1"</span> <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-p</span> 8787:8787 <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb3-18">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-v</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">$(</span><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">pwd</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">)</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span>:/home/rstudio/output <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb3-19">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">-v</span> /home/USERNAME/Documents:/home/rstudio/Documents <span class="dt" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb3-20">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">--rm</span> custom-rocker-example</span></code></pre></div>
+<p>Explanation of the Unix-based startup file:</p>
+<ol type="1">
+<li><p>handler() { … } and trap handler INT: These lines define a function and assign it to the SIGINT signal, which is triggered when the user presses Ctrl+C. The function handler() is responsible for cleaning up Docker resources before exiting the script.</p></li>
+<li><p>docker build -t custom-rocker-example .: This line builds the Docker image using the Dockerfile in the current directory and assigns it the name custom-rocker-example.</p></li>
+<li><p>open http://localhost:8787: This line opens a web browser and navigates to http://localhost:8787, which is the default address for the RStudio server running inside the Docker container.</p></li>
+<li><p>docker run -e PASSWORD=“$1” -p 8787:8787 …: This line runs the Docker container based on the custom-rocker-example image. The -e PASSWORD=“$1” flag sets the password for the RStudio server, which is passed as an argument when executing the startup file.</p></li>
+<li><p>The -p 8787:8787 flag maps the port 8787 from the container to the same port on the host system. The -v “$(pwd)”:/home/rstudio/output flag mounts the current directory as /home/rstudio/output inside the container, allowing you to access and save files between the host and container. Additionally, the -v /home/USERNAME/Documents:/home/rstudio/Documents flag mounts the Documents directory from the host system to the Documents directory inside the container, enabling seamless access to files in that directory.</p></li>
+</ol>
+<p>By using these startup files, you can easily build and run your Docker container for R package development. The startup file automates the process, ensuring that the necessary image is built and the container is launched with the appropriate configurations. This saves you time and effort, allowing you to focus on your R package development tasks.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <category>Packages</category>
+  <category>Docker</category>
+  <category>Rocker</category>
+  <guid>https://vusaverse.github.io/posts/Rocker.html</guid>
+  <pubDate>Mon, 17 Jul 2023 22:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Exploring Data Visualization with Tableau</title>
+  <dc:creator>John Doe</dc:creator>
+  <link>https://vusaverse.github.io/posts/example_blog.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="exploring-data-visualization-with-tableau" class="level1">
+<h1>Exploring Data Visualization with Tableau</h1>
+<p>Data visualization is an essential component of data science. It allows us to present complex information in a visually appealing and easily understandable manner. In this blog post, we will explore the power of Tableau, a popular data visualization tool.</p>
+<section id="what-is-tableau" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-tableau">What is Tableau?</h2>
+<p>Tableau is a powerful and intuitive data visualization tool that enables users to create interactive and dynamic visualizations. It offers a wide range of visualization options, including charts, graphs, maps, and dashboards. Tableau’s drag-and-drop interface makes it accessible to both data scientists and non-technical users.</p>
+</section>
+<section id="benefits-of-using-tableau" class="level2">
+<h2 class="anchored" data-anchor-id="benefits-of-using-tableau">Benefits of Using Tableau</h2>
+<p>Tableau provides numerous benefits for data scientists and analysts:</p>
+<section id="easy-data-connection-and-integration" class="level3">
+<h3 class="anchored" data-anchor-id="easy-data-connection-and-integration">1. Easy Data Connection and Integration</h3>
+<p>Tableau supports various data sources, such as CSV files, Excel spreadsheets, databases, and cloud services. It allows users to connect and integrate data from multiple sources seamlessly. With Tableau’s data blending capabilities, you can combine different datasets to uncover valuable insights.</p>
+</section>
+<section id="interactive-visualizations" class="level3">
+<h3 class="anchored" data-anchor-id="interactive-visualizations">2. Interactive Visualizations</h3>
+<p>One of Tableau’s standout features is its ability to create interactive visualizations. Users can filter, drill down, and explore data dynamically. This interactivity empowers stakeholders to gain deeper insights and ask ad hoc questions, leading to more informed decision-making.</p>
+</section>
+<section id="powerful-analytics-and-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="powerful-analytics-and-statistics">3. Powerful Analytics and Statistics</h3>
+<p>Tableau offers built-in analytics and statistical functions that enhance data exploration. Users can perform calculations, trend analysis, forecasting, clustering, and more. These analytical capabilities enable data scientists to dig deeper into the data and uncover patterns and relationships.</p>
+</section>
+<section id="dashboard-creation" class="level3">
+<h3 class="anchored" data-anchor-id="dashboard-creation">4. Dashboard Creation</h3>
+<p>Tableau allows the creation of interactive dashboards that consolidate multiple visualizations into a single view. Dashboards provide an overview of key metrics and allow users to explore data across different dimensions. They can be customized with filters, parameters, and actions to enable users to interact with the data.</p>
+</section>
+</section>
+<section id="getting-started-with-tableau" class="level2">
+<h2 class="anchored" data-anchor-id="getting-started-with-tableau">Getting Started with Tableau</h2>
+<p>To get started with Tableau, follow these steps:</p>
+<ol type="1">
+<li>Download and install Tableau Desktop from the official website.</li>
+<li>Launch Tableau Desktop and connect to your desired data source.</li>
+<li>Choose the appropriate visualization type and drag and drop fields onto the canvas.</li>
+<li>Customize the visualization by applying filters, sorting, formatting, and adding interactivity.</li>
+<li>Create a dashboard to combine multiple visualizations and enhance data exploration.</li>
+<li>Publish your visualizations to Tableau Server or Tableau Public for sharing and collaboration.</li>
+</ol>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Tableau is a powerful tool that empowers data scientists and analysts to create stunning and interactive data visualizations. Its intuitive interface, extensive feature set, and ability to integrate with various data sources make it a popular choice in the data science community.</p>
+<p>By leveraging Tableau’s capabilities, data scientists can effectively communicate insights, drive decision-making, and extract maximum value from their data.</p>
+<p>If you haven’t explored Tableau yet, I highly recommend giving it a try. Start visualizing your data in new and insightful ways with Tableau today!</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>Tableau</category>
+  <category>Visualisations</category>
+  <guid>https://vusaverse.github.io/posts/example_blog.html</guid>
+  <pubDate>Sun, 09 Jul 2023 22:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
