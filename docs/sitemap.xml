@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://vusaverse.github.io/about.html</loc>
-    <lastmod>2024-04-11T09:18:44.319Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vusaverse.github.io/blog.html</loc>
-    <lastmod>2024-04-11T09:18:45.828Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vusaverse.github.io/faq.html</loc>
-    <lastmod>2024-04-11T09:18:46.517Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vusaverse.github.io/index.html</loc>
-    <lastmod>2024-04-11T09:18:47.242Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vusaverse.github.io/packages.html</loc>
-    <lastmod>2024-04-11T09:18:47.860Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vusaverse.github.io/posts/example_blog.html</loc>
-    <lastmod>2024-04-11T09:18:48.654Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vusaverse.github.io/posts/Rocker.html</loc>
-    <lastmod>2024-04-11T09:18:49.658Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vusaverse.github.io/posts/vvdoctor_alpha_release.html</loc>
-    <lastmod>2024-04-11T09:18:50.613Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vusaverse.github.io/posts/vvtableau.html</loc>
-    <lastmod>2024-04-11T09:18:51.593Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vusaverse.github.io/posts/vvtableau_3_24.html</loc>
-    <lastmod>2024-04-11T09:18:52.688Z</lastmod>
+    <loc>https://vusaverse.github.io/styleguides.html</loc>
+    <lastmod>2024-04-12T15:08:26.131Z</lastmod>
   </url>
   <url>
     <loc>https://vusaverse.github.io/projects.html</loc>
-    <lastmod>2024-04-11T09:18:53.354Z</lastmod>
+    <lastmod>2024-04-12T15:08:24.412Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/posts/vvtableau.html</loc>
+    <lastmod>2024-04-12T15:08:22.555Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/posts/Rocker.html</loc>
+    <lastmod>2024-04-12T15:08:20.179Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/packages.html</loc>
+    <lastmod>2024-04-12T15:08:18.421Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/faq.html</loc>
+    <lastmod>2024-04-12T15:08:17.095Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/about.html</loc>
+    <lastmod>2024-04-12T15:08:14.866Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/blog.html</loc>
+    <lastmod>2024-04-12T15:08:16.434Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/index.html</loc>
+    <lastmod>2024-04-12T15:08:17.822Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/posts/example_blog.html</loc>
+    <lastmod>2024-04-12T15:08:19.231Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/posts/vvdoctor_alpha_release.html</loc>
+    <lastmod>2024-04-12T15:08:21.488Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vusaverse.github.io/posts/vvtableau_3_24.html</loc>
+    <lastmod>2024-04-12T15:08:23.713Z</lastmod>
   </url>
   <url>
     <loc>https://vusaverse.github.io/resources.html</loc>
-    <lastmod>2024-04-11T09:18:54.054Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vusaverse.github.io/styleguides.html</loc>
-    <lastmod>2024-04-11T09:18:55.001Z</lastmod>
+    <lastmod>2024-04-12T15:08:25.045Z</lastmod>
   </url>
 </urlset>
