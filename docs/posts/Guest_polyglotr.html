@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="VU Analytics">
-<meta name="dcterms.date" content="2024-04-11">
+<meta name="author" content="Tomer Iwan">
+<meta name="dcterms.date" content="2024-04-29">
 
-<title>vusaverse - Announcing vvdoctor Alpha Release</title>
+<title>vusaverse - Guest Post: Introducing the polyglotr package</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -171,13 +171,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Announcing vvdoctor Alpha Release</h1>
+      <h1 class="title">Guest Post: Introducing the polyglotr package</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">R</div>
-                <div class="quarto-category">Shiny</div>
                 <div class="quarto-category">Packages</div>
-                <div class="quarto-category">Statistics</div>
-                <div class="quarto-category">vusaverse</div>
+                <div class="quarto-category">CRAN</div>
               </div>
                   </div>
   </div>
@@ -188,14 +186,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>VU Analytics </p>
+               <p>Tomer Iwan </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">April 11, 2024</p>
+        <p class="date">April 29, 2024</p>
       </div>
     </div>
     
@@ -211,14 +209,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#announcing-the-launch-of-vvdoctor-a-shiny-app-for-effortless-data-analysis" id="toc-announcing-the-launch-of-vvdoctor-a-shiny-app-for-effortless-data-analysis" class="nav-link active" data-scroll-target="#announcing-the-launch-of-vvdoctor-a-shiny-app-for-effortless-data-analysis">Announcing the Launch of vvdoctor: A Shiny App for Effortless Data Analysis</a>
+  <li><a href="#announcing-the-polyglotr-package" id="toc-announcing-the-polyglotr-package" class="nav-link active" data-scroll-target="#announcing-the-polyglotr-package">Announcing the polyglotr package</a>
   <ul class="collapse">
-  <li><a href="#key-features" id="toc-key-features" class="nav-link" data-scroll-target="#key-features">Key Features</a></li>
-  <li><a href="#getting-started" id="toc-getting-started" class="nav-link" data-scroll-target="#getting-started">Getting Started</a></li>
-  <li><a href="#contributing-and-feedback" id="toc-contributing-and-feedback" class="nav-link" data-scroll-target="#contributing-and-feedback">Contributing and Feedback</a>
-  <ul class="collapse">
+  <li><a href="#key-features-of-polyglotr" id="toc-key-features-of-polyglotr" class="nav-link" data-scroll-target="#key-features-of-polyglotr">Key Features of polyglotr</a></li>
+  <li><a href="#contributing-to-polyglotr" id="toc-contributing-to-polyglotr" class="nav-link" data-scroll-target="#contributing-to-polyglotr">Contributing to polyglotr</a></li>
   <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
-  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -229,48 +224,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="announcing-the-launch-of-vvdoctor-a-shiny-app-for-effortless-data-analysis" class="level1">
-<h1>Announcing the Launch of vvdoctor: A Shiny App for Effortless Data Analysis</h1>
+<section id="announcing-the-polyglotr-package" class="level1">
+<h1>Announcing the polyglotr package</h1>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://edulytics.shinyapps.io/vvdoctor/"><img src="..\assets/hex-vvdoctor.png" class="img-fluid figure-img"></a></p>
-<figcaption class="figure-caption">vvdoctor</figcaption>
+<p><a href="https://tomeriko96.github.io/polyglotr/"><img src="..\assets/hex-polyglotr.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">polyglotr</figcaption>
 </figure>
 </div>
-<p>We are excited to announce the launch of <code>vvdoctor</code>, a new R Shiny app (and package) that provides a user-friendly interface for statistical testing from data! The goal is to aid to data-driven decision making from a statistical perspective. When is a difference large enough? Is there a notable increase from last year? Is there a difference between group A and B? These questions can be difficult to answer from solely a data-analytical perspective. <code>vvdoctor</code> alleviates this difficulty by easily allowing researchers, data analysts, and anyone interested in exploring data to easily conduct statistical tests from data! Upload your file, visualize your data, and perform a wide range of statistical tests in <code>vvdoctor</code>.</p>
-<p><code>vvdoctor</code> is now live and is accessible at: <a href="https://edulytics.shinyapps.io/vvdoctor/">shinyapps.io</a>. This app is the result of a collaborative effort by the team at Vusaverse, and it aims to simplify the process of conducting statistical tests from data.</p>
-<section id="key-features" class="level2">
-<h2 class="anchored" data-anchor-id="key-features">Key Features</h2>
-<ul>
-<li><p>Seamless Data Uploading: With just a few clicks, you can upload your data files in various formats, including CSV, RDS, Parquet, and more. The app will automatically display the data in a dataframe.</p></li>
-<li><p>Data Visualization: Generating histograms and other visualizations is a breeze. Simply select the variable you want to explore, and the app will generate the corresponding plot.</p></li>
-<li><p>Comprehensive Statistical Testing: <code>vvdoctor</code> offers a wide range of statistical tests, including t-tests, ANOVA, correlations, and more. The app will guide you through the process of selecting the appropriate test based on the characteristics of your data.</p></li>
-<li><p>Interpretable Results: Once you’ve run a statistical test, the app will display the test statistic, p-value, and any other relevant information, making it easy to interpret the results.</p></li>
-</ul>
-<p>Please refer to the <code>vvdoctor</code> <a href="https://github.com/vusaverse/vvdoctor">GitHub repository</a> of the project for further specification.</p>
-</section>
-<section id="getting-started" class="level2">
-<h2 class="anchored" data-anchor-id="getting-started">Getting Started</h2>
-<p>To start using vvdoctor, simply visit the app at <a href="https://edulytics.shinyapps.io/vvdoctor/">shinyapps.io</a>. Alternatively, you can install the package directly in R and run the app locally:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Install the package </span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"vusaverse/vvdoctor"</span>) </span>
+<p>The package <code>polyglotr</code> is tool for language translation within the R programming environment. This package stands out for its ability to integrate with a variety of free translation services, making it a versatile solution for translating text and files across different languages.</p>
+<p>To get started with <code>polyglotr</code>, follow these simple steps:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="do">## Install the package from CRAN </span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"polyglotr"</span>)</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="do">## Load the package and run the app </span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(vvdoctor) </span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>vvdoctor<span class="sc">::</span><span class="fu">diagnose</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="do">## Or install the development version from GitHub </span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"Tomeriko96/polyglotr"</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="do">## Load package </span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(polyglotr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="key-features-of-polyglotr" class="level3">
+<h3 class="anchored" data-anchor-id="key-features-of-polyglotr">Key Features of polyglotr</h3>
+<ul>
+<li><p>Multiple Translation Services Integration: The package supports a wide range of translation services, including <code>Google Translate API</code>, <code>Mymemory API</code>, <code>Linguee API</code>, <code>Pons API</code>, <code>QCRI API</code>, and <code>Wikimedia Translation API</code>. This broad support ensures that users have access to a variety of translation options, catering to different needs and preferences.</p></li>
+<li><p>Ease of Use: The package is designed with simplicity in mind, providing convenient functions for translating text and files. This makes it accessible to both beginners and experienced R users, enabling them to quickly incorporate translation capabilities into their projects.</p></li>
+<li><p>Comprehensive Documentation: To assist users in leveraging the full potential of the <code>polyglotr</code> package, it includes a detailed reference page that lists all available functions, organized by category. This resource is invaluable for users looking to explore the package’s capabilities or find specific functions for their translation tasks.</p></li>
+<li><p>Vignettes for Detailed Guidance: Beyond the reference page, <code>polyglotr</code> also offers vignettes that provide more detailed information on how to use the functions within the package. These vignettes serve as practical guides, offering step-by-step instructions and examples to help users get started with translating text and files in various languages.</p></li>
+<li><p>Batch Translation and File Translation Capabilities: The package includes functions for batch translations and file translations, allowing users to translate large volumes of text or entire documents efficiently.</p></li>
+<li><p>Language Detection: <code>polyglotr</code> offers language detection methods, which can automatically identify the language of the input text.</p></li>
+</ul>
+<p>For a comprehensive list of features and detailed documentation, we recommend referring to the official <code>polyglotr</code> <a href="https://tomeriko96.github.io/polyglotr/" title="https://tomeriko96.github.io/polyglotr/">documentation</a>. It provides in-depth explanations and examples to help you make the most of <code>polyglotr</code> in your R workflows.</p>
 </section>
-<section id="contributing-and-feedback" class="level2">
-<h2 class="anchored" data-anchor-id="contributing-and-feedback">Contributing and Feedback</h2>
-<p>This release of <code>vvdoctor</code> is an alpha-version. There are many improvements being made currently and many improvements to be made! We aim to polish up <code>vvdoctor</code> with the help of the R community! We’re committed to continuously improving <code>vvdoctor</code> and adding new features to make data analysis even more accessible. If you have any suggestions, ideas, or encounter any issues, please don’t hesitate to reach out to us. You can submit your feedback through GitHub issues or contribute to the project by submitting pull requests. We appreciate your support!</p>
-<p>Happy analyzing!</p>
+<section id="contributing-to-polyglotr" class="level3">
+<h3 class="anchored" data-anchor-id="contributing-to-polyglotr">Contributing to polyglotr</h3>
+<p><code>polyglotr</code> is an open-source project, and contributions from the community are highly encouraged. If you encounter any bugs, have feature requests, or would like to contribute code improvements, you can open an issue or submit a pull request on the <a href="https://github.com/Tomeriko96/polyglotr" title="https://github.com/Tomeriko96/polyglotr">GitHub</a> repository.</p>
+</section>
 <section id="further-reading" class="level3">
 <h3 class="anchored" data-anchor-id="further-reading">Further reading</h3>
 <p><strong>Liked this post?</strong> Check out more R-related content on <a href="https://www.r-bloggers.com/">r-bloggers.com</a>.</p>
 
 
-</section>
 </section>
 </section>
 
