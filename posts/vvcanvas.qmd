@@ -1,0 +1,95 @@
+---
+title: "Introduction to vvcanvas"
+author: "VU Analytics"
+date: "2024-05-22"
+categories: [R, Packages, Canvas, vusaverse] # self-defined categories
+---
+
+# Automate Canvas LMS Tasks with vvcanvas
+
+### Introduction
+
+Today, we're thrilled to introduce the `vvcanvas` package, an R library aimed at enhancing interactions with the Canvas Learning Management System (LMS). Whether you're involved in development, teaching, or research, this package offers a robust interface to tap into the extensive capabilities of Canvas LMS via R programming.
+
+### What is vvcanvas?
+
+[![vvcanvas](/assets/hex-vvcanvas.png)](https://vusaverse.github.io/vvcanvas/)
+
+The `vvcanvas` package serves as a bridge between R and the Canvas LMS API, allowing users to authenticate, retrieve course information, fetch specific details, and perform various operations within the Canvas ecosystem. It's like having a personal assistant for your Canvas needs, right from your R console!
+
+### Getting Started with vvcanvas
+
+Here's a quick guide to get you up and running:
+
+-   Acquire an API key from your Canvas LMS instance. Your Canvas administrator or the Canvas API documentation can guide you through this process.
+-   Load the `vvcanvas` library and use the `canvas_authenticate` function to authenticate. Here's an example snippet:
+
+``` r
+## Install the package from CRAN 
+install.packages("vvcanvas")
+
+## Or install the development version from GitHub 
+devtools::install_github("vusaverse/vvcanvas")
+
+## Load package 
+library(vvcanvas)
+
+## Authenticate on the Tableau Server
+
+# Replace the placeholders with your API key and base URL
+api_key <- "YOUR_API_KEY"
+base_url <- "https://your_canvas_domain.com/"
+
+# Authenticate with the Canvas LMS API
+canvas <- canvas_authenticate(api_key, base_url)
+
+## Alternatively, you can set system variables
+
+# Set the API key and base URL as environment variables
+Sys.setenv(CANVAS_API_KEY = "YOUR_API_KEY")
+Sys.setenv(CANVAS_BASE_URL = "https://your_canvas_domain.com/")
+
+# Authenticate with the Canvas LMS API
+canvas <- canvas_authenticate()
+
+## The above "canvas" object can now be passed in every Canvas LMS API method.
+```
+
+With the authentication step completed, you can now utilize the various functions provided by the `vvcanvas` package to interact with the Canvas LMS.
+
+In order to retrieve a dataframe with all courses you can use the following function:
+
+``` r
+# Pass the canvas object to the get_courses function
+courses <- get_courses(canvas)
+```
+
+### Contributing to vvcanvas
+
+`vvcanvas` is an open-source project, and contributions from the community are highly encouraged. If you encounter any bugs, have feature requests, or would like to contribute code improvements, you can open an issue or submit a pull request on the [GitHub](https://github.com/vusaverse/vvtableau "https://github.com/vusaverse/vvcanvas") repository.
+
+## Parting Note: Canvas Analytics Project
+
+As you delve into `vvcanvas`, you might wonder about the broader implications of leveraging Canvas data. That's where the [canvas-analytics](https://github.com/vusaverse/canvas-analytics) project comes into play. This repository focuses on creating a data pipeline for extracting, aggregating, and analyzing data from Canvas LMS. It's all about turning raw data into actionable insights, facilitating data-driven decisions across education and learning analytics.
+
+Stay tuned for Part II of this blog series, where we'll dive deeper into the `canvas-analytics` project, exploring how it empowers educators, researchers, and administrators with data-driven insights.
+
+Whether you're new to R or a seasoned programmer, the `vvcanvas` package and the upcoming exploration of the `canvas-analytics` project promise to open up exciting possibilities for leveraging Canvas LMS data. Let's embark on this journey together, transforming the way we approach educational technology and data analytics.
+
+### Further reading
+
+**Liked this post?** Check out more R-related content on [r-bloggers.com](https://www.r-bloggers.com/).
+
+Have a look at our other packages in the `vusaverse` collection:
+
+-   [`polyglotr`](https://tomeriko96.github.io/polyglotr/): R package for translation services
+-   [`vvdoctor`](https://vusaverse.github.io/vvdoctor/): Shiny app for statistics.
+-   [`vvcanvas`](https://vusaverse.github.io/vvcanvas/): R package for Canvas LMS.
+-   [`vvtableau`](https://vusaverse.github.io/vvtableau/): R package for Tableau Server.
+-   [`vvtermtime`](https://vusaverse.github.io/vvtermtime/): R package for Semestry TermTime.
+-   [`vvauditor`](https://vusaverse.github.io/vvauditor/): R package for auditing data.
+-   [`vvconverter`](https://vusaverse.github.io/vvconverter/): R package for converting data.
+-   [`vvfiller`](https://vusaverse.github.io/vvfiller/): R package for filling data.
+-   [`vvmover`](https://vusaverse.github.io/vvmover/): R package for reading and writing data.
+-   [`vvsculptor`](https://vusaverse.github.io/vvsculptor/): R package for sculpting data.
+-   [`vvshiny`](https://vusaverse.github.io/vvshiny/): R package to create shiny apps.

@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="VU Analytics">
-<meta name="dcterms.date" content="2024-03-27">
+<meta name="dcterms.date" content="2024-05-22">
 
-<title>vusaverse - Update vvtableau: Tableau Cloud Support</title>
+<title>vusaverse - Introduction to vvcanvas</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -172,11 +172,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Update vvtableau: Tableau Cloud Support</h1>
+      <h1 class="title">Introduction to vvcanvas</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">R</div>
                 <div class="quarto-category">Packages</div>
-                <div class="quarto-category">Tableau</div>
+                <div class="quarto-category">Canvas</div>
                 <div class="quarto-category">vusaverse</div>
               </div>
                   </div>
@@ -195,7 +195,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">March 27, 2024</p>
+        <p class="date">May 22, 2024</p>
       </div>
     </div>
     
@@ -211,13 +211,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#announcing-tableau-cloud-support" id="toc-announcing-tableau-cloud-support" class="nav-link active" data-scroll-target="#announcing-tableau-cloud-support">Announcing Tableau Cloud Support</a>
+  <li><a href="#automate-canvas-lms-tasks-with-vvcanvas" id="toc-automate-canvas-lms-tasks-with-vvcanvas" class="nav-link active" data-scroll-target="#automate-canvas-lms-tasks-with-vvcanvas">Automate Canvas LMS Tasks with vvcanvas</a>
   <ul class="collapse">
-  <li><a href="#whats-new-in-vvtableau-0.6.0" id="toc-whats-new-in-vvtableau-0.6.0" class="nav-link" data-scroll-target="#whats-new-in-vvtableau-0.6.0">What’s New in vvtableau 0.6.0?</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#what-is-vvcanvas" id="toc-what-is-vvcanvas" class="nav-link" data-scroll-target="#what-is-vvcanvas">What is vvcanvas?</a></li>
+  <li><a href="#getting-started-with-vvcanvas" id="toc-getting-started-with-vvcanvas" class="nav-link" data-scroll-target="#getting-started-with-vvcanvas">Getting Started with vvcanvas</a></li>
+  <li><a href="#contributing-to-vvcanvas" id="toc-contributing-to-vvcanvas" class="nav-link" data-scroll-target="#contributing-to-vvcanvas">Contributing to vvcanvas</a></li>
+  <li><a href="#parting-note-canvas-analytics-project" id="toc-parting-note-canvas-analytics-project" class="nav-link" data-scroll-target="#parting-note-canvas-analytics-project">Parting Note: Canvas Analytics Project</a>
   <ul class="collapse">
-  <li><a href="#getting-started-with-the-updated-vvtableau" id="toc-getting-started-with-the-updated-vvtableau" class="nav-link" data-scroll-target="#getting-started-with-the-updated-vvtableau">Getting Started with the Updated vvtableau</a></li>
-  <li><a href="#key-features-of-vvtableau" id="toc-key-features-of-vvtableau" class="nav-link" data-scroll-target="#key-features-of-vvtableau">Key Features of vvtableau</a></li>
-  <li><a href="#contributing-to-vvtableau" id="toc-contributing-to-vvtableau" class="nav-link" data-scroll-target="#contributing-to-vvtableau">Contributing to vvtableau</a></li>
   <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further reading</a></li>
   </ul></li>
   </ul></li>
@@ -230,81 +231,88 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="announcing-tableau-cloud-support" class="level1">
-<h1>Announcing Tableau Cloud Support</h1>
+<section id="automate-canvas-lms-tasks-with-vvcanvas" class="level1">
+<h1>Automate Canvas LMS Tasks with vvcanvas</h1>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">Introduction</h3>
+<p>Today, we’re thrilled to introduce the <code>vvcanvas</code> package, an R library aimed at enhancing interactions with the Canvas Learning Management System (LMS). Whether you’re involved in development, teaching, or research, this package offers a robust interface to tap into the extensive capabilities of Canvas LMS via R programming.</p>
+</section>
+<section id="what-is-vvcanvas" class="level3">
+<h3 class="anchored" data-anchor-id="what-is-vvcanvas">What is vvcanvas?</h3>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="https://vusaverse.github.io/vvtableau/"><img src="..\assets/hex-vvtableau.png" class="img-fluid figure-img"></a></p>
-<figcaption class="figure-caption">vvtableau</figcaption>
+<p><a href="https://vusaverse.github.io/vvcanvas/"><img src="..\assets/hex-vvcanvas.png" class="img-fluid figure-img"></a></p>
+<figcaption class="figure-caption">vvcanvas</figcaption>
 </figure>
 </div>
-<p>In our latest update, we’re excited to announce that <code>vvtableau</code> now supports Tableau Cloud, expanding its capabilities beyond Tableau Server to include the cloud-based platform. This significant enhancement allows users to automate tasks across both Tableau Server and Tableau Cloud, providing a unified interface for managing Tableau resources.</p>
-<section id="whats-new-in-vvtableau-0.6.0" class="level2">
-<h2 class="anchored" data-anchor-id="whats-new-in-vvtableau-0.6.0">What’s New in vvtableau 0.6.0?</h2>
-<p>The <code>vvtableau</code> 0.6.0 release brings several key updates that significantly enhance its functionality and usability:</p>
+<p>The <code>vvcanvas</code> package serves as a bridge between R and the Canvas LMS API, allowing users to authenticate, retrieve course information, fetch specific details, and perform various operations within the Canvas ecosystem. It’s like having a personal assistant for your Canvas needs, right from your R console!</p>
+</section>
+<section id="getting-started-with-vvcanvas" class="level3">
+<h3 class="anchored" data-anchor-id="getting-started-with-vvcanvas">Getting Started with vvcanvas</h3>
+<p>Here’s a quick guide to get you up and running:</p>
 <ul>
-<li><p><strong>Extract Refresh Task Execution</strong>: A new function has been added to run extract refresh tasks immediately on the server. This feature is particularly useful for ensuring that your data is always up-to-date without manual intervention.</p></li>
-<li><p><strong>Data Source and Workbook Updates</strong>: Functions to update a data source and a workbook on the server have been introduced. These updates allow for dynamic changes to data sources and workbooks, enabling more flexible and responsive data management workflows.</p></li>
-<li><p><strong>Enhanced User and Group Management</strong>: With the addition of Users and Groups Tableau REST API methods in <code>vvtableau</code> 0.4.0, the package now offers a more comprehensive set of tools for managing users and groups on Tableau Server and Cloud.</p></li>
+<li>Acquire an API key from your Canvas LMS instance. Your Canvas administrator or the Canvas API documentation can guide you through this process.</li>
+<li>Load the <code>vvcanvas</code> library and use the <code>canvas_authenticate</code> function to authenticate. Here’s an example snippet:</li>
 </ul>
-<section id="getting-started-with-the-updated-vvtableau" class="level3">
-<h3 class="anchored" data-anchor-id="getting-started-with-the-updated-vvtableau">Getting Started with the Updated vvtableau</h3>
-<p>To take advantage of these new features, you’ll need to update your vvtableau package. Here’s how you can do it:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="do">## Install the package from CRAN</span></span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="do">## Install the package from CRAN </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"vvcanvas"</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"vvtableau"</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="do">## Or install the development version from GitHub</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"vusaverse/vvtableau"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="do">## Or install the development version from GitHub </span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"vusaverse/vvcanvas"</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="do">## Load package </span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(vvcanvas)</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="do">## Load package</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="do">## Authenticate on the Tableau Server</span></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(vvtableau)</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="do">## Authenticate on the Tableau Server using password</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace the placeholders with your API key and base URL</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>api_key <span class="ot">&lt;-</span> <span class="st">"YOUR_API_KEY"</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>base_url <span class="ot">&lt;-</span> <span class="st">"https://your_canvas_domain.com/"</span></span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>tableau <span class="ot">&lt;-</span> <span class="fu">authenticate_server</span>(</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="at">username =</span> <span class="fu">tableau_username</span>(),</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="at">password =</span> <span class="fu">tableau_password</span>(),</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="at">base_url =</span> <span class="fu">tableau_base_url</span>(),</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="at">api_version =</span> <span class="fl">3.4</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="do">## Authenticate on the Tableau Server or Tableau Cloud using Personal Access Token (PAT)</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Authenticate with the Canvas LMS API</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>canvas <span class="ot">&lt;-</span> <span class="fu">canvas_authenticate</span>(api_key, base_url)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="do">## Alternatively, you can set system variables</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Set the API key and base URL as environment variables</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.setenv</span>(<span class="at">CANVAS_API_KEY =</span> <span class="st">"YOUR_API_KEY"</span>)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.setenv</span>(<span class="at">CANVAS_BASE_URL =</span> <span class="st">"https://your_canvas_domain.com/"</span>)</span>
 <span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>tableau <span class="ot">&lt;-</span> <span class="fu">authenticate_PAT</span>(</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  <span class="at">pat_name =</span> <span class="fu">tableau_pat_name</span>(),</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="at">pat_secret =</span> <span class="fu">tableau_pat_secret</span>(),</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  <span class="at">content_url =</span> <span class="fu">tableau_content_url</span>(),</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  <span class="at">base_url =</span> <span class="fu">tableau_base_url</span>(),</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  <span class="at">api_version =</span> <span class="fl">3.4</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="do">## The above "tableau" object can now be passed in every Tableau REST API method.</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="do">## Example: get all users</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>users <span class="ot">&lt;-</span> <span class="fu">get_server_users</span>(</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>  tableau,</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>  <span class="at">api_version =</span> <span class="fl">3.4</span>,</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>  <span class="at">page_number =</span> <span class="dv">1</span>,</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>  <span class="at">page_size =</span> <span class="dv">100</span>,</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>  <span class="at">include_metadata =</span> <span class="cn">FALSE</span></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Please refer to the function documentation on what values to pass for the argument when using either Tableau Server or Tableau Cloud.</p>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Authenticate with the Canvas LMS API</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>canvas <span class="ot">&lt;-</span> <span class="fu">canvas_authenticate</span>()</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="do">## The above "canvas" object can now be passed in every Canvas LMS API method.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>With the authentication step completed, you can now utilize the various functions provided by the <code>vvcanvas</code> package to interact with the Canvas LMS.</p>
+<p>In order to retrieve a dataframe with all courses you can use the following function:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Pass the canvas object to the get_courses function</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>courses <span class="ot">&lt;-</span> <span class="fu">get_courses</span>(canvas)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="key-features-of-vvtableau" class="level3">
-<h3 class="anchored" data-anchor-id="key-features-of-vvtableau">Key Features of vvtableau</h3>
-<p>For a comprehensive list of features and detailed documentation, we recommend referring to the official <code>vvtableau</code> <a href="https://vusaverse.github.io/vvtableau/" title="https://vusaverse.github.io/vvtableau/">documentation</a>. It provides in-depth explanations and examples to help you make the most of <code>vvtableau</code> in your R workflows.</p>
+<section id="contributing-to-vvcanvas" class="level3">
+<h3 class="anchored" data-anchor-id="contributing-to-vvcanvas">Contributing to vvcanvas</h3>
+<p><code>vvcanvas</code> is an open-source project, and contributions from the community are highly encouraged. If you encounter any bugs, have feature requests, or would like to contribute code improvements, you can open an issue or submit a pull request on the <a href="https://github.com/vusaverse/vvtableau" title="https://github.com/vusaverse/vvcanvas">GitHub</a> repository.</p>
 </section>
-<section id="contributing-to-vvtableau" class="level3">
-<h3 class="anchored" data-anchor-id="contributing-to-vvtableau">Contributing to vvtableau</h3>
-<p><code>vvtableau</code> is an open-source project, and contributions from the community are highly encouraged. If you encounter any bugs, have feature requests, or would like to contribute code improvements, you can open an issue or submit a pull request on the <a href="https://github.com/vusaverse/vvtableau" title="https://github.com/vusaverse/vvtableau">GitHub</a> repository.</p>
-</section>
+<section id="parting-note-canvas-analytics-project" class="level2">
+<h2 class="anchored" data-anchor-id="parting-note-canvas-analytics-project">Parting Note: Canvas Analytics Project</h2>
+<p>As you delve into <code>vvcanvas</code>, you might wonder about the broader implications of leveraging Canvas data. That’s where the <a href="https://github.com/vusaverse/canvas-analytics">canvas-analytics</a> project comes into play. This repository focuses on creating a data pipeline for extracting, aggregating, and analyzing data from Canvas LMS. It’s all about turning raw data into actionable insights, facilitating data-driven decisions across education and learning analytics.</p>
+<p>Stay tuned for Part II of this blog series, where we’ll dive deeper into the <code>canvas-analytics</code> project, exploring how it empowers educators, researchers, and administrators with data-driven insights.</p>
+<p>Whether you’re new to R or a seasoned programmer, the <code>vvcanvas</code> package and the upcoming exploration of the <code>canvas-analytics</code> project promise to open up exciting possibilities for leveraging Canvas LMS data. Let’s embark on this journey together, transforming the way we approach educational technology and data analytics.</p>
 <section id="further-reading" class="level3">
 <h3 class="anchored" data-anchor-id="further-reading">Further reading</h3>
 <p><strong>Liked this post?</strong> Check out more R-related content on <a href="https://www.r-bloggers.com/">r-bloggers.com</a>.</p>
+<p>Have a look at our other packages in the <code>vusaverse</code> collection:</p>
+<ul>
+<li><a href="https://tomeriko96.github.io/polyglotr/"><code>polyglotr</code></a>: R package for translation services</li>
+<li><a href="https://vusaverse.github.io/vvdoctor/"><code>vvdoctor</code></a>: Shiny app for statistics.</li>
+<li><a href="https://vusaverse.github.io/vvcanvas/"><code>vvcanvas</code></a>: R package for Canvas LMS.</li>
+<li><a href="https://vusaverse.github.io/vvtableau/"><code>vvtableau</code></a>: R package for Tableau Server.</li>
+<li><a href="https://vusaverse.github.io/vvtermtime/"><code>vvtermtime</code></a>: R package for Semestry TermTime.</li>
+<li><a href="https://vusaverse.github.io/vvauditor/"><code>vvauditor</code></a>: R package for auditing data.</li>
+<li><a href="https://vusaverse.github.io/vvconverter/"><code>vvconverter</code></a>: R package for converting data.</li>
+<li><a href="https://vusaverse.github.io/vvfiller/"><code>vvfiller</code></a>: R package for filling data.</li>
+<li><a href="https://vusaverse.github.io/vvmover/"><code>vvmover</code></a>: R package for reading and writing data.</li>
+<li><a href="https://vusaverse.github.io/vvsculptor/"><code>vvsculptor</code></a>: R package for sculpting data.</li>
+<li><a href="https://vusaverse.github.io/vvshiny/"><code>vvshiny</code></a>: R package to create shiny apps.</li>
+</ul>
 
 
 </section>
