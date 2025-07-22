@@ -12,6 +12,8 @@ VU Analytics has created a number of packages to simplify its work. These packag
 
 These packages include:
 
+-   vvbitwarden; for secure secret management with Bitwarden Secrets Manager
+
 -   vvcanvas; for communicating with the CANVAS LMS
 
 -   vvtableau; for using Tableau REST API
