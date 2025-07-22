@@ -53,6 +53,8 @@ Choose from **7 different translation services**, each with their own strengths:
 
 ## 🖥️ See the App in Action
 
+> **Note**: Screenshots of the actual Shiny app interface would be valuable additions here. The app can be launched with `launch_polyglotr_app()` to capture screenshots of the dashboard, translation process, and various features.
+
 ### Getting Started
 The app interface is organized into three main tabs:
 
@@ -87,13 +89,22 @@ For those comfortable with R, you can still use polyglotr programmatically while
 ```r
 library(polyglotr)
 
-# Traditional R approach
+# Traditional R approach - various translation services
 google_translate("Hello, world!", target_language = "es")
 #> "Hola mundo!"
 
-# Or use the Shiny app for the same task
+mymemory_translate("Hello, world!", target_language = "fr", source_language = "en")
+#> "Bonjour le monde!"
+
+# Language detection
+language_detect("Bonjour le monde")
+#> "fr"
+
+# Or use the Shiny app for the same tasks with a GUI
 launch_polyglotr_app()
 ```
+
+The Shiny app provides access to all these functions through an intuitive interface, making it perfect for users who prefer point-and-click interaction over coding.
 
 ## 🚀 How to Access the Shiny App
 
